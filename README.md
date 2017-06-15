@@ -36,4 +36,4 @@ Now, each modification on `ovh-documentation-toolkit` will benefit from hot-relo
 
 ## Contribute
 
-Please refer to [CONTRIBUTE](CONTRIBUTE.md).
+Please refer to [CONTRIBUTING](CONTRIBUTING.md).
