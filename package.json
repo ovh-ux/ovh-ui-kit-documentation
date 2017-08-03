@@ -1,6 +1,6 @@
 {
   "name": "ovh-ui-kit-documentation",
-  "version": "1.0.0-alpha.9",
+  "version": "1.0.0-alpha.10",
   "description": "The documentation and showcase application for OVH UI Kit.",
   "license": "BSD-3-Clause",
   "scripts": {
@@ -63,6 +63,6 @@
     "angular-ui-router": "^0.4.2",
     "lodash": "^4.17.4",
     "ovh-documentation-toolkit": "https://github.com/ovh-ux/ovh-documentation-toolkit.git",
-    "ovh-ui-kit": "https://github.com/ovh-ux/ovh-ui-kit.git#v1.0.0-alpha.12"
+    "ovh-ui-kit": "https://github.com/ovh-ux/ovh-ui-kit.git#v1.0.0-alpha.13"
   }
 }
