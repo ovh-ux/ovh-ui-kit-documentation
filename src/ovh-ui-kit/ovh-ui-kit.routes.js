@@ -15,19 +15,43 @@ export default function ($stateProvider) {
       groupName: 'ovh-ui-kit components',
       redirectTo: 'showcase.ovh-ui-kit.introduction',
       template: '<ui-view></ui-view>',
-      weight: 9000
+      weight: 9000,
+      groups: {
+        basic: {
+          name: 'Basic',
+          weight: 9000
+        },
+        form: {
+          name: 'Form',
+          weight: 8000
+        },
+        data: {
+          name: 'Data',
+          weight: 7000
+        },
+        notice: {
+          name: 'Notice',
+          weight: 6000
+        },
+        nav: {
+          name: 'Navigation',
+          weight: 5000
+        },
+        others: {
+          name: 'Others',
+          weight: 0
+        }
+      }
     })
     .state('showcase.ovh-ui-kit.introduction', {
       url: '/introduction',
       friendlyName: 'Introduction',
-      template: introductionTemplate,
-      weight: 9000
+      template: introductionTemplate
     })
     .state('showcase.ovh-ui-kit.contributing', {
       url: '/contributing',
       friendlyName: 'Contributing',
-      template: contributingTemplate,
-      weight: 9000
+      template: contributingTemplate
     })
 
     // Isolated routes
