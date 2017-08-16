@@ -5,8 +5,8 @@
   "license": "BSD-3-Clause",
   "scripts": {
     "start": "cross-env NODE_ENV=dev babel-node ./build/server",
-    "serve:dist": "opn http://localhost:8080/latest && static dist/static",
-    "build": "rimraf dist/static && cross-env NODE_ENV=production webpack --progress --color --hide-modules --config ./build/webpack.dist.config.babel.js"
+    "serve:dist": "opn http://localhost:8080 && static dist",
+    "build": "rimraf dist && cross-env NODE_ENV=production webpack --progress --color --hide-modules --config ./build/webpack.dist.config.babel.js"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
