@@ -1,5 +1,6 @@
 import introductionTemplate from './introduction.md'
 import contributingTemplate from './contributing.md'
+import urlsTemplate from './urls.md'
 import componentStatusTemplate from './component-status.md'
 import lessPluginRemcalcTemplate from 'less-plugin-remcalc/README.md'
 
@@ -24,6 +25,11 @@ export default function ($stateProvider) {
       url: '/contributing',
       friendlyName: 'Contributing',
       template: contributingTemplate
+    })
+    .state('showcase.documentation.urls', {
+      url: '/urls',
+      friendlyName: 'URLs',
+      template: urlsTemplate
     })
     .state('showcase.documentation.component-status', {
       url: '/component-status',
