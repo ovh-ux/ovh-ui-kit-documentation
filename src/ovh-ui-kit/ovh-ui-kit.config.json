@@ -1,8 +1,82 @@
 {
   "typography": {
-    "weight": 3000
+    "weight": 3000,
+    "group": "basic"
   },
   "color": {
-    "weight": 2000
+    "weight": 2000,
+    "group": "basic"
+  },
+  "accessibility": {
+    "group": "basic"
+  },
+  "animation": {
+    "group": "basic"
+  },
+  "button": {
+    "group": "basic"
+  },
+  "icons": {
+    "group": "basic"
+  },
+  "responsive": {
+    "group": "basic"
+  },
+  "checkbox": {
+    "group": "form"
+  },
+  "formfield": {
+    "group": "form"
+  },
+  "input": {
+    "group": "form"
+  },
+  "input-group": {
+    "group": "form"
+  },
+  "label": {
+    "group": "form"
+  },
+  "radio": {
+    "group": "form"
+  },
+  "select": {
+    "group": "form"
+  },
+  "switch": {
+    "group": "form"
+  },
+  "textarea": {
+    "group": "form"
+  },
+  "list": {
+    "group": "data"
+  },
+  "table": {
+    "group": "data"
+  },
+  "progress": {
+    "group": "data"
+  },
+  "navbar": {
+    "group": "nav"
+  },
+  "progress-tracker": {
+    "group": "nav"
+  },
+  "loader": {
+    "group": "notice"
+  },
+  "message": {
+    "group": "notice"
+  },
+  "modal": {
+    "group": "notice"
+  },
+  "box": {
+    "group": "others"
+  },
+  "tip": {
+    "group": "others"
   }
 }
