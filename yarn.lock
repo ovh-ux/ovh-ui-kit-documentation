@@ -3404,15 +3404,25 @@ output-file-sync@^1.1.0:
     angular-ui-router "~0.4.2"
     lodash "~4.17.4"
 
+<<<<<<< HEAD
 ovh-ui-angular@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/ovh-ui-angular/-/ovh-ui-angular-1.0.3.tgz#bcc67484f7b61d4023fd1f36402a5433838535d1"
+=======
+"ovh-ui-angular@https://github.com/ovh-ux/ovh-ui-angular.git#develop":
+  version "1.0.3"
+  resolved "https://github.com/ovh-ux/ovh-ui-angular.git#5c72603fc2f5288f91e04a26f8f03d0a81d7801e"
+>>>>>>> feat: Integrate ovh-ui-angular
   dependencies:
     ovh-ui-kit "https://github.com/ovh-ux/ovh-ui-kit.git"
 
 "ovh-ui-kit@https://github.com/ovh-ux/ovh-ui-kit.git":
   version "1.0.0-alpha.15"
+<<<<<<< HEAD
   resolved "https://github.com/ovh-ux/ovh-ui-kit.git#62c5b86d7db60431e087c99fe9f44e5241064ee1"
+=======
+  resolved "https://github.com/ovh-ux/ovh-ui-kit.git#329921975da50ed27ac8c69f974f740df8f7e6f8"
+>>>>>>> feat: Integrate ovh-ui-angular
   dependencies:
     less-plugin-remcalc "^0.0.1"
 
