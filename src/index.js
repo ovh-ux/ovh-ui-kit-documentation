@@ -1,6 +1,7 @@
 import 'angular'
 import 'angular-ui-router'
 import 'ovh-documentation-toolkit'
+import 'ovh-ui-angular'
 
 import 'highlightjs/styles/vs.css'
 
@@ -11,16 +12,19 @@ import versionsConfig from './init/versions.config'
 import componentStatusConfig from './init/component-status.config'
 import DocumentationRoutes from './documentation/documentation.routes'
 import OvhUiKitRoutes from './ovh-ui-kit/ovh-ui-kit.routes'
+import OvhUiAngularRoutes from './ovh-ui-angular/ovh-ui-angular.routes'
 
 const app = angular
   .module('ovh-ui-kit-documentation', [
     'ui.router',
-    'ovh-documentation-toolkit'
+    'ovh-documentation-toolkit',
+    'oui'
   ])
   .config(themesConfig)
   .config(versionsConfig)
   .config(componentStatusConfig)
   .config(DocumentationRoutes)
   .config(OvhUiKitRoutes)
+  .config(OvhUiAngularRoutes)
 
 export default app
