@@ -16,6 +16,9 @@
   "button": {
     "group": "basic"
   },
+  "button-group": {
+    "group": "basic"
+  },
   "icons": {
     "group": "basic"
   },
@@ -23,6 +26,9 @@
     "group": "basic"
   },
   "checkbox": {
+    "group": "form"
+  },
+  "field": {
     "group": "form"
   },
   "formfield": {
