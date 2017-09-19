@@ -4,9 +4,6 @@ import _ from 'lodash'
 import webpack from 'webpack'
 import formatter from 'eslint-friendly-formatter'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
-import autoprefixer from 'autoprefixer'
-import RemcalcPlugin from 'less-plugin-remcalc'
-import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
 const __root = path.join(__dirname, '..')
 
@@ -43,10 +40,6 @@ export default {
         const fn = _.template(fs.readFileSync(templatePath))
         return fn({ assets: parameters.htmlWebpackPlugin.files })
       }
-    }),
-    new ExtractTextPlugin({
-      filename: '[name].css',
-      allChunks: true
     })
   ],
   module: {
@@ -71,31 +64,6 @@ export default {
           'style-loader',
           'css-loader'
         ] },
-      { test: /\.less$/,
-        exclude,
-        use: ExtractTextPlugin.extract({
-          fallback: ['css-loader', 'postcss-loader', 'less-loader'],
-          use: [
-            { loader: 'css-loader',
-              options: {
-                sourceMap: true
-              } },
-            { loader: 'postcss-loader',
-              options: {
-                sourceMap: true,
-                plugins: () => [
-                  autoprefixer({
-                    browsers: ['last 2 versions', 'ie 11']
-                  })
-                ]
-              } },
-            { loader: 'less-loader',
-              options: {
-                sourceMap: true,
-                plugins: [ RemcalcPlugin ]
-              } }
-          ]
-        }) },
       { test: /\.md$/,
         use: [
           { loader: 'html-loader',
