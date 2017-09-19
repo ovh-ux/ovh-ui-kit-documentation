@@ -4,6 +4,7 @@ export default function (ComponentStatusProvider) {
   'ngInject'
 
   const CX_DESIGN_LEVELS = {
+    error: ['deprecated'],
     warning: ['none'],
     info: ['partial'],
     success: ['complete']
