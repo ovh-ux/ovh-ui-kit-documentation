@@ -3422,8 +3422,9 @@ ovh-ui-angular@^1.0.3:
   dependencies:
     ovh-ui-kit "https://github.com/ovh-ux/ovh-ui-kit.git"
 
-"ovh-ui-kit@git+https://github.com/ovh-ux/ovh-ui-kit.git":
+"ovh-ui-kit@https://github.com/ovh-ux/ovh-ui-kit.git":
   version "1.0.0-alpha.15"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   resolved "https://github.com/ovh-ux/ovh-ui-kit.git#62c5b86d7db60431e087c99fe9f44e5241064ee1"
@@ -3433,6 +3434,9 @@ ovh-ui-angular@^1.0.3:
 =======
   resolved "git+https://github.com/ovh-ux/ovh-ui-kit.git#62c5b86d7db60431e087c99fe9f44e5241064ee1"
 >>>>>>> chore(bower): update ovh-ui-angular
+=======
+  resolved "https://github.com/ovh-ux/ovh-ui-kit.git#62c5b86d7db60431e087c99fe9f44e5241064ee1"
+>>>>>>> chore(bower): update ovh-ui-kit
   dependencies:
     less-plugin-remcalc "^0.0.1"
 
