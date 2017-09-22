@@ -34,6 +34,9 @@ export default merge(config, {
       { from: 'src/versions.json' }
     ])
   ],
+  resolve: {
+    mainFields: ['module', 'main']
+  },
   module: {
     rules: [
       { test: /\.less$/,
