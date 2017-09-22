@@ -9,6 +9,7 @@ You can find here all definitions related on component status. On each component
 | Status             | Definition                                                                              |
 | ------------------ | --------------------------------------------------------------------------------------- |
 | **None**           | CX team have not defined any guidelines or rules about this component.                  |
+| **Deprecated**     | CX team does not recommend to use this component anymore.                               |
 | **Partial**        | CX team have made some guidelines or mockups and they have been used on this component. |
 | **Complete**       | CX team have made all guidelines about this component.                                  |
 
@@ -27,7 +28,7 @@ You can find here all definitions related on component status. On each component
 
 | Type           | Status                               |
 | -------------- | ------------------------------------ |
-| **Error**      | None                                 |
+| **Error**      | None, Deprecated                     |
 | **Warning**    | Partial                              |
 | **Success**    | Complete                             |
 
@@ -44,6 +45,8 @@ You can find here all definitions related on component status. On each component
 ### Error
 
 <component-status cx-design="none" ux="prototype"></component-status>
+
+<component-status cx-design="deprecated" ux="rc"></component-status>
 
 ### Warning
 
