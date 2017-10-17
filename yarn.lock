@@ -3404,15 +3404,21 @@ output-file-sync@^1.1.0:
     angular-ui-router "~0.4.2"
     lodash "~4.17.4"
 
-"ovh-ui-kit@https://github.com/ovh-ux/ovh-ui-kit.git#v1.0.0-alpha.12":
-  version "1.0.0-alpha.12"
-  resolved "https://github.com/ovh-ux/ovh-ui-kit.git#0f9c9b9314a1affe69a62555ba0892b62207157e"
+ovh-ui-angular@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/ovh-ui-angular/-/ovh-ui-angular-1.0.3.tgz#bcc67484f7b61d4023fd1f36402a5433838535d1"
+  dependencies:
+    ovh-ui-kit "https://github.com/ovh-ux/ovh-ui-kit.git"
+
+"ovh-ui-kit@https://github.com/ovh-ux/ovh-ui-kit.git":
+  version "1.0.0-alpha.15"
+  resolved "https://github.com/ovh-ux/ovh-ui-kit.git#62c5b86d7db60431e087c99fe9f44e5241064ee1"
   dependencies:
     less-plugin-remcalc "^0.0.1"
 
-"ovh-ui-kit@https://github.com/ovh-ux/ovh-ui-kit.git#v1.0.0-alpha.13":
-  version "1.0.0-alpha.13"
-  resolved "https://github.com/ovh-ux/ovh-ui-kit.git#ee5defeac6930857d4ad6b368dcfdfa13e36ffde"
+"ovh-ui-kit@https://github.com/ovh-ux/ovh-ui-kit.git#v1.0.0-alpha.15":
+  version "1.0.0-alpha.15"
+  resolved "https://github.com/ovh-ux/ovh-ui-kit.git#2a47de85f7cd9b503e9a818780f1ad824d9b636d"
   dependencies:
     less-plugin-remcalc "^0.0.1"
 
