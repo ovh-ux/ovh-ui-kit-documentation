@@ -3,6 +3,7 @@ import checkboxTemplate from 'ovh-ui-angular/packages/oui-checkbox/README.md'
 import radioTemplate from 'ovh-ui-angular/packages/oui-radio/README.md'
 import radioGroupTemplate from 'ovh-ui-angular/packages/oui-radio-group/README.md'
 import messageTemplate from 'ovh-ui-angular/packages/oui-message/README.md'
+import loaderTemplate from 'ovh-ui-angular/packages/oui-loader/README.md'
 import contributingTemplate from 'ovh-ui-angular/CONTRIBUTING.md'
 
 import showCurrentValueInPopopController from './show-current-value-in-popup.controller'
@@ -52,5 +53,10 @@ export default function ($stateProvider) {
       url: '/message',
       friendlyName: 'Message',
       template: messageTemplate
+    })
+    .state('showcase.oui-angular.loader', {
+      url: '/loader',
+      friendlyName: 'Loader',
+      template: loaderTemplate
     })
 }
