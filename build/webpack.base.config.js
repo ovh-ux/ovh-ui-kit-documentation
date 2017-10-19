@@ -34,6 +34,7 @@ export default {
     new webpack.DefinePlugin({
       'process.env': process.env.NODE_ENV
     }),
+    new webpack.optimize.ModuleConcatenationPlugin(), // Enable scope hoisting
     new HtmlWebpackPlugin({
       inject: false,
       templateContent: (parameters) => {
