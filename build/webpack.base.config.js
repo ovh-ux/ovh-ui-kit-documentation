@@ -7,7 +7,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 
 const __root = path.join(__dirname, '..')
 
-const exclude = [/node_modules(?!\/ovh-documentation-toolkit)/, /dist/]
+const exclude = [/node_modules(?!\/(ovh-documentation-toolkit|ovh-ui-angular))/, /dist/]
 
 export default {
   context: __root,
@@ -20,7 +20,8 @@ export default {
   resolve: {
     alias: {
       src: path.resolve(__root, 'src'),
-      build: path.resolve(__dirname)
+      build: path.resolve(__dirname),
+      '@oui-angular': fs.realpathSync(path.join(__dirname, '../node_modules/ovh-ui-angular/packages'))
     }
   },
   resolveLoader: {
@@ -33,6 +34,7 @@ export default {
     new webpack.DefinePlugin({
       'process.env': process.env.NODE_ENV
     }),
+    new webpack.optimize.ModuleConcatenationPlugin(), // Enable scope hoisting
     new HtmlWebpackPlugin({
       inject: false,
       templateContent: (parameters) => {
