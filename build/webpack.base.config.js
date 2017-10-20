@@ -18,6 +18,7 @@ export default {
     filename: '[name].js'
   },
   resolve: {
+    extensions: [".js", ".json", ".less"],
     alias: {
       src: path.resolve(__root, 'src'),
       build: path.resolve(__dirname),
