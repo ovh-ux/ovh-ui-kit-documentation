@@ -27,4 +27,6 @@ const app = angular
   .config(OvhUiKitRoutes)
   .config(OvhUiAngularRoutes)
 
+require('./ovh-ui-angular/controllers/index')
+
 export default app

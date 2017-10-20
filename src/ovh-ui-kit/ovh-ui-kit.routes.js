@@ -60,5 +60,5 @@ export default function ($stateProvider) {
       template: '<ui-view></ui-view>'
     })
 
-  templateUtils.addComponentStates($stateProvider, templates, config)
+  templateUtils.addLessComponentStates($stateProvider, templates, config)
 }
