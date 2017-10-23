@@ -6,7 +6,12 @@ class TemplateUtils {
     return loadAll(req)
   }
 
-  static addComponentStates ($stateProvider, templates, config) {
+  static loadAngularJSReadme () {
+    const req = requireAngularJS()
+    return loadAll(req)
+  }
+
+  static addLessComponentStates ($stateProvider, templates, config) {
     Object.keys(templates).forEach(templateName => {
       const templateConfig = {
         url: `/${templateName}`,
@@ -27,6 +32,26 @@ class TemplateUtils {
       })
     })
   }
+
+  static addAngularJSComponentStates ($stateProvider, templates, config) {
+    Object.keys(templates).forEach(templateName => {
+      const templateConfig = {
+        url: `/${templateName}`,
+        friendlyName: _.capitalize(templateName),
+        ...config[templateName]
+      }
+
+      if (templateConfig.controller) {
+        templateConfig.controllerAs = '$ctrl'
+      }
+
+      // Create showcase route
+      $stateProvider.state(`showcase.oui-angular.${templateName}`, {
+        ...templateConfig,
+        template: templates[templateName]
+      })
+    })
+  }
 }
 
 function loadAll (req) {
@@ -42,6 +67,10 @@ function loadAll (req) {
 
 function requireLess () {
   return require.context('!templatePreview-loader!ovh-ui-kit/packages', true, /^\.\/((?!node_modules).)*\/README\.md$/)
+}
+
+function requireAngularJS () {
+  return require.context('ovh-ui-angular/packages', true, /^\.\/((?!node_modules).)*\/README\.md$/)
 }
 
 export default TemplateUtils

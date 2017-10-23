@@ -1,0 +1,19 @@
+{
+  "checkbox": {
+    "controller": "ShowCurrentValueInPopupCtrl",
+    "group": "form"
+  },
+  "radio": {
+    "group": "form"
+  },
+  "radio-group": {
+    "controller": "ShowCurrentValueInPopupCtrl",
+    "group": "form"
+  },
+  "message": {
+    "group": "notice"
+  },
+  "loader": {
+    "group": "notice"
+  }
+}
