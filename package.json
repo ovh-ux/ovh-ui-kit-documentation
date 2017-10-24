@@ -65,6 +65,6 @@
     "lodash": "^4.17.4",
     "ovh-documentation-toolkit": "https://github.com/ovh-ux/ovh-documentation-toolkit.git",
     "ovh-ui-angular": "^1.1.1",
-    "ovh-ui-kit": "https://github.com/ovh-ux/ovh-ui-kit.git#v1.0.0-alpha.19"
+    "ovh-ui-kit": "https://github.com/ovh-ux/ovh-ui-kit.git#v1.0.0-alpha.20"
   }
 }
