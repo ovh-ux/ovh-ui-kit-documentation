@@ -13,6 +13,7 @@ import componentStatusConfig from './init/component-status.config'
 import DocumentationRoutes from './documentation/documentation.routes'
 import OvhUiKitRoutes from './ovh-ui-kit/ovh-ui-kit.routes'
 import OvhUiAngularRoutes from './ovh-ui-angular/ovh-ui-angular.routes'
+import OvhGuidelinesRoutes from './guidelines/guidelines.routes'
 
 const app = angular
   .module('ovh-ui-kit-documentation', [
@@ -26,6 +27,7 @@ const app = angular
   .config(DocumentationRoutes)
   .config(OvhUiKitRoutes)
   .config(OvhUiAngularRoutes)
+  .config(OvhGuidelinesRoutes)
 
 require('./ovh-ui-angular/controllers/index')
 

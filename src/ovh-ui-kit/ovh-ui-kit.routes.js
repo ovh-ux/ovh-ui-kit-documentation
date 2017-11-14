@@ -15,7 +15,7 @@ export default function ($stateProvider) {
       groupName: 'ovh-ui-kit components',
       redirectTo: 'showcase.ovh-ui-kit.introduction',
       template: '<ui-view></ui-view>',
-      weight: 9000,
+      weight: 7000,
       groups: {
         basic: {
           name: 'Basic',
