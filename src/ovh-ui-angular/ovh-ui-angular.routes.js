@@ -1,5 +1,6 @@
 import introductionTemplate from 'ovh-ui-angular/README.md'
 import contributingTemplate from 'ovh-ui-angular/CONTRIBUTING.md'
+import decisionsTemplate from './decisions.md'
 import templateUtils from 'src/utils/template-utils'
 import config from './ovh-ui-angular.config.json'
 
@@ -52,6 +53,11 @@ export default function ($stateProvider) {
       url: '/contributing',
       friendlyName: 'Contributing',
       template: contributingTemplate
+    })
+    .state('showcase.oui-angular.decisions', {
+      url: '/decisions',
+      friendlyName: 'Decisions',
+      template: decisionsTemplate
     })
 
   templateUtils.addAngularJSComponentStates($stateProvider, templates, config)
