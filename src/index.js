@@ -14,11 +14,14 @@ import DocumentationRoutes from './documentation/documentation.routes'
 import OvhUiKitRoutes from './ovh-ui-kit/ovh-ui-kit.routes'
 import OvhUiAngularRoutes from './ovh-ui-angular/ovh-ui-angular.routes'
 
+import './components'
+
 const app = angular
   .module('ovh-ui-kit-documentation', [
     'ui.router',
     'ovh-documentation-toolkit',
-    'oui'
+    'oui',
+    'ovh-ui-kit-documentation-components'
   ])
   .config(themesConfig)
   .config(versionsConfig)
