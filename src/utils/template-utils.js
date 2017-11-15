@@ -3,12 +3,18 @@ import _ from 'lodash'
 class TemplateUtils {
   static loadLessReadme () {
     const req = requireLess()
-    return loadAll(req)
+    return loadAllComponent(req)
   }
 
   static loadAngularJSReadme () {
     const req = requireAngularJS()
-    return loadAll(req)
+    return loadAllComponent(req)
+  }
+
+  static loadGuidelinesReadme () {
+    const req = requireGuidelines()
+
+    return loadAllReadme(req)
   }
 
   static addLessComponentStates ($stateProvider, templates, config) {
@@ -52,9 +58,36 @@ class TemplateUtils {
       })
     })
   }
+
+  static addGuidelinesComponentStates ($stateProvider, templates, config) {
+    Object.keys(templates).forEach(templateName => {
+      const templateConfig = {
+        url: `/${templateName}`,
+        friendlyName: _.capitalize(templateName),
+        ...config[templateName]
+      }
+
+      // Create showcase route
+      $stateProvider.state(`showcase.guidelines.${templateName}`, {
+        ...templateConfig,
+        template: templates[templateName]
+      })
+    })
+  }
 }
 
-function loadAll (req) {
+function loadAllReadme (req) {
+  let templates = []
+  req.keys().forEach(readmeFile => {
+    const matches = readmeFile.match(/([^/]+)\.md$/)
+    if (matches && matches.length >= 2) {
+      templates[matches[1]] = req(readmeFile)
+    }
+  })
+  return templates
+}
+
+function loadAllComponent (req) {
   let templates = []
   req.keys().forEach(readmeFile => {
     const matches = readmeFile.match(/oui-([^/]+)\//)
@@ -71,6 +104,10 @@ function requireLess () {
 
 function requireAngularJS () {
   return require.context('ovh-ui-angular/packages', true, /^\.\/((?!node_modules).)*\/README\.md$/)
+}
+
+function requireGuidelines () {
+  return require.context('../guidelines', true, /\.md$/)
 }
 
 export default TemplateUtils

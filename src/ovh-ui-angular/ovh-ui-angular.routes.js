@@ -16,7 +16,7 @@ export default function ($stateProvider) {
       groupName: 'oui-angular components',
       redirectTo: 'showcase.oui-angular.introduction',
       template: '<ui-view></ui-view>',
-      weight: 9000,
+      weight: 6000,
       groups: {
         basic: {
           name: 'Basic',
