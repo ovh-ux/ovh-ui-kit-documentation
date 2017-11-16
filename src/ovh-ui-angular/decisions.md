@@ -9,9 +9,10 @@
     1. For now, keep component code as simple as possible
     2. Expose only form events that are really used
     3. Use the `text` attribute for component inner text without html inside
-    4. Be more restrictive on component attributes and signature
-    5. Throw warning when concurrent modifiers are used at the same time
-    6. Throw warning when aria text are missing
+    4. Group together states that are exclusive in a single attribute
+    5. Be more restrictive on component attributes and signature
+    6. Throw warning when concurrent modifiers are used at the same time
+    7. Throw warning when aria text are missing
 
 ## Use two-way bindings with `ng-model` and one-way bindings for read-only components
 
@@ -87,6 +88,22 @@ Only form events really used from the component external point-of-view should be
 ### Use the `text` attribute for component inner text without html inside
 
 On component that needs text inside of it but this text also needs to not contains html, like `oui-button`, the `text` attribute should be used.
+
+### Group together states that are exclusive in a single attribute
+
+When a component has multiple states that are exclusive, like the `primary` and `secondary` states on `oui-button`, they should be grouped together in a single attribute like `variant`.
+
+```html
+<oui-button variant="primary|secondary|link"></oui-button>
+```
+
+instead
+
+```html
+<oui-button primary secondary link></oui-button>
+```
+
+By grouping those states in a single attribute no validation is required and it behaves more closely to what html does.
 
 ### Be more restrictive on component attributes and signature
 
