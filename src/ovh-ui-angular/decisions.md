@@ -6,11 +6,12 @@
 4. Use `id` and `name` attributes on form components
 5. Keep translation outside this library
 6. Components
-    1. Expose only form events that are really used
-    2. Use the `text` attribute for component inner text without html inside
-    3. Be more restrictive on component attributes and signature
-    4. Throw warning when concurrent modifiers are used at the same time
-    5. Throw warning when aria text are missing
+    1. For now, keep component code as simple as possible
+    2. Expose only form events that are really used
+    3. Use the `text` attribute for component inner text without html inside
+    4. Be more restrictive on component attributes and signature
+    5. Throw warning when concurrent modifiers are used at the same time
+    6. Throw warning when aria text are missing
 
 ## Use two-way bindings with `ng-model` and one-way bindings for read-only components
 
@@ -72,6 +73,12 @@ angular.directive("test", function () {
 No translation should be stored in the library and strings should be given to the component in attributes.
 
 ## Components
+
+### For now, keep component code as simple as possible
+
+Because we can always add extra features later, in first place components should be kept as simple as possible and some features should be done later. There is some example of what has been pushed later:
+
+* Warnings on attributes values typos
 
 ### Expose only form events that are really used
 
