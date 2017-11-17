@@ -11,8 +11,7 @@
     3. Use the `text` attribute for component inner text without html inside
     4. Group together states that are exclusive in a single attribute
     5. Be more restrictive on component attributes and signature
-    6. Throw warning when concurrent modifiers are used at the same time
-    7. Throw warning when aria text are missing
+    6. Throw warning when aria text are missing
 
 ## Use two-way bindings with `ng-model` and one-way bindings for read-only components
 
@@ -108,10 +107,6 @@ By grouping those states in a single attribute no validation is required and it 
 ### Be more restrictive on component attributes and signature
 
 When a new component is in development phase and attributes and signatures are about to be choose, make sure to be restrictive as possible because the developer still can use native html/css to do its things.
-
-### Throw warning when concurrent modifiers are used at the same time
-
-When a component expose multiple modifiers that should not be used at the same time, like `primary` and `secondary` on `oui-button`, a warning should be thrown to let know the developer when he is doing something wrong.
 
 ### Throw warning when aria text are missing
 
