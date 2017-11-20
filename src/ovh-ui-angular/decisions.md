@@ -6,11 +6,12 @@
 4. Use `id` and `name` attributes on form components
 5. Keep translation outside this library
 6. Components
-    1. Expose only form events that are really used
-    2. Use the `text` attribute for component inner text without html inside
-    3. Be more restrictive on component attributes and signature
-    4. Throw warning when concurrent modifiers are used at the same time
-    5. Throw warning when aria text are missing
+    1. For now, keep component code as simple as possible
+    2. Expose only form events that are really used
+    3. Use the `text` attribute for component inner text without html inside
+    4. Group together states that are exclusive in a single attribute
+    5. Be more restrictive on component attributes and signature
+    6. Throw warning when aria text are missing
 
 ## Use two-way bindings with `ng-model` and one-way bindings for read-only components
 
@@ -73,6 +74,12 @@ No translation should be stored in the library and strings should be given to th
 
 ## Components
 
+### For now, keep component code as simple as possible
+
+Because we can always add extra features later, in first place components should be kept as simple as possible and some features should be done later. There is some example of what has been pushed later:
+
+* Warnings on attributes values typos
+
 ### Expose only form events that are really used
 
 Only form events really used from the component external point-of-view should be exposed through bindings. For example, on `oui-button` it has been chosen to expose only `on-click`, even if `on-focus` could exist, because only `on-click` will be used in real world. Other events, like `on-focus` may be used, but from the `link` method in first place.
@@ -81,13 +88,25 @@ Only form events really used from the component external point-of-view should be
 
 On component that needs text inside of it but this text also needs to not contains html, like `oui-button`, the `text` attribute should be used.
 
+### Group together states that are exclusive in a single attribute
+
+When a component has multiple states that are exclusive, like the `primary` and `secondary` states on `oui-button`, they should be grouped together in a single attribute like `variant`.
+
+```html
+<oui-button variant="primary|secondary|link"></oui-button>
+```
+
+instead
+
+```html
+<oui-button primary secondary link></oui-button>
+```
+
+By grouping those states in a single attribute no validation is required and it behaves more closely to what html does.
+
 ### Be more restrictive on component attributes and signature
 
 When a new component is in development phase and attributes and signatures are about to be choose, make sure to be restrictive as possible because the developer still can use native html/css to do its things.
-
-### Throw warning when concurrent modifiers are used at the same time
-
-When a component expose multiple modifiers that should not be used at the same time, like `primary` and `secondary` on `oui-button`, a warning should be thrown to let know the developer when he is doing something wrong.
 
 ### Throw warning when aria text are missing
 
