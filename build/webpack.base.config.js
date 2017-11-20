@@ -15,7 +15,7 @@ export default {
     app: [path.resolve(__root, 'src', 'index.js')]
   },
   output: {
-    filename: '[name].js'
+    filename: '[name]-[hash].js'
   },
   resolve: {
     extensions: [".js", ".json", ".less"],
