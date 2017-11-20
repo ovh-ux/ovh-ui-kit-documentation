@@ -1,5 +1,6 @@
 import marked from 'marked'
 import highlight from 'highlightjs'
+import cheerio from 'cheerio'
 
 export default class extends marked.Renderer {
   constructor () {
@@ -15,6 +16,20 @@ export default class extends marked.Renderer {
     `
   }
 
+  // Removes each element that follow those rules:
+  // - Removes every element and its children with oui-doc-preview-only class on it
+  // - Removes only the element with oui-doc-preview-only-keep-children class on it
+  _filterHtmlElementFromCode (code) {
+    const $ = cheerio.load(code)
+
+    $('.oui-doc-preview-only').remove()
+    $('.oui-doc-preview-only-keep-children').replaceWith(function () {
+      return $(this).html()
+    })
+
+    return $('body').html()
+  }
+
   code (code, lang) {
     var highlightCode = code
 
@@ -22,7 +37,7 @@ export default class extends marked.Renderer {
       // If somebody write ```html:preview it will show the real code and
       // show a collapsible pre block.
       if (lang === 'html:preview') {
-        highlightCode = highlight.highlight('html', code).value
+        highlightCode = highlight.highlight('html', this._filterHtmlElementFromCode(code)).value
 
         this.codeBlockUID += 1
         var scopeVariableName = `$markdown.code[${this.codeBlockUID}]`
