@@ -4,14 +4,19 @@
 2. Add class to the root component element instead of using the deprecated directive `replace: true` attribute
 3. Use `component` method for **elements** only and `directive` method for **attributes**
 4. Use `id` and `name` attributes on form components
-5. Keep translation outside this library
-6. Components
+5. Use `aria-label` attribute to get aria label
+6. Use `data-` only on native html element attributes with no `ng-` attribute when directive
+7. Prefer bootstrap classes instead of inline style inside preview html blocks
+8. Keep translation outside this library
+9. Components
     1. For now, keep component code as simple as possible
     2. Expose only form events that are really used
     3. Use the `text` attribute for component inner text without html inside
     4. Group together states that are exclusive in a single attribute
     5. Be more restrictive on component attributes and signature
-    6. Throw warning when aria text are missing
+    6. Return model value on change
+    7. Generate ids when label can not be wrapped around input and the id is missing but mandatory
+    8. Prefer `ng-bind` to `{{}}`
 
 ## Use two-way bindings with `ng-model` and one-way bindings for read-only components
 
@@ -68,6 +73,24 @@ angular.directive("test", function () {
 });
 ```
 
+## Use `id` and `name` attributes on form components
+
+When a form input requires an `id` or `name` inside a component, those attributes should be asked through `id` and `name` bindings on the component. Those bindings need to be removed from DOM on `link` method otherwise ids and names could be duplicated and wrong element could be targeted.
+
+## Use `aria-label` attribute to get aria label
+
+When a form input requires an `aria-label` inside a component, this attribute should be asked through `aria-label` binding on the component. This binding needs to be removed from DOM on `link` method otherwise some tools could have weird behavior with this attribute on wrong element.
+
+## Use `data-` only on native html element attributes with no `ng-` attribute when directive
+
+The goal of this library is not to be W3C valid. So, html5 only requires `data-` on attribute with only one word, so angular directive on native html does not require `data-` prefix. Also, custom element are valid and their attributes are all considered valid.
+
+So, `data-` prefix is only required on directive with one word used on native html element.
+
+## Prefer bootstrap classes instead of inline style inside preview html blocks
+
+Because people are doing lot of "copy-paste" of html preview blocks, prefer bootstrap classes instead of inline style to position examples inside html preview blocks.
+
 ## Keep translation outside this library
 
 No translation should be stored in the library and strings should be given to the component in attributes.
@@ -108,6 +131,20 @@ By grouping those states in a single attribute no validation is required and it 
 
 When a new component is in development phase and attributes and signatures are about to be choose, make sure to be restrictive as possible because the developer still can use native html/css to do its things.
 
-### Throw warning when aria text are missing
+### Return model value on change
 
-To be sure that applications are accessible some texts are required and we should throw warning when possible. For example, on `oui-button` if no aria text is given the button is not fully accessible, so the developper should be warn to let him know.
+When a component needs to notify parent of model has changed, the `onChange` binding should be called with an object like this:
+
+```html
+<input ng-model="$ctrl.model" ng-change="$ctrl.onChange({ modelValue: $ctrl.model })">
+```
+
+The `modelValue` name has been chosen to differenciate it from the model containing the `$viewValue`. Those angular specific properties are not mandatory and should not be used from the external, even if they are available.
+
+### Generate ids when label can not be wrapped around input and the id is missing but mandatory
+
+When a form component is developped and label can not wrap the input form, an id will be required to link the label on the input form. When no id is given as component binding an id should be generated using this format `oui-<componentName>-<$scope.$id>`.
+
+### Prefer `ng-bind` to `{{}}`
+
+For performance, prefer `ng-bind` instead of `{{}}`, at least the component is not used a lot and this is really the best solution for this case.
