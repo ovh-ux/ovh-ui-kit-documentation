@@ -27,7 +27,7 @@ export default merge(baseConfig, {
       ]
     }),
     new ExtractTextPlugin({
-      filename: '[name].css',
+      filename: '[name]-[hash].css',
       allChunks: true
     })
   ],
