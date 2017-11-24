@@ -1,19 +1,37 @@
 {
+  "button": {
+    "group": "basic"
+  },
+  "back-button": {
+    "group": "basic"
+  },
   "checkbox": {
     "controller": "ShowCurrentValueInPopupCtrl",
     "group": "form"
   },
-  "radio": {
+  "numeric": {
     "group": "form"
+  },
+  "action-menu": {
+    "group": "others"
+  },
+  "tooltip": {
+    "group": "others"
+  },
+  "dropdown": {
+    "group": "internal"
+  },
+  "radio": {
+    "group": "legacy"
   },
   "radio-group": {
     "controller": "ShowCurrentValueInPopupCtrl",
-    "group": "form"
+    "group": "legacy"
   },
   "message": {
-    "group": "notice"
+    "group": "legacy"
   },
   "loader": {
-    "group": "notice"
+    "group": "legacy"
   }
 }

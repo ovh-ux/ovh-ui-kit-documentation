@@ -79,6 +79,12 @@
   "modal": {
     "group": "notice"
   },
+  "action-menu": {
+    "group": "others"
+  },
+  "dropdown": {
+    "group": "others"
+  },
   "box": {
     "group": "others"
   },

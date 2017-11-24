@@ -40,6 +40,14 @@ export default function ($stateProvider) {
         },
         others: {
           name: 'Others',
+          weight: 1000
+        },
+        internal: {
+          name: 'Internal',
+          weight: 500
+        },
+        legacy: {
+          name: 'Legacy',
           weight: 0
         }
       }
