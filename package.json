@@ -65,8 +65,8 @@
     "angular": "^1.6.1",
     "angular-ui-router": "^0.4.2",
     "lodash": "^4.17.4",
-    "ovh-documentation-toolkit": "https://github.com/ovh-ux/ovh-documentation-toolkit.git",
-    "ovh-ui-angular": "^1.1.1",
-    "ovh-ui-kit": "https://github.com/ovh-ux/ovh-ui-kit.git#v1.0.0-alpha.20"
+    "ovh-documentation-toolkit": "https://github.com/ovh-ux/ovh-documentation-toolkit.git#master",
+    "ovh-ui-angular": "https://github.com/ovh-ux/ovh-ui-angular.git#master",
+    "ovh-ui-kit": "https://github.com/ovh-ux/ovh-ui-kit.git#master"
   }
 }
