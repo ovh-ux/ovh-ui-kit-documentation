@@ -1,11 +1,11 @@
 export default () => ({
-  restrict: 'A',
-  link: ($scope, $element, $attrs) => {
-    const tagName = $element.prop('tagName')
-    const type = $element.attr('type')
+    restrict: "A",
+    link: ($scope, $element) => {
+        const tagName = $element.prop("tagName");
+        const type = $element.attr("type");
 
-    if (tagName && type && tagName.toLowerCase() === 'input' && type.toLowerCase() === 'checkbox') {
-      $element.prop('indeterminate', true)
+        if (tagName && type && tagName.toLowerCase() === "input" && type.toLowerCase() === "checkbox") {
+            $element.prop("indeterminate", true);
+        }
     }
-  }
-})
+});

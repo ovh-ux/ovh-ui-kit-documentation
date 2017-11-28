@@ -1903,6 +1903,10 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
+eslint-config-ovh@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-ovh/-/eslint-config-ovh-0.1.1.tgz#1eeb9e63f914ecfd8cbb3c6c52e228f8dd31ee39"
+
 eslint-config-standard@^10.2.1:
   version "10.2.1"
   resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-10.2.1.tgz#c061e4d066f379dc17cd562c64e819b4dd454591"
