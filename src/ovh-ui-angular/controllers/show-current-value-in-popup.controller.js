@@ -1,6 +1,6 @@
 export default class {
-  // This controller can be used by any README.md to test on-change
-  // callback and show the actual value.
+    // This controller can be used by any README.md to test on-change
+    // callback and show the actual value.
     constructor ($window) {
         "ngInject";
 

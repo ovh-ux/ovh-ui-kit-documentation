@@ -19,13 +19,13 @@ class TemplateUtils {
                 ...config[templateName]
             };
 
-      // Create showcase route
+            // Create showcase route
             $stateProvider.state(`showcase.ovh-ui-kit.${templateName}`, {
                 ...templateConfig,
                 template: templates[templateName].template
             });
 
-      // Create isolated component route
+            // Create isolated component route
             $stateProvider.state(`isolated-ovh-ui-kit.${templateName}`, {
                 ...templateConfig,
                 template: templates[templateName].preview
@@ -45,7 +45,7 @@ class TemplateUtils {
                 templateConfig.controllerAs = "$ctrl";
             }
 
-      // Create showcase route
+            // Create showcase route
             $stateProvider.state(`showcase.oui-angular.${templateName}`, {
                 ...templateConfig,
                 template: templates[templateName]
