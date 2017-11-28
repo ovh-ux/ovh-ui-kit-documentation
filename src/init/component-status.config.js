@@ -1,24 +1,24 @@
-import { includes } from 'lodash'
+import { includes } from "lodash";
 
 export default function (ComponentStatusProvider) {
-  'ngInject'
+    "ngInject";
 
-  const CX_DESIGN_LEVELS = {
-    error: ['deprecated'],
-    warning: ['none'],
-    info: ['partial'],
-    success: ['complete']
-  }
+    const CX_DESIGN_LEVELS = {
+        error: ["deprecated"],
+        warning: ["none"],
+        info: ["partial"],
+        success: ["complete"]
+    };
 
-  const UX_LEVELS = {
-    error: ['prototype'],
-    warning: ['beta'],
-    info: ['rc'],
-    success: ['complete']
-  }
+    const UX_LEVELS = {
+        error: ["prototype"],
+        warning: ["beta"],
+        info: ["rc"],
+        success: ["complete"]
+    };
 
-  ComponentStatusProvider.setReadmeUrl('#!/documentation/component-status')
-  ComponentStatusProvider.setFindMessageTypeFunc((level, cxDesign, ux) =>
+    ComponentStatusProvider.setReadmeUrl("#!/documentation/component-status");
+    ComponentStatusProvider.setFindMessageTypeFunc((level, cxDesign, ux) =>
     includes(CX_DESIGN_LEVELS[level], cxDesign) || includes(UX_LEVELS[level], ux)
-  )
+  );
 }

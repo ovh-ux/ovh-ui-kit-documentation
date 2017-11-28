@@ -1,7 +1,7 @@
-import packageJson from '../../package.json'
+import packageJson from "../../package.json";
 
 export default function (VersionsProvider) {
-  'ngInject'
+    "ngInject";
 
-  VersionsProvider.setCurrentVersion(`v${packageJson.version}`)
+    VersionsProvider.setCurrentVersion(`v${packageJson.version}`);
 }
