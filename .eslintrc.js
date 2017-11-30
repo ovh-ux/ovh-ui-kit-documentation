@@ -22,10 +22,6 @@ module.exports = {
         "generator-star-spacing": 0,
         "no-magic-numbers": ["error", {
             "ignore": [0, -1, 1, 2]
-        }],
-        "class-methods-use-this": "off",
-        "no-underscore-dangle": ["error", {
-            "allowAfterThis": true
         }]
     },
     "no-console": isDistribution ? 2 : 0,
