@@ -29,7 +29,10 @@ export default class extends marked.Renderer {
       return $(this).html()
     })
 
-    return $('body').html()
+    // HACK: Known issue on Cheerio and it is not cleared if it will be fixed.
+    // `.replace(/=""/g, '')`
+    // https://github.com/cheeriojs/cheerio/issues/1032
+    return $('body').html().replace(/=""/g, '')
   }
 
   code (code, lang) {
