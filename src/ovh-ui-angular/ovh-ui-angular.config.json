@@ -25,6 +25,10 @@
     "controller": "PaginationCtrl",
     "group": "others"
   },
+  "datagrid": {
+    "controller": "DatagridCtrl",
+    "group": "others"
+  },
   "dropdown": {
     "group": "internal"
   },
