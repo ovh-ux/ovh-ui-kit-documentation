@@ -20,14 +20,19 @@ export default class extends marked.Renderer {
   // - Removes every element and its children with oui-doc-preview-only class on it
   // - Removes only the element with oui-doc-preview-only-keep-children class on it
   _filterHtmlElementFromCode (code) {
-    const $ = cheerio.load(code)
+    const $ = cheerio.load(code, {
+      decodeEntities: false
+    })
 
     $('.oui-doc-preview-only').remove()
     $('.oui-doc-preview-only-keep-children').replaceWith(function () {
       return $(this).html()
     })
 
-    return $('body').html()
+    // HACK: Known issue on Cheerio and it is not cleared if it will be fixed.
+    // `.replace(/=""/g, '')`
+    // https://github.com/cheeriojs/cheerio/issues/1032
+    return $('body').html().replace(/=""/g, '')
   }
 
   code (code, lang) {
