@@ -12,6 +12,9 @@
   "numeric": {
     "group": "form"
   },
+  "spinner": {
+    "group": "notice"
+  },
   "action-menu": {
     "group": "others"
   },
@@ -29,9 +32,6 @@
     "group": "legacy"
   },
   "message": {
-    "group": "legacy"
-  },
-  "loader": {
     "group": "legacy"
   }
 }
