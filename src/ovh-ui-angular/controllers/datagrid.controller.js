@@ -103,12 +103,6 @@ export default class {
         console.log(selection); // eslint-disable-line
     }
 
-    onSearchText (id) {
-        this.scope.$broadcast(`oui-table:${id}:refresh`, {
-            searchText: this.searchText
-        });
-    }
-
     getTemplate () {
         return `
       <div>
