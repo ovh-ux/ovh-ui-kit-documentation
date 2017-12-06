@@ -3,6 +3,7 @@ import data from "./datagrid.data.json";
 
 const defaultSliceSize = 50;
 
+/* eslint-disable class-methods-use-this */
 export default class {
     constructor ($scope, $timeout, orderByFilter) {
         "ngInject";
