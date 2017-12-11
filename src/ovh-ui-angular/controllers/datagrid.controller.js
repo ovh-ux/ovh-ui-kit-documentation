@@ -1,16 +1,18 @@
 import _ from "lodash";
 import data from "./datagrid.data.json";
 
+const initialPageSize = 25;
 const defaultSliceSize = 50;
 
 /* eslint-disable class-methods-use-this */
 export default class {
-    constructor ($scope, $timeout, orderByFilter) {
+    constructor ($scope, $timeout, $state, orderByFilter) {
         "ngInject";
 
         this.orderBy = orderByFilter;
         this.scope = $scope;
         this.timeout = $timeout;
+        this.$state = $state;
     }
 
     $onInit () {
@@ -26,6 +28,8 @@ export default class {
         this.label = "value";
         this.pageLabel = "Page";
         this.emptyList = [];
+
+        this.initialPageSize = this.$state.params.initialPageSize || initialPageSize;
     }
 
     loadData ({ offset, pageSize, sort, searchText }) {
