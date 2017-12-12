@@ -21,6 +21,10 @@
   "tooltip": {
     "group": "others"
   },
+  "pagination": {
+    "controller": "PaginationCtrl",
+    "group": "others"
+  },
   "dropdown": {
     "group": "internal"
   },
