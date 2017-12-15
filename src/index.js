@@ -1,4 +1,5 @@
 import "angular";
+import "angular-aria";
 import "angular-ui-router";
 import "ovh-documentation-toolkit";
 import "ovh-ui-angular";
