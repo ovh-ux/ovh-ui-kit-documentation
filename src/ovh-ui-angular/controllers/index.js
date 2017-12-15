@@ -1,4 +1,6 @@
-import showCurrentValueInPopopController from "./show-current-value-in-popup.controller";
+import paginationController from "./pagination.controller";
+import showCurrentValueInPopupController from "./show-current-value-in-popup.controller";
 
 angular.module("ovh-ui-kit-documentation")
-    .controller("ShowCurrentValueInPopupCtrl", showCurrentValueInPopopController);
+    .controller("PaginationCtrl", paginationController)
+    .controller("ShowCurrentValueInPopupCtrl", showCurrentValueInPopupController);

@@ -88,6 +88,9 @@
   "box": {
     "group": "others"
   },
+  "pagination": {
+    "group": "others"
+  },
   "tip": {
     "group": "others"
   }
