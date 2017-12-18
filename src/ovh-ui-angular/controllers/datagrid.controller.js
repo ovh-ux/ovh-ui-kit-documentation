@@ -14,6 +14,7 @@ export default class {
 
     $onInit () {
         this.delay = 0;
+        this.emptyList = [];
 
         this.timeout(() => {
             this.data = data;
