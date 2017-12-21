@@ -12,6 +12,12 @@
   "numeric": {
     "group": "form"
   },
+  "radio": {
+    "group": "form"
+  },
+  "message": {
+    "group": "notice"
+  },
   "spinner": {
     "group": "notice"
   },
@@ -21,10 +27,6 @@
   "tooltip": {
     "group": "others"
   },
-  "pagination": {
-    "controller": "PaginationCtrl",
-    "group": "others"
-  },
   "datagrid": {
     "controller": "DatagridCtrl",
     "group": "others"
@@ -32,14 +34,12 @@
   "dropdown": {
     "group": "internal"
   },
-  "radio": {
-    "group": "legacy"
+  "pagination": {
+    "controller": "PaginationCtrl",
+    "group": "internal"
   },
   "radio-group": {
     "controller": "ShowCurrentValueInPopupCtrl",
-    "group": "legacy"
-  },
-  "message": {
     "group": "legacy"
   }
 }
