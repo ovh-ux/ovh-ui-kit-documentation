@@ -22,6 +22,9 @@
   "icons": {
     "group": "basic"
   },
+  "themes": {
+    "group": "basic"
+  },
   "responsive": {
     "group": "basic"
   },
@@ -86,6 +89,9 @@
     "group": "others"
   },
   "box": {
+    "group": "others"
+  },
+  "datagrid": {
     "group": "others"
   },
   "pagination": {
