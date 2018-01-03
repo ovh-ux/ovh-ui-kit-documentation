@@ -1,3 +1,4 @@
+import changelogTemplate from "ovh-ui-kit/CHANGELOG.md";
 import config from "./ovh-ui-kit.config.json";
 import contributingTemplate from "ovh-ui-kit/CONTRIBUTING.md";
 import introductionTemplate from "ovh-ui-kit/README.md";
@@ -53,8 +54,13 @@ export default function ($stateProvider) {
             friendlyName: "Contributing",
             template: contributingTemplate
         })
+        .state("showcase.ovh-ui-kit.changelog", {
+            url: "/changelog",
+            friendlyName: "Changelog",
+            template: changelogTemplate
+        })
 
-    // Isolated routes
+        // Isolated routes
         .state("isolated-ovh-ui-kit", {
             url: "/isolated-ovh-ui-kit",
             template: "<ui-view></ui-view>"

@@ -1,3 +1,4 @@
+import changelogTemplate from "../../CHANGELOG.md";
 import componentStatusTemplate from "./component-status.md";
 import contributingTemplate from "./contributing.md";
 import introductionTemplate from "./introduction.md";
@@ -25,6 +26,11 @@ export default function ($stateProvider) {
             url: "/contributing",
             friendlyName: "Contributing",
             template: contributingTemplate
+        })
+        .state("showcase.documentation.changelog", {
+            url: "/changelog",
+            friendlyName: "Changelog",
+            template: changelogTemplate
         })
         .state("showcase.documentation.urls", {
             url: "/urls",
