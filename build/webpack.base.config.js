@@ -7,7 +7,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 
 const __root = path.join(__dirname, '..')
 
-const exclude = [/node_modules(?!\/(ovh-documentation-toolkit|ovh-ui-angular))/, /dist/]
+const exclude = [/node_modules(?![\/\\](ovh-documentation-toolkit|ovh-ui-angular))/, /dist/]
 
 export default {
   context: __root,
