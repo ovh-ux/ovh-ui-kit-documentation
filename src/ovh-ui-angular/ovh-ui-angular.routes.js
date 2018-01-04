@@ -1,3 +1,4 @@
+import changelogTemplate from "ovh-ui-angular/CHANGELOG.md";
 import config from "./ovh-ui-angular.config.json";
 import contributingTemplate from "ovh-ui-angular/CONTRIBUTING.md";
 import decisionsTemplate from "./decisions.md";
@@ -61,6 +62,11 @@ export default function ($stateProvider) {
             url: "/contributing",
             friendlyName: "Contributing",
             template: contributingTemplate
+        })
+        .state("showcase.oui-angular.changelog", {
+            url: "/changelog",
+            friendlyName: "Changelog",
+            template: changelogTemplate
         })
         .state("showcase.oui-angular.decisions", {
             url: "/decisions",
