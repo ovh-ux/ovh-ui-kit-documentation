@@ -144,6 +144,10 @@ angular-aria@^1.6.1:
   version "1.6.8"
   resolved "https://registry.yarnpkg.com/angular-aria/-/angular-aria-1.6.8.tgz#f5dfcdd69c0dddcb8b691749285613caa7e6cca5"
 
+angular-sanitize@^1.6.1:
+  version "1.6.8"
+  resolved "https://registry.yarnpkg.com/angular-sanitize/-/angular-sanitize-1.6.8.tgz#68175a1a5853a6439fffcb251a88a538a44a8e70"
+
 angular-ui-router@^0.4.2, angular-ui-router@~0.4.2:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/angular-ui-router/-/angular-ui-router-0.4.3.tgz#6c29546fe50b8d2f74614dcb8660d6fc40d6e167"
@@ -3788,14 +3792,14 @@ ovh-documentation-toolkit@^1.0.0:
     lodash "~4.17.4"
 
 ovh-ui-angular@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/ovh-ui-angular/-/ovh-ui-angular-2.0.0.tgz#47bef45a41b1496b84fd06e50b666826b284d4d7"
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/ovh-ui-angular/-/ovh-ui-angular-2.1.0.tgz#f451c92e469c7240304c0b71728822516f76dc7a"
   dependencies:
     popper.js "^1.12.9"
 
 ovh-ui-kit@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/ovh-ui-kit/-/ovh-ui-kit-2.0.0.tgz#3b1f43f7cbf50f1d7776322e89e1c80608725e16"
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/ovh-ui-kit/-/ovh-ui-kit-2.1.0.tgz#5870a00c1482be233c3b53164c90187dfc19029c"
   dependencies:
     less-plugin-remcalc "^0.0.1"
 
