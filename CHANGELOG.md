@@ -4,6 +4,12 @@
 
 ### ovh-ui-kit
 
+#### Fixes
+
+- Remove pointer cursor on unsortable `oui-datagrid`'s column headers
+
+#### Documentation
+
 - Changelog moved to `ovh-ui-kit-documentation`
 
 ### ovh-ui-angular
@@ -17,7 +23,7 @@
 - Handle `data-` prefixes on `oui-column`
 - Add scope context to process header titles
 
-##### Documentation
+#### Documentation
 
 - Changelog moved to `ovh-ui-kit-documentation`
 - Remove licence file extension
