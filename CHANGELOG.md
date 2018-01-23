@@ -1,5 +1,31 @@
 # Changelog
 
+## v2.1.0
+
+### ovh-ui-kit
+
+#### Fixes
+
+- Fix accessibility on navbar
+
+### ovh-ui-angular
+
+#### Features
+
+- Add navbar component
+
+#### Documentation
+
+- Improve datagrid documentation
+
+## v2.0.2
+
+### ovh-ui-angular
+
+#### Fixes
+
+- Fix unwanted properties on component tags (e.g. `aria-label`, `id`, `name`, ...)
+
 ## v2.0.1
 
 ### ovh-ui-kit
