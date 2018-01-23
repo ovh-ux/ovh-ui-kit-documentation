@@ -3,6 +3,7 @@ import "angular-aria";
 import "angular-sanitize";
 import "angular-messages";
 import "angular-sanitize";
+import "angular-messages";
 import "angular-ui-router";
 import "ovh-documentation-toolkit";
 import "ovh-ui-angular";
