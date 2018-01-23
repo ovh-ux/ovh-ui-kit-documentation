@@ -68,6 +68,7 @@
     "angular-aria": "^1.6.1",
     "angular-sanitize": "^1.6.1",
     "angular-messages": "^1.6.1",
+    "angular-sanitize": "^1.6.1",
     "angular-ui-router": "^0.4.2",
     "lodash": "^4.17.4",
     "ovh-documentation-toolkit": "^1.0.0",
