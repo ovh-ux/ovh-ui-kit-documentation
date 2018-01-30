@@ -1,6 +1,5 @@
 import "angular";
 import "angular-aria";
-import "angular-sanitize";
 import "angular-messages";
 import "angular-sanitize";
 import "angular-ui-router";
