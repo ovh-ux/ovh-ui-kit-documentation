@@ -25,6 +25,9 @@
   "spinner": {
     "group": "notice"
   },
+  "modal": {
+    "group": "notice"
+  },
   "action-menu": {
     "group": "others"
   },
