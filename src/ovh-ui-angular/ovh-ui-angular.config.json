@@ -15,6 +15,9 @@
   "radio": {
     "group": "form"
   },
+  "field": {
+    "group": "form"
+  },
   "navbar": {
     "controller": "NavbarCtrl",
     "group": "nav"
