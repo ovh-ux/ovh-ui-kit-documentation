@@ -18,6 +18,10 @@
   "field": {
     "group": "form"
   },
+  "select": {
+    "controller": "SelectCtrl",
+    "group": "form"
+  },
   "navbar": {
     "controller": "NavbarCtrl",
     "group": "nav"
