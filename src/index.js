@@ -1,5 +1,6 @@
 import "angular";
 import "angular-aria";
+import "angular-messages";
 import "angular-sanitize";
 import "angular-ui-router";
 import "ovh-documentation-toolkit";
@@ -19,6 +20,9 @@ import versionsConfig from "./init/versions.config";
 
 const app = angular
   .module("ovh-ui-kit-documentation", [
+      "ngAria",
+      "ngMessages",
+      "ngSanitize",
       "ui.router",
       "ovh-documentation-toolkit",
       "oui",
