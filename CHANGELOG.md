@@ -1,5 +1,46 @@
 # Changelog
 
+## v2.2.0
+
+### ovh-ui-kit
+
+#### Features
+
+- Add field component
+- Add modal component
+- Add disabled style on disabled action-menu item
+- Add versions on icon paths
+
+#### Fixes
+
+- remove useless margin on radio
+- fix error colors on input
+- fix margin on label
+- fix responsive for desktop
+- fix transition slide on navbar
+- change responsive breakpoint on navbar
+
+### ovh-ui-angular
+
+#### Features
+
+- Add field component
+- Add modal component
+- Add required attribute on checkbox
+- Add spinner between page changes on datagrid
+- Add disabled attribute to disable item on action-menu
+
+#### Fixes
+
+- prevent useless calls to row-loader on datagrid
+- close the notification menu when clicked on navbar
+- fix transition slide on navbar
+- avoid sorting if property attribute is not set on datagrid column
+
+#### Documentation
+
+- Improve datagrid documentation
+
 ## v2.1.0
 
 ### ovh-ui-kit
