@@ -13,6 +13,9 @@
   "animation": {
     "group": "basic"
   },
+  "back-button": {
+    "group": "basic"
+  },
   "button": {
     "group": "basic"
   },
