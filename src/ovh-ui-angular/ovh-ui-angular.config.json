@@ -15,6 +15,9 @@
   "radio": {
     "group": "form"
   },
+  "textarea": {
+    "group": "form"
+  },
   "field": {
     "group": "form"
   },
