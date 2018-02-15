@@ -15,6 +15,9 @@
   "radio": {
     "group": "form"
   },
+  "radio-group": {
+    "group": "form"
+  },
   "field": {
     "group": "form"
   },
@@ -47,9 +50,5 @@
   "pagination": {
     "controller": "PaginationCtrl",
     "group": "internal"
-  },
-  "radio-group": {
-    "controller": "ShowCurrentValueInPopupCtrl",
-    "group": "legacy"
   }
 }
