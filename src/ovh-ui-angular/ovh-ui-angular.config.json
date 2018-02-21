@@ -21,6 +21,9 @@
   "radio-group": {
     "group": "form"
   },
+  "radio-toggle-group": {
+    "group": "form"
+  },
   "textarea": {
     "group": "form"
   },

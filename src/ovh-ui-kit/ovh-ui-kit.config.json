@@ -52,6 +52,9 @@
   "radio": {
     "group": "form"
   },
+  "radio-toggle-group": {
+    "group": "form"
+  },
   "select": {
     "group": "form"
   },
