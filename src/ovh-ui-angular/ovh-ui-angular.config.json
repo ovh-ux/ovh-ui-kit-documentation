@@ -19,6 +19,7 @@
     "group": "form"
   },
   "field": {
+    "controller": "FieldCtrl",
     "group": "form"
   },
   "select": {
