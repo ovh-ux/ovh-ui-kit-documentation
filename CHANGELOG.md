@@ -1,5 +1,41 @@
 # Changelog
 
+## v2.3.0
+
+### ovh-ui-kit
+
+#### Features
+
+- Add back-button component
+- Add select component
+
+
+#### Fixes
+
+- Fix action-menu colors
+- Fix navbar menu colors
+- Fix navbar toggle visibility
+- Fix datagrid cell position
+- Fix modal shadow color
+- Fix dropdown button styles
+
+### ovh-ui-angular
+
+#### Features
+
+- Add title to existing back-button component
+- Add a toggler-links attribute to navbar
+- Add select component
+
+#### Fixes
+
+- Update navbar template for internal menus
+- Prevent datagrid to render empty cell when template contains only white spaces
+
+#### Documentation
+
+- Add back-button and select components
+
 ## v2.2.0
 
 ### ovh-ui-kit
@@ -13,12 +49,12 @@
 
 #### Fixes
 
-- remove useless margin on radio
-- fix error colors on input
-- fix margin on label
-- fix responsive for desktop
-- fix transition slide on navbar
-- change responsive breakpoint on navbar
+- Remove useless margin on radio
+- Fix error colors on input
+- Fix margin on label
+- Fix responsive for desktop
+- Fix transition slide on navbar
+- Change responsive breakpoint on navbar
 
 ### ovh-ui-angular
 
@@ -32,10 +68,10 @@
 
 #### Fixes
 
-- prevent useless calls to row-loader on datagrid
-- close the notification menu when clicked on navbar
-- fix transition slide on navbar
-- avoid sorting if property attribute is not set on datagrid column
+- Prevent useless calls to row-loader on datagrid
+- Close the notification menu when clicked on navbar
+- Fix transition slide on navbar
+- Avoid sorting if property attribute is not set on datagrid column
 
 #### Documentation
 
