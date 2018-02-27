@@ -1,5 +1,36 @@
 # Changelog
 
+## v2.4.0
+
+### ovh-ui-kit
+
+#### Features
+
+- Add textarea component
+- Add search and broken chain icons
+- Add select, dropdown, textarea and button error styles
+
+#### Fixes
+
+- Fix select, dropdown, textarea, button and field styles
+
+### ovh-ui-angular
+
+#### Features
+
+- Add textarea component
+- Add radio-group component
+- Manage textarea and select errors in field component
+
+#### Fixes
+
+- Update menu header and active item for navbar
+- Hide empty sublink for navbar
+
+#### Documentation
+
+- Add textarea and radio-group component
+
 ## v2.3.0
 
 ### ovh-ui-kit
