@@ -18,7 +18,15 @@
   "radio-group": {
     "group": "form"
   },
+  "textarea": {
+    "group": "form"
+  },
   "field": {
+    "controller": "FieldCtrl",
+    "group": "form"
+  },
+  "select": {
+    "controller": "SelectCtrl",
     "group": "form"
   },
   "navbar": {
