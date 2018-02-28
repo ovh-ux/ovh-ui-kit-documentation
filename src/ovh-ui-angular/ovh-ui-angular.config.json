@@ -43,6 +43,9 @@
     "controller": "SelectCtrl",
     "group": "form"
   },
+  "select-picker": {
+    "group": "form"
+  },
   "navbar": {
     "controller": "NavbarCtrl",
     "group": "nav"

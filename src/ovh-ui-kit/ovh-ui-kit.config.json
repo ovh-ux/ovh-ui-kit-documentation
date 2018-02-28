@@ -61,6 +61,9 @@
   "select": {
     "group": "form"
   },
+  "select-picker": {
+    "group": "form"
+  },
   "switch": {
     "group": "form"
   },
