@@ -25,21 +25,19 @@ export default class {
         this.label = "value";
     }
 
-    loadPartialData ({ offset, pageSize, sort, searchText }) {
-        let filteredData;
-        if (searchText) {
-            const regExp = new RegExp(searchText, "i");
-            filteredData = data.filter(row => regExp.test(row.firstName) ||
-                regExp.test(row.lastName) ||
-                regExp.test(row.email) ||
-                regExp.test(row.phone) ||
-                regExp.test(row.birth));
-        } else {
-            filteredData = data;
-        }
+    loadPartialData ({ offset, pageSize, sort, criteria }) {
+        let filteredData = data;
+        criteria.forEach(criterion => {
+            if (criterion.property === null && criterion.operator === "contains") {
+                const pattern = new RegExp(criterion.value, "i"); // Naive implementation here...
+                filteredData = filteredData.filter(row => pattern.test(row.firstName) ||
+                    pattern.test(row.lastName)
+                );
+            }
+        });
 
         const sortedData = sort.property ? this.orderBy(filteredData, sort.property, sort.dir === -1) : data;
-        const page = sortedData.slice(offset, offset + pageSize);
+        const page = sortedData.slice(offset - 1, offset + pageSize - 1);
 
         // AngularJS independent logic
         return new Promise(resolve => {
