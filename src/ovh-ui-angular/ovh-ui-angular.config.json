@@ -59,6 +59,10 @@
     "controller": "DatagridCtrl",
     "group": "others"
   },
+  "criteria-adder": {
+    "controller": "CriteriaAdderCtrl",
+    "group": "internal"
+  },
   "dropdown": {
     "group": "internal"
   },
