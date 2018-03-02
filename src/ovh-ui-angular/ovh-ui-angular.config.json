@@ -48,6 +48,10 @@
   "action-menu": {
     "group": "others"
   },
+  "search": {
+    "controller": "SearchCtrl",
+    "group": "others"
+  },
   "tooltip": {
     "group": "others"
   },
