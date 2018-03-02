@@ -9,6 +9,9 @@
     "controller": "ShowCurrentValueInPopupCtrl",
     "group": "form"
   },
+  "form-actions": {
+    "group": "form"
+  },
   "numeric": {
     "group": "form"
   },
