@@ -55,7 +55,7 @@
     "ng-annotate-loader": "^0.6.1",
     "node-static": "^0.7.9",
     "npm-scripts-config": "^0.0.1",
-    "npm-scripts-conventional-changelog": "^0.0.1",
+    "npm-scripts-conventional-changelog": "^0.1.0",
     "opn": "^5.0.0",
     "opn-cli": "^3.1.0",
     "portscanner": "^2.1.1",
