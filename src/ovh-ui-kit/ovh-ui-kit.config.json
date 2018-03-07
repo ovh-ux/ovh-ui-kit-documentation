@@ -64,6 +64,9 @@
   "textarea": {
     "group": "form"
   },
+  "chip": {
+    "group": "data"
+  },
   "list": {
     "group": "data"
   },

@@ -1,3 +1,4 @@
+import chipsController from "./chips.controller";
 import criteriaAdderController from "./criteria-adder.controller";
 import datagridController from "./datagrid.controller";
 import fieldController from "./field.controller";
@@ -9,6 +10,7 @@ import showCurrentValueInPopupController from "./show-current-value-in-popup.con
 
 angular.module("ovh-ui-kit-documentation")
     .controller("CriteriaAdderCtrl", criteriaAdderController)
+    .controller("ChipsCtrl", chipsController)
     .controller("DatagridCtrl", datagridController)
     .controller("FieldCtrl", fieldController)
     .controller("NavbarCtrl", navbarController)
