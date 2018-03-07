@@ -5,6 +5,10 @@
   "back-button": {
     "group": "basic"
   },
+  "chips": {
+    "controller": "ChipsCtrl",
+    "group": "data"
+  },
   "checkbox": {
     "controller": "ShowCurrentValueInPopupCtrl",
     "group": "form"
