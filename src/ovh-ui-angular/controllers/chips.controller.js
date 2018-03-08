@@ -13,7 +13,8 @@ export default class {
         });
     }
 
-    onRemove (items) {
-        this.changedValue = angular.copy(items);
+    onRemove (items, removed) {
+        this.changedValue = items;
+        this.removedValue = removed;
     }
 }
