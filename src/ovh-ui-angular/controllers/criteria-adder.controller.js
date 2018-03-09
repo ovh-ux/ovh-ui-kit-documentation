@@ -1,4 +1,4 @@
-import data from "ovh-ui-angular/packages/oui-criteria-adder/src/index.spec.data.json";
+import data from "./fixtures/criteria-adder.data.json";
 
 export default class {
     $onInit () {
