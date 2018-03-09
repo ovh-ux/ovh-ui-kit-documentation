@@ -1,4 +1,4 @@
-import data from "ovh-ui-angular/packages/oui-chips/src/index.spec.data.json";
+import data from "./fixtures/chips.data.json";
 
 export default class {
     $onInit () {
