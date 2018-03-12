@@ -9,6 +9,10 @@
     "controller": "ChipsCtrl",
     "group": "data"
   },
+  "calendar": {
+    "controller": "CalendarCtrl",
+    "group": "form"
+  },
   "checkbox": {
     "controller": "ShowCurrentValueInPopupCtrl",
     "group": "form"
