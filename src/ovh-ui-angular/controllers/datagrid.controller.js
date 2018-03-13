@@ -33,7 +33,20 @@ export default class {
                 filteredData = filteredData.filter(row => pattern.test(row.firstName) ||
                     pattern.test(row.lastName)
                 );
+            } else if (criterion.property && criterion.value !== undefined) {
+                switch (criterion.operator) {
+                case "contains":
+                    filteredData = filteredData.filter(item => {
+                        const value = _.get(item, criterion.property);
+                        const pattern = new RegExp(criterion.value, "i");
+                        return pattern.test(value);
+                    });
+                    break;
+                default: _.noop();
+                }
             }
+
+
         });
 
         const sortedData = sort.property ? this.orderBy(filteredData, sort.property, sort.dir === -1) : data;
