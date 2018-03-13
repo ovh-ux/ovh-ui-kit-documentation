@@ -12,6 +12,9 @@ const __root = path.join(__dirname, '..')
 const exclude = [/node_modules(?!\/ovh-documentation-toolkit)/, /dist/]
 
 export default merge(baseConfig, {
+  resolve: {
+    mainFields: ['module', 'main']
+  },
   output: {
     path: path.resolve(__root, 'dist')
   },
