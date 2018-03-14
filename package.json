@@ -6,7 +6,7 @@
   "scripts": {
     "commit": "npm-scripts-config commit",
     "commitmsg": "npm-scripts-config commitmsg",
-    "preversion": "npm install ovh-ui-kit@latest --save && npm install ovh-ui-angular@latest --save && npm run build",
+    "preversion": "yarn upgrade ovh-ui-kit ovh-ui-angular --latest && yarn build",
     "version": "npm-scripts-config version",
     "postversion": "git push && git push --tags",
     "preview-changelog": "npm-scripts-config preview-changelog",
