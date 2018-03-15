@@ -1,5 +1,6 @@
 import _ from "lodash";
 import data from "ovh-ui-angular/packages/oui-datagrid/src/index.spec.data.json";
+import servers from "ovh-ui-angular/packages/oui-datagrid/src/servers.spec.data.json";
 
 const defaultSliceSize = 50;
 
@@ -18,6 +19,7 @@ export default class {
 
         this.timeout(() => {
             this.data = data;
+            this.servers = servers;
 
             this.partialData = _.map(data.slice(0, defaultSliceSize), line => _.pick(line, ["firstName", "lastName"]));
         }, 1000); // eslint-disable-line no-magic-numbers
