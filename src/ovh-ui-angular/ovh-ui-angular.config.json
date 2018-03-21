@@ -46,6 +46,10 @@
   "select-picker": {
     "group": "form"
   },
+  "stepper": {
+    "controller": "StepperCtrl",
+    "group": "form"
+  },
   "navbar": {
     "controller": "NavbarCtrl",
     "group": "nav"
