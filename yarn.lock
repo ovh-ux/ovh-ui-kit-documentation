@@ -2986,6 +2986,10 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
+flatpickr@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.3.2.tgz#6a477043c075ef36c3ff54fadb49b936a64d635f"
+
 flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
@@ -4922,15 +4926,16 @@ ovh-documentation-toolkit@^1.0.0:
     angular-ui-router "~0.4.2"
     lodash "~4.17.4"
 
-ovh-ui-angular@^2.5.0:
-  version "2.5.3"
-  resolved "https://registry.yarnpkg.com/ovh-ui-angular/-/ovh-ui-angular-2.5.3.tgz#a74d23288d3a0c892b20d99f7acba1fa1fa2317e"
+ovh-ui-angular@^2.6.0:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/ovh-ui-angular/-/ovh-ui-angular-2.7.1.tgz#881b0966bdf5a6f5d6d43183b557779992c429a4"
   dependencies:
+    escape-string-regexp "^1.0.5"
     popper.js "^1.12.9"
 
-ovh-ui-kit@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/ovh-ui-kit/-/ovh-ui-kit-2.5.0.tgz#3362238d53296f6998744950687a8dd8bd1e71d5"
+ovh-ui-kit@^2.6.0:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/ovh-ui-kit/-/ovh-ui-kit-2.7.1.tgz#1e0b56b1a86f64db700a48f69a4d7a8c1951af4a"
   dependencies:
     less-plugin-remcalc "^0.0.1"
 
