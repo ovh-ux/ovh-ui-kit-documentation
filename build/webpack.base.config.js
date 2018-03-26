@@ -4,6 +4,7 @@ import _ from 'lodash'
 import webpack from 'webpack'
 import formatter from 'eslint-friendly-formatter'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
+import LodashModuleReplacementPlugin from "lodash-webpack-plugin";
 
 const __root = path.join(__dirname, '..')
 
@@ -35,6 +36,11 @@ export default {
     new webpack.DefinePlugin({
       'process.env': process.env.NODE_ENV
     }),
+    new LodashModuleReplacementPlugin({
+        shorthands: true,
+        collections: true,
+        paths: true
+    }), // Save bytes on Lodash
     new webpack.optimize.ModuleConcatenationPlugin(), // Enable scope hoisting
     new HtmlWebpackPlugin({
       inject: false,
