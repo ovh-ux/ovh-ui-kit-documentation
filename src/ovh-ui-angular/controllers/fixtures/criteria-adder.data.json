@@ -7,5 +7,20 @@
         "name": "example.number",
         "title": "Example Number",
         "type": "number"
+    }, {
+        "name": "example.options",
+        "title": "Example Options",
+        "type": "options",
+        "typeOptions": {
+            "values": {
+                "network": "Network",
+                "database": "Database",
+                "static": "Static content",
+                "frontend": "Frontend",
+                "backend": "Backend",
+                "broker": "Broker",
+                "others": "Other"
+            }
+        }
     }]
 }
