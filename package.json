@@ -78,7 +78,7 @@
     "flatpickr": "~4.3.2",
     "lodash": "^4.17.4",
     "ovh-documentation-toolkit": "^1.0.0",
-    "ovh-ui-angular": "^2.8.0",
-    "ovh-ui-kit": "^2.8.0"
+    "ovh-ui-angular": "^2.9.0",
+    "ovh-ui-kit": "^2.9.0"
   }
 }
