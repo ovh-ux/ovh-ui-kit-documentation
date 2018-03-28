@@ -3,7 +3,7 @@
     "group": "basic"
   },
   "back-button": {
-    "group": "basic"
+    "group": "nav"
   },
   "chips": {
     "controller": "ChipsCtrl",
@@ -24,7 +24,7 @@
     "group": "form"
   },
   "radio": {
-    "group": "form"
+    "group": "internal"
   },
   "radio-group": {
     "group": "form"

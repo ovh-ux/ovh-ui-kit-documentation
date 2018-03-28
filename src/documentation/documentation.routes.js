@@ -3,7 +3,8 @@ import componentStatusTemplate from "./component-status.md";
 import contributingTemplate from "./contributing.md";
 import introductionTemplate from "./introduction.md";
 import lessPluginRemcalcTemplate from "less-plugin-remcalc/README.md";
-import urlsTemplate from "./urls.md";
+
+// import urlsTemplate from "./urls.md";
 
 export default function ($stateProvider) {
     "ngInject";
@@ -32,11 +33,12 @@ export default function ($stateProvider) {
             friendlyName: "Changelog",
             template: changelogTemplate
         })
-        .state("showcase.documentation.urls", {
-            url: "/urls",
-            friendlyName: "URLs",
-            template: urlsTemplate
-        })
+
+        // .state("showcase.documentation.urls", {
+        //     url: "/urls",
+        //     friendlyName: "URLs",
+        //     template: urlsTemplate
+        // })
         .state("showcase.documentation.component-status", {
             url: "/component-status",
             friendlyName: "Component status",
