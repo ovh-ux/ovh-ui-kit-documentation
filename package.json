@@ -6,7 +6,7 @@
   "scripts": {
     "commit": "npm-scripts-config commit",
     "commitmsg": "npm-scripts-config commitmsg",
-    "preversion": "yarn upgrade ovh-ui-kit ovh-ui-angular --latest && yarn build",
+    "preversion": "yarn upgrade ovh-ui-kit ovh-ui-angular --latest && yarn build && git add yarn.lock",
     "version": "npm-scripts-config version",
     "postversion": "git push && git push --tags",
     "preview-changelog": "npm-scripts-config preview-changelog",
