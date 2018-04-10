@@ -1,4 +1,8 @@
 export default class StepperController {
+    constructor () {
+        this.customSubmitCount = 0;
+    }
+
     onInit (value) {
         this.onInitModel = value;
     }
@@ -13,5 +17,9 @@ export default class StepperController {
 
     onSubmit (form) {
         this.onSubmitForm = form;
+    }
+
+    onCustomSubmit () {
+        this.customSubmitCount++;
     }
 }
