@@ -97,6 +97,9 @@
   "modal": {
     "group": "notice"
   },
+  "status": {
+    "group": "notice"
+  },
   "action-menu": {
     "group": "others"
   },
