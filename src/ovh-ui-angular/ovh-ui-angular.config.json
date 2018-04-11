@@ -62,6 +62,9 @@
   "action-menu": {
     "group": "others"
   },
+  "popover": {
+    "group": "others"
+  },
   "search": {
     "controller": "SearchCtrl",
     "group": "others"
