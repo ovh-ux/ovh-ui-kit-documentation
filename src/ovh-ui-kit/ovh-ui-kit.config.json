@@ -115,6 +115,9 @@
   "pagination": {
     "group": "others"
   },
+  "popover": {
+    "group": "others"
+  },
   "tip": {
     "group": "others"
   }
