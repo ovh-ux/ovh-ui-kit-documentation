@@ -3001,9 +3001,9 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
-flatpickr@~4.4.3:
-  version "4.4.3"
-  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.4.3.tgz#53ba7b06523f73ee69175b3ed808c7fc0f245c4f"
+flatpickr@4.4.4:
+  version "4.4.4"
+  resolved "https://nexus.ovh.net/nexus3/repository/npm-all/flatpickr/-/flatpickr-4.4.4.tgz#fdeb083ca3d580eecb822a4080f67b06f0294fc7"
 
 flatten@^1.0.2:
   version "1.0.2"
@@ -4947,16 +4947,16 @@ ovh-documentation-toolkit@^1.0.0:
     angular-ui-router "~0.4.2"
     lodash "~4.17.4"
 
-ovh-ui-angular@^2.10.0:
-  version "2.10.1"
-  resolved "https://registry.yarnpkg.com/ovh-ui-angular/-/ovh-ui-angular-2.10.1.tgz#e360794bba77df21c2eb4bde17e364fad6920485"
+ovh-ui-angular@^2.11.0:
+  version "2.11.0"
+  resolved "https://nexus.ovh.net/nexus3/repository/npm-all/ovh-ui-angular/-/ovh-ui-angular-2.11.0.tgz#ddff01c38545cfda3509c69f2dfdf43729ff7e6a"
   dependencies:
     escape-string-regexp "^1.0.5"
     popper.js "^1.12.9"
 
-ovh-ui-kit@^2.10.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/ovh-ui-kit/-/ovh-ui-kit-2.10.0.tgz#aca4a4dab9414e16c6cc4b6007eb3bf1f4150b3d"
+ovh-ui-kit@^2.11.0:
+  version "2.11.0"
+  resolved "https://nexus.ovh.net/nexus3/repository/npm-all/ovh-ui-kit/-/ovh-ui-kit-2.11.0.tgz#9060a0be4705ea4a4eafd3a6e9180fe6c1bc6ba2"
   dependencies:
     less-plugin-remcalc "^0.0.1"
 

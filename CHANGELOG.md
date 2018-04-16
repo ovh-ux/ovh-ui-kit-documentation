@@ -1,3 +1,16 @@
+<a name="2.11.0"></a>
+# [2.11.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.10.0...v2.11.0) (2018-04-16)
+
+
+### Features
+
+* **oui-popover:** add popover feature ([d468018](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/d468018))
+* **oui-status:** add status feature ([78383a5](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/78383a5))
+* **oui-stepper:** add custom validation example ([0529c9e](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/0529c9e))
+* **oui-stepper:** create component to doc ([37fa545](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/37fa545))
+
+
+
 <a name="2.8.1"></a>
 ## [2.8.1](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.8.0...v2.8.1) (2018-03-22)
 
