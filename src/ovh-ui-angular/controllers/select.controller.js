@@ -6,6 +6,8 @@ export default class SelectController {
 
         this.$http = $http;
         this.$timeout = $timeout;
+        this.onBlurCounter = 0;
+        this.onFocusCounter = 0;
     }
 
     $onInit () {
@@ -29,6 +31,18 @@ export default class SelectController {
         ).then(response => {
             this.addresses = response.data.results;
         });
+    }
+
+    onFocus () {
+        this.onFocusCounter++;
+    }
+
+    onBlur () {
+        this.onBlurCounter++;
+    }
+
+    onChange (modelValue) {
+        this.onChangeModelValue = modelValue;
     }
 
     static getIps () {
