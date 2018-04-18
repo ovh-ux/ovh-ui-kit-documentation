@@ -37,6 +37,10 @@
   "dropdown": {
     "group": "components"
   },
+  "dual-list": {
+    "controller": "DualListCtrl",
+    "group": "components"
+  },
   "field": {
     "controller": "FieldCtrl",
     "group": "components"
