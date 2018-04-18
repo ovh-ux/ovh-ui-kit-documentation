@@ -120,5 +120,8 @@
   },
   "tip": {
     "group": "others"
+  },
+  "dual-list": {
+    "group": "others"
   }
 }
