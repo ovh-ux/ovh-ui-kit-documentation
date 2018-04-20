@@ -1,4 +1,4 @@
-import data from "./fixtures/criteria-adder.data.json";
+import data from "./data/criteria-adder.data.json";
 
 export default class {
     $onInit () {
