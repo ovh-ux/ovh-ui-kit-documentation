@@ -1,5 +1,6 @@
 import _ from "lodash";
 import data from "ovh-ui-angular/packages/oui-datagrid/src/index.spec.data.json";
+import metaData from "./data/datagrid.data.json";
 import servers from "ovh-ui-angular/packages/oui-datagrid/src/servers.spec.data.json";
 
 const defaultSliceSize = 50;
@@ -11,6 +12,7 @@ export default class {
 
         this.orderBy = orderByFilter;
         this.timeout = $timeout;
+        this.metaData = metaData;
     }
 
     $onInit () {
