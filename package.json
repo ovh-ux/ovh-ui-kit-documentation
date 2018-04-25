@@ -79,7 +79,7 @@
     "flatpickr": "4.4.4",
     "lodash": "^4.17.4",
     "ovh-documentation-toolkit": "^1.0.0",
-    "ovh-ui-angular": "git+https://github.com/ovh-ux/ovh-ui-angular#feature\/dual-list",
-    "ovh-ui-kit": "git+https://github.com/ovh-ux/ovh-ui-kit#feature\/dual-list"
+    "ovh-ui-angular": "^2.11.0",
+    "ovh-ui-kit": "^2.11.0"
   }
 }
