@@ -50,10 +50,12 @@ export default class extends marked.Renderer {
         return `<div>${code}</div>
                 <button type="button"
                         class="oui-button oui-button_secondary"
-                        data-ng-click="${scopeVariableName} = !${scopeVariableName}">
+                        ng-click="${scopeVariableName} = !${scopeVariableName}">
                   Click to show the example
                 </button>
-                <pre class="oui-showcase__code" data-ng-show="${scopeVariableName}">${highlightCode}</pre>`
+                <pre class="oui-showcase__code"
+                    ng-non-bindable
+                    ng-show="${scopeVariableName}">${highlightCode}</pre>`
       } else {
         highlightCode = highlight.highlight(lang, code).value
       }
