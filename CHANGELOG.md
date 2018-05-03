@@ -1,3 +1,13 @@
+<a name="2.13.0"></a>
+# [2.13.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.12.0...v2.13.0) (2018-05-03)
+
+
+### Bug Fixes
+
+* fix interpolation in code previews ([b30c461](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/b30c461))
+
+
+
 <a name="2.12.0"></a>
 # [2.12.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.11.0...v2.12.0) (2018-04-26)
 
