@@ -66,6 +66,9 @@
   "action-menu": {
     "group": "others"
   },
+  "button-guide": {
+    "group": "others"
+  },
   "popover": {
     "group": "others"
   },

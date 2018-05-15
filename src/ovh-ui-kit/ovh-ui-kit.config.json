@@ -103,6 +103,9 @@
   "action-menu": {
     "group": "others"
   },
+  "button-guide": {
+    "group": "others"
+  },
   "dropdown": {
     "group": "others"
   },
