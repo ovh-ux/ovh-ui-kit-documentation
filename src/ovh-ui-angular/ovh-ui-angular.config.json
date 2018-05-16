@@ -90,5 +90,23 @@
   "pagination": {
     "controller": "PaginationCtrl",
     "group": "internal"
+  },
+  "header-tabs": {
+    "controller": "HeaderTabsCtrl",
+    "group": "nav",
+    "childRouts": {
+      "home": {},
+      "dashboard": {},
+      "streams": {},
+      "tab1": {},
+      "tab2": {},
+      "tab3": {},
+      "tab11": {},
+      "tab12": {},
+      "tab13": {},
+      "tab21": {},
+      "tab22": {},
+      "tab23": {}
+    }
   }
 }
