@@ -120,5 +120,8 @@
   },
   "tip": {
     "group": "others"
+  },
+  "header-tabs": {
+    "group": "nav"
   }
 }

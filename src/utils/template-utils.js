@@ -50,6 +50,19 @@ class TemplateUtils {
                 ...templateConfig,
                 template: templates[templateName]
             });
+            if (templateConfig.childRouts) {
+                Object.keys(templateConfig.childRouts).forEach(route => {
+                    const childRouteConfig = {
+                        url: `/${route}`,
+                        friendlyName: _.capitalize(route),
+                        ...config[route]
+                    };
+                    $stateProvider.state(`showcase.oui-angular.${templateName}.${route}`, {
+                        ...childRouteConfig,
+                        template: route.template
+                    });
+                });
+            }
         });
     }
 }
