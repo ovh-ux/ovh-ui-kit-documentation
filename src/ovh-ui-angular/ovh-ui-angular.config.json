@@ -63,6 +63,9 @@
   "modal": {
     "group": "notice"
   },
+  "modal-on-boarding": {
+    "group": "notice"
+  },
   "action-menu": {
     "group": "others"
   },
