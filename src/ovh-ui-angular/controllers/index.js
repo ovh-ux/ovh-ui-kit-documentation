@@ -8,6 +8,7 @@ import paginationController from "./pagination.controller";
 import searchController from "./search.controller";
 import selectController from "./select.controller";
 import showCurrentValueInPopupController from "./show-current-value-in-popup.controller";
+import skeletonController from "./skeleton.controller";
 import stepperController from "./stepper.controller";
 
 angular.module("ovh-ui-kit-documentation")
@@ -21,4 +22,5 @@ angular.module("ovh-ui-kit-documentation")
     .controller("ShowCurrentValueInPopupCtrl", showCurrentValueInPopupController)
     .controller("SearchCtrl", searchController)
     .controller("SelectCtrl", selectController)
+    .controller("SkeletonCtrl", skeletonController)
     .controller("StepperCtrl", stepperController);
