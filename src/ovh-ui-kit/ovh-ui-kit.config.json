@@ -120,5 +120,8 @@
   },
   "tip": {
     "group": "others"
+  },
+  "skeleton": {
+    "group": "others"
   }
 }

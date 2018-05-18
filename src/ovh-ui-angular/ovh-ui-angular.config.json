@@ -66,6 +66,9 @@
   "action-menu": {
     "group": "others"
   },
+  "skeleton": {
+    "group": "others"
+  },
   "popover": {
     "group": "others"
   },
@@ -92,3 +95,4 @@
     "group": "internal"
   }
 }
+ 
