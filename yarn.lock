@@ -332,13 +332,7 @@ angular-sanitize@^1.6.1:
   version "1.6.10"
   resolved "https://registry.yarnpkg.com/angular-sanitize/-/angular-sanitize-1.6.10.tgz#635a362afb2dd040179f17d3a5455962b2c1918f"
 
-angular-ui-router@~0.4.2:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/angular-ui-router/-/angular-ui-router-0.4.3.tgz#6c29546fe50b8d2f74614dcb8660d6fc40d6e167"
-  dependencies:
-    angular "^1.0.8"
-
-angular@^1.0.8, angular@^1.6.1, angular@~1.6.1:
+angular@^1.6.1, angular@~1.6.1:
   version "1.6.10"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.6.10.tgz#eed3080a34d29d0f681ff119b18ce294e3f74826"
 
@@ -4994,12 +4988,12 @@ output-file-sync@^1.1.2:
     mkdirp "^0.5.1"
     object-assign "^4.1.0"
 
-ovh-documentation-toolkit@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ovh-documentation-toolkit/-/ovh-documentation-toolkit-1.0.1.tgz#a98b6824f920c8457639fe2c805604c42abd07ef"
+ovh-documentation-toolkit@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/ovh-documentation-toolkit/-/ovh-documentation-toolkit-1.1.0.tgz#35020a8519153cc91429aee7d179f8b83cc178ad"
   dependencies:
+    "@uirouter/angularjs" "^1.0.16"
     angular "~1.6.1"
-    angular-ui-router "~0.4.2"
     lodash "~4.17.4"
 
 ovh-ui-angular@^2.13.0:
