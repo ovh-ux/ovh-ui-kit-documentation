@@ -17,11 +17,11 @@ $ yarn start
 
 ## Develop
 
-# Hot reload
+### Hot reload
 
 Once you have `yarn start`-ed the project, you can edit anything with an automatic browser refresh as a result.
 
-# ovh-documentation-toolkit
+### ovh-documentation-toolkit
 
 This documentation uses the ovh-documentation-toolkit to display the components status, manage the active theme, etc...
 If you have to update the code of this project, you can simply clone and link it with the ovh-ui-kit-documentation.
@@ -35,6 +35,22 @@ $ yarn link ovh-documentation-toolkit
 ```
 
 Now, each modification on `ovh-documentation-toolkit` will benefit from hot-reloading.
+
+### Reorganize components
+
+`ovh-ui-kit` and `ovh-ui-angular` components are automatically added to the project and listed in menus. Sometimes, the default order is not good and it can be changed through `.config.json` files under respective project folders. Auto discovery of components is made by webpack using [`require.context(...)`](https://webpack.js.org/guides/dependency-management/#require-context) feature.
+
+On those json files, you can specify multiple attributes to organize and get better menu items. Those attributes are the same from [second level children states](https://github.com/ovh-ux/ovh-documentation-toolkit/blob/master/README.md) from `ovh-documentation-toolkit`. Those files are using *key-value* mapping where *key* are the folder name of the component and the *value* is the configuration to inject to the component state.
+
+```json
+{
+    "typography": {
+        "weight": 3000,
+        "group": "basic",
+        "friendlyName": "A better name for my component
+    }
+}
+```
 
 ## Contribute
 
