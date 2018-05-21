@@ -90,5 +90,9 @@
   "pagination": {
     "controller": "PaginationCtrl",
     "group": "internal"
+  },
+  "dual-list": {
+    "controller": "DualListCtrl",
+    "group": "others"
   }
 }
