@@ -67,7 +67,6 @@
     "group": "others"
   },
   "skeleton": {
-    "controller": "SkeletonCtrl",
     "group": "others"
   },
   "popover": {
