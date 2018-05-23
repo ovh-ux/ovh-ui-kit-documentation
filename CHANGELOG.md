@@ -1,3 +1,14 @@
+<a name="2.14.0"></a>
+# [2.14.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.13.0...v2.14.0) (2018-05-23)
+
+
+### Bug Fixes
+
+* bump version of ovh-documentation-toolkit ([c657964](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/c657964))
+* **markdown-renderer:** fix code preview toggle feature ([9efa97c](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/9efa97c))
+
+
+
 <a name="2.13.0"></a>
 # [2.13.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.12.0...v2.13.0) (2018-05-03)
 
