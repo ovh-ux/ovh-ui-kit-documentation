@@ -90,5 +90,8 @@
   "pagination": {
     "controller": "PaginationCtrl",
     "group": "internal"
+  },
+  "dashboard-tile": {
+    "group": "others"
   }
 }

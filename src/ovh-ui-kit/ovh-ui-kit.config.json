@@ -120,5 +120,8 @@
   },
   "tip": {
     "group": "others"
+  },
+  "dashboard-tile": {
+    "group": "others"
   }
 }
