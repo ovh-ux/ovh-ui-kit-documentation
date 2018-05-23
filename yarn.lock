@@ -4996,16 +4996,16 @@ ovh-documentation-toolkit@^1.1.0:
     angular "~1.6.1"
     lodash "~4.17.4"
 
-ovh-ui-angular@^2.14.0:
-  version "2.14.0"
-  resolved "https://nexus.ovh.net/nexus3/repository/npm-all/ovh-ui-angular/-/ovh-ui-angular-2.14.0.tgz#92cfee7e3ef24645dea98d9e784e668178475892"
+ovh-ui-angular@^2.15.0:
+  version "2.15.0"
+  resolved "https://nexus.ovh.net/nexus3/repository/npm-all/ovh-ui-angular/-/ovh-ui-angular-2.15.0.tgz#a25dea440fa4301fa775df7387b4582e98cbf445"
   dependencies:
     escape-string-regexp "^1.0.5"
     popper.js "^1.12.9"
 
-ovh-ui-kit@^2.14.0:
-  version "2.14.0"
-  resolved "https://nexus.ovh.net/nexus3/repository/npm-all/ovh-ui-kit/-/ovh-ui-kit-2.14.0.tgz#f278eea03ad00a92c4c42e50a3a1b13cadb207f5"
+ovh-ui-kit@^2.15.0:
+  version "2.15.0"
+  resolved "https://nexus.ovh.net/nexus3/repository/npm-all/ovh-ui-kit/-/ovh-ui-kit-2.15.0.tgz#60743f60790d26ffdbf7bcf72ffff6aec53ff3ca"
   dependencies:
     less-plugin-remcalc "^0.0.1"
 
