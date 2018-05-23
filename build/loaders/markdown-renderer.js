@@ -47,15 +47,15 @@ export default class extends marked.Renderer {
         this.codeBlockUID += 1
         var scopeVariableName = `$markdown.code[${this.codeBlockUID}]`
 
-        return `<div>${code}</div>
-                <button type="button"
-                        class="oui-button oui-button_secondary"
+          return `<div>${code}</div>
+                <button type="button" class="oui-button oui-button_secondary"
                         ng-click="${scopeVariableName} = !${scopeVariableName}">
                   Click to show the example
                 </button>
-                <pre class="oui-showcase__code"
-                    ng-non-bindable
-                    ng-show="${scopeVariableName}">${highlightCode}</pre>`
+                <div class="oui-showcase__code"
+                     ng-show="${scopeVariableName}">
+                    <pre ng-non-bindable>${highlightCode}</pre>
+                </div>`
       } else {
         highlightCode = highlight.highlight(lang, code).value
       }
