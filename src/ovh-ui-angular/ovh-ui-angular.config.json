@@ -50,6 +50,9 @@
     "controller": "StepperCtrl",
     "group": "form"
   },
+  "switch": {
+    "group": "form"
+  },
   "navbar": {
     "controller": "NavbarCtrl",
     "group": "nav"
