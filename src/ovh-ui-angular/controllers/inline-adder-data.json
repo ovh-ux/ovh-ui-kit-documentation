@@ -1,0 +1,34 @@
+{
+    "singleFieldItem": {
+        "prop1": "",
+        "fieldCount": 1,
+        "isNew": true
+    },
+    "dualFieldItem": {
+        "prop1": "",
+        "prop2": "",
+        "fieldCount": 2,
+        "isNew": true
+    },
+    "tripleFieldItem": {
+        "prop1": "",
+        "prop2": "",
+        "prop3": 0,
+        "fieldCount": 3,
+        "isNew": true
+    },
+    "quadraFieldItem": {
+        "prop1": "",
+        "prop2": "",
+        "prop3": "",
+        "prop4": "",
+        "fieldCount": 4,
+        "isNew": true
+    },
+    "fieldTypes": {
+        "singleField": 1,
+        "dualField": 2,
+        "tripleField": 3,
+        "quadraField": 4
+    }
+}

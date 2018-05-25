@@ -120,5 +120,8 @@
   },
   "tip": {
     "group": "others"
+  },
+  "inline-adder": {
+    "group": "others"
   }
 }

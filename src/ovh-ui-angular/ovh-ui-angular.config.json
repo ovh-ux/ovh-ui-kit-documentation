@@ -90,5 +90,9 @@
   "pagination": {
     "controller": "PaginationCtrl",
     "group": "internal"
+  },
+  "inline-adder": {
+    "controller": "inlineAdderCtrl",
+    "group": "others"
   }
 }
