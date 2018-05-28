@@ -7,16 +7,17 @@ const defaultSliceSize = 50;
 
 /* eslint-disable class-methods-use-this */
 export default class {
-    constructor ($timeout, orderByFilter) {
+    constructor ($timeout, orderByFilter, ouiDatagridService) {
         "ngInject";
 
-        this.orderBy = orderByFilter;
         this.timeout = $timeout;
+        this.orderBy = orderByFilter;
+        this.ouiDatagridService = ouiDatagridService;
         this.metaData = metaData;
     }
 
     $onInit () {
-        this.delay = 0;
+        this.delay = 500;
         this.emptyList = [];
 
         this.timeout(() => {
@@ -78,5 +79,21 @@ export default class {
                 resolve(_.find(data, { firstName, lastName }));
             }, 500 + 1000 * Math.random()); // eslint-disable-line
         });
+    }
+
+    loadRandom (row) {
+        return Promise.resolve({
+            ...row,
+            number: 1000 * Math.random() // eslint-disable-line
+        });
+    }
+
+    loadRowWithRandom ({ firstName, lastName }) { // eslint-disable-line
+        return this.loadRow({ firstName, lastName })
+            .then(row => this.loadRandom(row));
+    }
+
+    refreshDatagrid (datagridId, showSpinner) {
+        this.ouiDatagridService.refresh(datagridId, showSpinner);
     }
 }
