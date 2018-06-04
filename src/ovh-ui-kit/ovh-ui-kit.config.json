@@ -22,6 +22,9 @@
   "button-group": {
     "group": "basic"
   },
+  "collapsible": {
+    "group": "others"
+  },
   "icons": {
     "group": "basic"
   },
