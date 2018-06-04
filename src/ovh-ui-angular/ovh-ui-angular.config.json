@@ -90,5 +90,8 @@
   "pagination": {
     "controller": "PaginationCtrl",
     "group": "internal"
+  },
+  "collapsible": {
+    "group": "others"
   }
 }
