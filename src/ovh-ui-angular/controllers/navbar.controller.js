@@ -8,9 +8,9 @@ export default class {
     }
 
     $onInit () {
-        this.brand = angular.copy(data.brand);
-        this.asideLinks = angular.copy(data.asideLinks);
-        this.mainLinks = angular.copy(data.mainLinks);
+        Object.keys(data).forEach(key => {
+            this[key] = angular.copy(data[key]);
+        });
 
         // Simulate a promise for togglerLinks
         const delay = 2500;
