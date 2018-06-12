@@ -102,5 +102,8 @@
   },
   "collapsible": {
     "group": "others"
+  },
+  "page-header": {
+    "group": "internal"
   }
 }
