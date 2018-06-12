@@ -105,5 +105,8 @@
   },
   "page-header": {
     "group": "internal"
+  },
+  "tile": {
+    "group": "others"
   }
 }
