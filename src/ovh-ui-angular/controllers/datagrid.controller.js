@@ -28,6 +28,8 @@ export default class {
         }, 1000); // eslint-disable-line no-magic-numbers
 
         this.label = "value";
+
+        this.loadDatagridParameters();
     }
 
     loadPartialData ({ offset, pageSize, sort, criteria }) {
@@ -95,5 +97,22 @@ export default class {
 
     refreshDatagrid (datagridId, showSpinner) {
         this.ouiDatagridService.refresh(datagridId, showSpinner);
+    }
+
+    getFromLocalStorage (key) {
+        return JSON.parse(localStorage.getItem(key));
+    }
+
+    saveToLocalStorage (key, value) {
+        localStorage.setItem(key, JSON.stringify(value));
+    }
+
+    loadDatagridParameters () {
+        this.datagridParameters = this.getFromLocalStorage("datagridsParams") || {};
+    }
+
+    onColumnsParametersChange (datagridId, columns) {
+        this.datagridParameters[datagridId] = columns;
+        this.saveToLocalStorage("datagridsParams", this.datagridParameters);
     }
 }
