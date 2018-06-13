@@ -47,7 +47,7 @@ export default class extends marked.Renderer {
         this.codeBlockUID += 1
         var scopeVariableName = `$markdown.code[${this.codeBlockUID}]`
 
-          return `<div>${code}</div>
+          return `<div class="oui-doc-preview">${code}</div>
                 <button type="button" class="oui-button oui-button_secondary"
                         ng-click="${scopeVariableName} = !${scopeVariableName}">
                   Click to show the example
