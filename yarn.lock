@@ -4988,9 +4988,9 @@ output-file-sync@^1.1.2:
     mkdirp "^0.5.1"
     object-assign "^4.1.0"
 
-ovh-documentation-toolkit@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/ovh-documentation-toolkit/-/ovh-documentation-toolkit-1.1.0.tgz#35020a8519153cc91429aee7d179f8b83cc178ad"
+ovh-documentation-toolkit@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/ovh-documentation-toolkit/-/ovh-documentation-toolkit-1.1.1.tgz#5a4a22cc1d179c79ae21fe89f114fcb0aa598fef"
   dependencies:
     "@uirouter/angularjs" "^1.0.16"
     angular "~1.6.1"
