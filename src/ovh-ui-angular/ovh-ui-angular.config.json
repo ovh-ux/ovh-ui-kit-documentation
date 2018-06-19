@@ -108,5 +108,8 @@
   },
   "tile": {
     "group": "others"
+  },
+  "guide-menu": {
+    "group": "others"
   }
 }
