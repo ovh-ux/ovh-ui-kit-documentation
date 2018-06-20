@@ -73,41 +73,41 @@
     "group": "others"
   },
   "clipboard": {
-    "group": "others"
+    "group": "form"
   },
   "popover": {
-    "group": "others"
+    "group": "notice"
   },
   "search": {
     "controller": "SearchCtrl",
-    "group": "others"
+    "group": "form"
   },
   "tooltip": {
-    "group": "others"
+    "group": "notice"
   },
   "datagrid": {
     "controller": "DatagridCtrl",
-    "group": "others"
+    "group": "data"
   },
   "criteria-adder": {
     "controller": "CriteriaAdderCtrl",
     "group": "internal"
   },
   "dropdown": {
-    "group": "internal"
+    "group": "basic"
   },
   "pagination": {
     "controller": "PaginationCtrl",
     "group": "internal"
   },
   "collapsible": {
-    "group": "others"
+    "group": "basic"
   },
   "page-header": {
-    "group": "internal"
+    "group": "basic"
   },
   "tile": {
-    "group": "others"
+    "group": "basic"
   },
   "guide-menu": {
     "group": "others"

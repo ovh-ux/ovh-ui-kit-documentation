@@ -116,13 +116,13 @@
     "group": "others"
   },
   "datagrid": {
-    "group": "others"
+    "group": "data"
   },
   "pagination": {
     "group": "others"
   },
   "popover": {
-    "group": "others"
+    "group": "notice"
   },
   "tip": {
     "group": "others"
