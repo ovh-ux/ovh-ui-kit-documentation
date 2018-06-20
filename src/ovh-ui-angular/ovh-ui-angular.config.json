@@ -111,5 +111,8 @@
   },
   "guide-menu": {
     "group": "others"
+  },
+  "header-tabs": {
+    "group": "nav"
   }
 }
