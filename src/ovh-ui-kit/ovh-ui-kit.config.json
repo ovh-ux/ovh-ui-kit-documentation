@@ -135,5 +135,8 @@
   },
   "tile": {
     "group": "others"
+  },
+  "header-tabs": {
+    "group": "nav"
   }
 }
