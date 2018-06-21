@@ -1,3 +1,21 @@
+<a name="2.16.0"></a>
+# [2.16.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.15.0...v2.16.0) (2018-06-21)
+
+
+### Features
+
+* **header-tabs:** add header-tabs component ([#121](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/121)) ([37bda44](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/37bda44))
+* **oui-clipboard:** add oui-clipboard component ([#95](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/95)) ([8d66653](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/8d66653))
+* **oui-collapsible:** add oui-collapsible component ([#94](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/94)) ([c258d2a](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/c258d2a))
+* **oui-doc:** add margin on previews ([#117](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/117)) ([cc16689](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/cc16689))
+* **oui-guide-menu:** add group for oui-guide-menu ([#120](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/120)) ([a310c15](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/a310c15))
+* **oui-navbar:** add any fake data to navbar ctrl ([#116](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/116)) ([a2e1302](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/a2e1302))
+* **oui-skeleton:** add oui-skeleton component ([#106](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/106)) ([69c1dd3](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/69c1dd3))
+* **oui-tile:** add oui-tile component ([#118](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/118)) ([7054f97](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/7054f97))
+* **page-header:** add page-header component ([#119](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/119)) ([293e884](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/293e884))
+
+
+
 <a name="2.15.0"></a>
 # [2.15.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.14.0...v2.15.0) (2018-05-23)
 
