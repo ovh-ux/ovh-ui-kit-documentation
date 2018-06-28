@@ -114,5 +114,8 @@
   },
   "header-tabs": {
     "group": "nav"
+  },
+  "switch": {
+    "group": "form"
   }
 }
