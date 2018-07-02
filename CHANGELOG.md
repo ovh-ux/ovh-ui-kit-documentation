@@ -1,3 +1,21 @@
+<a name="2.16.2"></a>
+## [2.16.2](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.16.1...v2.16.2) (2018-07-02)
+
+
+### Features
+
+* **header-tabs:** add header-tabs component ([#121](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/121)) ([3b98a95](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/3b98a95))
+* **oui-clipboard:** add oui-clipboard component ([#95](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/95)) ([f9cf145](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/f9cf145))
+* **oui-collapsible:** add oui-collapsible component ([#94](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/94)) ([14fa573](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/14fa573))
+* **oui-doc:** add margin on previews ([#117](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/117)) ([93b6fc9](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/93b6fc9))
+* **oui-guide-menu:** add group for oui-guide-menu ([#120](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/120)) ([d1df840](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/d1df840))
+* **oui-navbar:** add any fake data to navbar ctrl ([#116](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/116)) ([e67d4a5](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/e67d4a5))
+* **oui-skeleton:** add oui-skeleton component ([#106](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/106)) ([d3eb120](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/d3eb120))
+* **oui-tile:** add oui-tile component ([#118](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/118)) ([7656c32](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/7656c32))
+* **page-header:** add page-header component ([#119](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/119)) ([bf62f9a](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/bf62f9a))
+
+
+
 <a name="2.16.1"></a>
 ## [2.16.1](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.16.0...v2.16.1) (2018-06-27)
 
