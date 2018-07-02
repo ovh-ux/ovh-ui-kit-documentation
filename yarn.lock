@@ -5014,18 +5014,18 @@ ovh-documentation-toolkit@^1.1.1:
     angular "~1.6.1"
     lodash "~4.17.4"
 
-ovh-ui-angular@^2.16.0:
-  version "2.16.0"
-  resolved "https://registry.yarnpkg.com/ovh-ui-angular/-/ovh-ui-angular-2.16.0.tgz#8b6bd53d014e0f6e87d3cd292f34c7af2a414182"
+ovh-ui-angular@^2.16.x:
+  version "2.16.2"
+  resolved "https://registry.yarnpkg.com/ovh-ui-angular/-/ovh-ui-angular-2.16.2.tgz#409f36685de2de7e3879f2e24456f4a1f950291d"
   dependencies:
     clipboard "2.0.1"
     escape-string-regexp "^1.0.5"
     flatpickr "4.5.0"
     popper.js "^1.12.9"
 
-ovh-ui-kit@^2.16.0:
-  version "2.16.0"
-  resolved "https://registry.yarnpkg.com/ovh-ui-kit/-/ovh-ui-kit-2.16.0.tgz#cc3f08d9d1e08d7cc5817556a69a9c01ec48fbe1"
+ovh-ui-kit@^2.16.x:
+  version "2.16.3"
+  resolved "https://registry.yarnpkg.com/ovh-ui-kit/-/ovh-ui-kit-2.16.3.tgz#4a94f52f291a49d7186091826fbd95210ebfe38c"
   dependencies:
     less-plugin-remcalc "^0.0.1"
 
