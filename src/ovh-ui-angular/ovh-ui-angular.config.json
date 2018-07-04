@@ -8,8 +8,8 @@
   "chips": {
     "controller": "ChipsCtrl",
     "group": "data"
-},
-"progress": {
+  },
+  "progress": {
     "controller": "ProgressCtrl",
     "group": "data"
   },
