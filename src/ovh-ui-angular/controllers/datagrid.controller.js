@@ -22,6 +22,7 @@ export default class {
 
         this.timeout(() => {
             this.data = data;
+            this.groupedData = this.loadGroupedData();
             this.servers = servers;
 
             this.partialData = _.map(data.slice(0, defaultSliceSize), line => _.pick(line, ["firstName", "lastName"]));
@@ -93,6 +94,19 @@ export default class {
     loadRowWithRandom ({ firstName, lastName }) { // eslint-disable-line
         return this.loadRow({ firstName, lastName })
             .then(row => this.loadRandom(row));
+    }
+
+    loadGroupedData () {
+        const originalData = angular.copy(data);
+        const groupedData = [];
+        while (originalData.length > 0) {
+            const parentRow = groupedData[groupedData.push(originalData.pop()) - 1];
+            parentRow.subrows = [];
+            for (let i = 0; i < 4 && originalData.length > 0; i++) { // eslint-disable-line
+                parentRow.subrows.push(originalData.pop());
+            }
+        }
+        return groupedData;
     }
 
     refreshDatagrid (datagridId, showSpinner) {
