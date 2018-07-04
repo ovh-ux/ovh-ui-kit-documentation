@@ -9,6 +9,10 @@
     "controller": "ChipsCtrl",
     "group": "data"
   },
+  "progress": {
+    "controller": "ProgressCtrl",
+    "group": "data"
+  },
   "calendar": {
     "controller": "CalendarCtrl",
     "group": "form"
