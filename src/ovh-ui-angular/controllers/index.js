@@ -5,6 +5,7 @@ import datagridController from "./datagrid.controller";
 import fieldController from "./field.controller";
 import navbarController from "./navbar.controller";
 import paginationController from "./pagination.controller";
+import progressController from "./progress.controller";
 import searchController from "./search.controller";
 import selectController from "./select.controller";
 import showCurrentValueInPopupController from "./show-current-value-in-popup.controller";
@@ -18,6 +19,7 @@ angular.module("ovh-ui-kit-documentation")
     .controller("FieldCtrl", fieldController)
     .controller("NavbarCtrl", navbarController)
     .controller("PaginationCtrl", paginationController)
+    .controller("ProgressCtrl", progressController)
     .controller("ShowCurrentValueInPopupCtrl", showCurrentValueInPopupController)
     .controller("SearchCtrl", searchController)
     .controller("SelectCtrl", selectController)
