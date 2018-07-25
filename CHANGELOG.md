@@ -1,3 +1,14 @@
+<a name="2.17.0"></a>
+# [2.17.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.16.2...v2.17.0) (2018-07-25)
+
+
+### Features
+
+* **oui-progress:** add oui-progress component ([#112](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/112)) ([7468172](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/7468172))
+* **oui-switch:** add oui-switch component ([#111](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/111)) ([a79d29c](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/a79d29c))
+
+
+
 <a name="2.16.2"></a>
 ## [2.16.2](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.16.1...v2.16.2) (2018-07-02)
 
