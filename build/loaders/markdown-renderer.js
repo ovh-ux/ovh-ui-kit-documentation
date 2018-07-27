@@ -3,13 +3,13 @@ import highlight from 'highlightjs'
 import cheerio from 'cheerio'
 
 export default class extends marked.Renderer {
-    constructor() {
+    constructor () {
         super()
 
         this.codeBlockUID = 0
     }
 
-    heading(text, level, raw) {
+    heading (text, level, raw) {
         const id = raw.toLowerCase().replace(/[^\w]+/g, '-')
         return `
       <h${level} id="${id}" class="oui-header_${level}">${text}</h${level}>
@@ -19,7 +19,7 @@ export default class extends marked.Renderer {
     // Removes each element that follow those rules:
     // - Removes every element and its children with oui-doc-preview-only class on it
     // - Removes only the element with oui-doc-preview-only-keep-children class on it
-    _filterHtmlElementFromCode(code) {
+    _filterHtmlElementFromCode (code) {
         const $ = cheerio.load(code, {
             decodeEntities: false
         })
@@ -35,7 +35,7 @@ export default class extends marked.Renderer {
         return $('body').html().replace(/=""/g, '')
     }
 
-    code(code, lang) {
+    code (code, lang) {
         var highlightCode = code
 
         if (lang) {
@@ -48,10 +48,11 @@ export default class extends marked.Renderer {
                 var scopeVariableName = `$markdown.code[${this.codeBlockUID}]`
 
                 return `<div class="oui-doc-preview">${code}</div>
-                <button type="button" class="oui-button oui-button_secondary"
-                        ng-click="${scopeVariableName} = !${scopeVariableName}">
-                  Click to show the example
-                </button>
+                <p>
+                    <oui-button on-click="${scopeVariableName} = !${scopeVariableName}">
+                        Click to show the example
+                    </oui-button>
+                </p>
                 <div class="oui-showcase__code"
                      ng-show="${scopeVariableName}">
                     <pre ng-non-bindable>${highlightCode}</pre>
@@ -64,18 +65,18 @@ export default class extends marked.Renderer {
         return `<pre class="oui-showcase__code">${highlightCode}</pre>`
     }
 
-    table(header, body) {
+    table (header, body) {
         return `<table class="oui-datagrid">
             <thead class="oui-datagrid__headers">${header}</thead>
             <tbody>${body}</tbody>
         </table>`;
     }
 
-    tablerow(content) {
+    tablerow (content) {
         return `<tr class="oui-datagrid__row">${content}</tr>`;
     }
 
-    tablecell(content, flag) {
+    tablecell (content, flag) {
         if (flag.header) {
             return `<th class="oui-datagrid__header">${content}</th>`;
         } else {
