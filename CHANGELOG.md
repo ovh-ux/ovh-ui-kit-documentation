@@ -1,3 +1,13 @@
+<a name="2.17.1"></a>
+## [2.17.1](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.17.0...v2.17.1) (2018-07-30)
+
+
+### Bug Fixes
+
+* use oui-datagrid instead of bs table ([4224914](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/4224914))
+
+
+
 <a name="2.17.0"></a>
 # [2.17.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.16.2...v2.17.0) (2018-07-25)
 
