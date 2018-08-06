@@ -47,7 +47,7 @@
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.26.0",
     "json-loader": "^0.5.4",
-    "less": "^3.0.0-alpha.3",
+    "less": "^2.7.2",
     "less-loader": "^4.0.4",
     "lodash-webpack-plugin": "^0.11.4",
     "marked": "^0.3.6",
@@ -78,7 +78,7 @@
     "angular-sanitize": "^1.6.1",
     "flatpickr": "4.5.0",
     "lodash": "^4.17.4",
-    "ovh-documentation-toolkit": "^1.1.1",
+    "ovh-documentation-toolkit": "^1.1.2",
     "ovh-ui-angular": "^2.17.2",
     "ovh-ui-kit": "^2.17.2"
   }
