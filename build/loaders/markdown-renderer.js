@@ -66,7 +66,7 @@ export default class extends marked.Renderer {
     }
 
     table (header, body) {
-        return `<table class="oui-datagrid">
+        return `<table class="oui-datagrid oui-datagrid_compact">
             <thead class="oui-datagrid__headers">${header}</thead>
             <tbody>${body}</tbody>
         </table>`;
