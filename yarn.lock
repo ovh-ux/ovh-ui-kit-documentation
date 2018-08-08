@@ -342,7 +342,7 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
-angular-aria@^1.6.1:
+angular-aria@^1.6.1, angular-aria@^1.6.x:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/angular-aria/-/angular-aria-1.7.2.tgz#68cb3d15aece7a22517b1fe3e00d9d3807ceca88"
 
@@ -350,11 +350,11 @@ angular-messages@^1.6.1:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/angular-messages/-/angular-messages-1.7.2.tgz#77116d83a72a00234d8177de9837bc867321f25e"
 
-angular-sanitize@^1.6.1:
+angular-sanitize@^1.6.1, angular-sanitize@^1.6.x:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/angular-sanitize/-/angular-sanitize-1.7.2.tgz#e9f6e6a3e966c479c02dbc5712bee6de031f8eef"
 
-angular@^1.6.1:
+angular@^1.6.1, angular@^1.6.x:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.7.2.tgz#687b955dbe5c533f8d73460461707af00360251f"
 
@@ -1625,9 +1625,9 @@ cli-width@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-2.2.0.tgz#ff19ede8a9a5e579324147b0c11f0fbcbabed639"
 
-clipboard@2.0.1:
+clipboard@^2.0.1:
   version "2.0.1"
-  resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-2.0.1.tgz#a12481e1c13d8a50f5f036b0560fe5d16d74e46a"
+  resolved "https://nexus.ovh.net/nexus3/repository/npm-all/clipboard/-/clipboard-2.0.1.tgz#a12481e1c13d8a50f5f036b0560fe5d16d74e46a"
   dependencies:
     good-listener "^1.2.2"
     select "^1.1.2"
@@ -3061,6 +3061,10 @@ flat-cache@^1.2.1:
 flatpickr@4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.5.0.tgz#f72c7164a1c24e3ad419e3b2209d1a2d3604724a"
+
+flatpickr@^4.5.1:
+  version "4.5.1"
+  resolved "https://nexus.ovh.net/nexus3/repository/npm-all/flatpickr/-/flatpickr-4.5.1.tgz#f65eaf54c07538f87d6f68a67b03cf816d7fb82f"
 
 flatten@^1.0.2:
   version "1.0.2"
@@ -5127,18 +5131,21 @@ ovh-documentation-toolkit@^1.1.2:
     angular "~1.6.1"
     lodash "~4.17.4"
 
-ovh-ui-angular@^2.17.2:
-  version "2.17.2"
-  resolved "https://registry.yarnpkg.com/ovh-ui-angular/-/ovh-ui-angular-2.17.2.tgz#21a6fb5470749e04aa55a7788adc76c343d87e24"
+ovh-ui-angular@^2.18.0:
+  version "2.18.0"
+  resolved "https://nexus.ovh.net/nexus3/repository/npm-all/ovh-ui-angular/-/ovh-ui-angular-2.18.0.tgz#eef5ae22f360e8e028d34a05f67440ce44649c6c"
   dependencies:
-    clipboard "2.0.1"
+    angular "^1.6.x"
+    angular-aria "^1.6.x"
+    angular-sanitize "^1.6.x"
+    clipboard "^2.0.1"
     escape-string-regexp "^1.0.5"
-    flatpickr "4.5.0"
+    flatpickr "^4.5.1"
     popper.js "^1.14.3"
 
-ovh-ui-kit@^2.17.2:
-  version "2.17.2"
-  resolved "https://registry.yarnpkg.com/ovh-ui-kit/-/ovh-ui-kit-2.17.2.tgz#7c923f13f8e4f2c98441748c30437f72bb2feee8"
+ovh-ui-kit@^2.18.0:
+  version "2.18.0"
+  resolved "https://nexus.ovh.net/nexus3/repository/npm-all/ovh-ui-kit/-/ovh-ui-kit-2.18.0.tgz#eed38677ee28569f6c1de2c2af5317af1cd0ce24"
   dependencies:
     less-plugin-remcalc "^0.0.1"
 

@@ -1,3 +1,8 @@
+<a name="2.18.0"></a>
+# [2.18.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.17.2...v2.18.0) (2018-08-08)
+
+
+
 <a name="2.17.2"></a>
 ## [2.17.2](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.17.1...v2.17.2) (2018-08-06)
 
