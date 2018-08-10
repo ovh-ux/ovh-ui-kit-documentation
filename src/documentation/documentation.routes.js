@@ -2,7 +2,6 @@ import changelogTemplate from "../../CHANGELOG.md";
 import componentStatusTemplate from "./component-status.md";
 import contributingTemplate from "./contributing.md";
 import introductionTemplate from "./introduction.md";
-import lessPluginRemcalcTemplate from "less-plugin-remcalc/README.md";
 
 // import urlsTemplate from "./urls.md";
 
@@ -43,10 +42,5 @@ export default function ($stateProvider) {
             url: "/component-status",
             friendlyName: "Component status",
             template: componentStatusTemplate
-        })
-        .state("showcase.documentation.less-plugin-remcalc", {
-            url: "/less-plugin-remcalc",
-            friendlyName: "less-plugin-remcalc",
-            template: lessPluginRemcalcTemplate
         });
 }

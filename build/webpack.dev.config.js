@@ -4,7 +4,6 @@ import merge from 'webpack-merge'
 import webpack from 'webpack'
 import autoprefixer from 'autoprefixer'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
-import RemcalcPlugin from 'less-plugin-remcalc'
 import baseConfig from './webpack.base.config'
 
 const __root = path.join(__dirname, '..')
@@ -61,8 +60,7 @@ export default merge(config, {
             } },
           { loader: 'less-loader',
             options: {
-              sourceMap: true,
-              plugins: [ RemcalcPlugin ]
+              sourceMap: true
             } }
         ]
       }
