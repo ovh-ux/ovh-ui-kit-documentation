@@ -32,12 +32,6 @@ export default function ($stateProvider) {
             friendlyName: "Changelog",
             template: changelogTemplate
         })
-
-        // .state("showcase.documentation.urls", {
-        //     url: "/urls",
-        //     friendlyName: "URLs",
-        //     template: urlsTemplate
-        // })
         .state("showcase.documentation.component-status", {
             url: "/component-status",
             friendlyName: "Component status",
