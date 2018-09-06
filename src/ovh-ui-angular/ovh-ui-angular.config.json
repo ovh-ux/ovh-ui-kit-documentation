@@ -28,12 +28,6 @@
     "group": "form"
   },
   "radio": {
-    "group": "internal"
-  },
-  "radio-group": {
-    "group": "form"
-  },
-  "radio-toggle-group": {
     "group": "form"
   },
   "textarea": {
