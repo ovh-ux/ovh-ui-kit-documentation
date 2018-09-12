@@ -13,7 +13,7 @@ export default function ($stateProvider) {
         .state("showcase.ovh-ui-kit", {
             url: "/ovh-ui-kit",
             friendlyName: "Styles",
-            groupName: "ovh-ui-kit components",
+            groupName: "Getting started",
             redirectTo: "showcase.ovh-ui-kit.introduction",
             template: "<ui-view></ui-view>",
             weight: 9000,

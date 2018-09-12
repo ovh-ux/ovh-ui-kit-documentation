@@ -88,6 +88,9 @@
   "navbar": {
     "group": "nav"
   },
+  "sidebar": {
+    "group": "nav"
+  },
   "progress-tracker": {
     "group": "nav"
   },

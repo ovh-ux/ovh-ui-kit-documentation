@@ -15,7 +15,7 @@ export default function ($stateProvider) {
         .state("showcase.oui-angular", {
             url: "/oui-angular",
             friendlyName: "Components",
-            groupName: "oui-angular components",
+            groupName: "Getting started",
             redirectTo: "showcase.oui-angular.introduction",
             template: "<ui-view></ui-view>",
             weight: 9000,
