@@ -5139,9 +5139,9 @@ ovh-documentation-toolkit@^1.1.2:
     angular "~1.6.1"
     lodash "~4.17.4"
 
-ovh-ui-angular@^2.19.0:
-  version "2.19.0"
-  resolved "https://registry.yarnpkg.com/ovh-ui-angular/-/ovh-ui-angular-2.19.0.tgz#e4396dbc46975669a81108708d5dbc45358a55fb"
+ovh-ui-angular@^2.20.0:
+  version "2.20.0"
+  resolved "https://nexus.ovh.net/nexus3/repository/npm-all/ovh-ui-angular/-/ovh-ui-angular-2.20.0.tgz#3e6892b5401c9e53a60cfa1b019f707aef5481ec"
   dependencies:
     angular "^1.6.x"
     angular-aria "^1.6.x"
@@ -5151,9 +5151,9 @@ ovh-ui-angular@^2.19.0:
     flatpickr "^4.5.1"
     popper.js "^1.14.3"
 
-ovh-ui-kit@^2.19.0:
-  version "2.19.0"
-  resolved "https://registry.yarnpkg.com/ovh-ui-kit/-/ovh-ui-kit-2.19.0.tgz#e9ca5304348aefad2e62e0954be1a228cca72995"
+ovh-ui-kit@^2.20.0:
+  version "2.20.0"
+  resolved "https://nexus.ovh.net/nexus3/repository/npm-all/ovh-ui-kit/-/ovh-ui-kit-2.20.0.tgz#edba008b8ac9c6d884f0d5f3356df183f2acaff8"
   dependencies:
     less-plugin-remcalc "^0.1.0"
 
