@@ -15,42 +15,26 @@ export default function ($stateProvider) {
         .state("showcase.oui-angular", {
             url: "/oui-angular",
             friendlyName: "Components",
-            groupName: "oui-angular components",
+            groupName: "Getting started",
             redirectTo: "showcase.oui-angular.introduction",
             template: "<ui-view></ui-view>",
             weight: 9000,
             groups: {
-                basic: {
-                    name: "Basic",
+                layout: {
+                    name: "Layout",
                     weight: 9000
                 },
-                form: {
-                    name: "Form",
+                content: {
+                    name: "Content",
                     weight: 8000
                 },
-                data: {
-                    name: "Data",
+                components: {
+                    name: "Components",
                     weight: 7000
                 },
-                notice: {
-                    name: "Notice",
+                utilities: {
+                    name: "Utilities",
                     weight: 6000
-                },
-                nav: {
-                    name: "Navigation",
-                    weight: 5000
-                },
-                others: {
-                    name: "Others",
-                    weight: 1000
-                },
-                internal: {
-                    name: "Internal",
-                    weight: 500
-                },
-                legacy: {
-                    name: "Legacy",
-                    weight: 0
                 }
             }
         })

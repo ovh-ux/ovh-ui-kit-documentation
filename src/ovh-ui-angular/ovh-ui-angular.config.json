@@ -1,125 +1,119 @@
 {
-  "button": {
-    "group": "basic"
+  "action-menu": {
+    "group": "components"
   },
   "back-button": {
-    "group": "nav"
+    "group": "components"
   },
-  "chips": {
-    "controller": "ChipsCtrl",
-    "group": "data"
-  },
-  "progress": {
-    "controller": "ProgressCtrl",
-    "group": "data"
+  "button": {
+    "group": "components"
   },
   "calendar": {
     "controller": "CalendarCtrl",
-    "group": "form"
+    "group": "components"
   },
   "checkbox": {
     "controller": "ShowCurrentValueInPopupCtrl",
-    "group": "form"
+    "group": "components"
   },
-  "form-actions": {
-    "group": "form"
-  },
-  "numeric": {
-    "group": "form"
-  },
-  "radio": {
-    "group": "internal"
-  },
-  "radio-group": {
-    "group": "form"
-  },
-  "radio-toggle-group": {
-    "group": "form"
-  },
-  "textarea": {
-    "group": "form"
-  },
-  "field": {
-    "controller": "FieldCtrl",
-    "group": "form"
-  },
-  "select": {
-    "controller": "SelectCtrl",
-    "group": "form"
-  },
-  "select-picker": {
-    "group": "form"
-  },
-  "stepper": {
-    "controller": "StepperCtrl",
-    "group": "form"
-  },
-  "switch": {
-    "group": "form"
-  },
-  "navbar": {
-    "controller": "NavbarCtrl",
-    "group": "nav"
-  },
-  "message": {
-    "group": "notice"
-  },
-  "spinner": {
-    "group": "notice"
-  },
-  "modal": {
-    "group": "notice"
-  },
-  "slideshow": {
-    "group": "notice"
-  },
-  "action-menu": {
-    "group": "others"
-  },
-  "skeleton": {
-    "group": "others"
+  "chips": {
+    "controller": "ChipsCtrl",
+    "group": "components"
   },
   "clipboard": {
-    "group": "form"
+    "group": "components"
   },
-  "popover": {
-    "group": "notice"
-  },
-  "search": {
-    "controller": "SearchCtrl",
-    "group": "form"
-  },
-  "tooltip": {
-    "group": "notice"
-  },
-  "datagrid": {
-    "controller": "DatagridCtrl",
-    "group": "data"
+  "collapsible": {
+    "group": "components"
   },
   "criteria-adder": {
     "controller": "CriteriaAdderCtrl",
-    "group": "internal"
+    "group": "components"
+  },
+  "datagrid": {
+    "controller": "DatagridCtrl",
+    "group": "components"
   },
   "dropdown": {
-    "group": "basic"
+    "group": "components"
+  },
+  "field": {
+    "controller": "FieldCtrl",
+    "group": "components"
+  },
+  "form-actions": {
+    "group": "components"
+  },
+  "guide-menu": {
+    "group": "components"
+  },
+  "header-tabs": {
+    "group": "components"
+  },
+  "message": {
+    "group": "components"
+  },
+  "modal": {
+    "group": "components"
+  },
+  "navbar": {
+    "controller": "NavbarCtrl",
+    "group": "components"
+  },
+  "numeric": {
+    "group": "components"
+  },
+  "page-header": {
+    "group": "components"
   },
   "pagination": {
     "controller": "PaginationCtrl",
-    "group": "internal"
+    "group": "components"
   },
-  "collapsible": {
-    "group": "basic"
+  "popover": {
+    "group": "components"
   },
-  "page-header": {
-    "group": "basic"
+  "progress": {
+    "controller": "ProgressCtrl",
+    "group": "components"
+  },
+  "radio": {
+    "group": "components"
+  },
+  "search": {
+    "controller": "SearchCtrl",
+    "group": "components"
+  },
+  "select": {
+    "controller": "SelectCtrl",
+    "group": "components"
+  },
+  "select-picker": {
+    "group": "components"
+  },
+  "skeleton": {
+    "group": "components"
+  },
+  "slideshow": {
+    "group": "components"
+  },
+  "spinner": {
+    "group": "components"
+  },
+  "stepper": {
+    "controller": "StepperCtrl",
+    "group": "components"
+  },
+  "switch": {
+    "group": "components"
+  },
+  "textarea": {
+    "group": "components"
   },
   "tile": {
-    "group": "basic"
+    "group": "components"
   },
-  "guide-menu": {
-    "group": "others"
-  },
-  "header-tabs": {
-    "group": "nav"
+  "tooltip": {
+    "group": "components"
   }
 }
