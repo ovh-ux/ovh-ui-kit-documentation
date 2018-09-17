@@ -1,145 +1,122 @@
 {
-  "typography": {
-    "weight": 3000,
-    "group": "basic"
+  "responsive": {
+    "group": "layout"
   },
   "color": {
-    "weight": 2000,
-    "group": "basic"
+    "group": "content"
   },
   "accessibility": {
-    "group": "basic"
+    "group": "content"
   },
   "animation": {
-    "group": "basic"
-  },
-  "back-button": {
-    "group": "basic"
-  },
-  "button": {
-    "group": "basic"
-  },
-  "button-group": {
-    "group": "basic"
-  },
-  "collapsible": {
-    "group": "others"
+    "group": "content"
   },
   "icons": {
-    "group": "basic"
+    "group": "content"
   },
-  "themes": {
-    "group": "basic"
+  "typography": {
+    "group": "content"
   },
-  "responsive": {
-    "group": "basic"
-  },
-  "calendar": {
-    "group": "form"
-  },
-  "checkbox": {
-    "group": "form"
-  },
-  "field": {
-    "group": "form"
-  },
-  "formfield": {
-    "group": "form"
-  },
-  "input": {
-    "group": "form"
-  },
-  "input-group": {
-    "group": "form"
-  },
-  "label": {
-    "group": "form"
-  },
-  "radio": {
-    "group": "form"
-  },
-  "radio-toggle-group": {
-    "group": "form"
-  },
-  "select": {
-    "group": "form"
-  },
-  "select-picker": {
-    "group": "form"
-  },
-  "switch": {
-    "group": "form"
-  },
-  "textarea": {
-    "group": "form"
-  },
-  "chip": {
-    "group": "data"
-  },
-  "list": {
-    "group": "data"
-  },
-  "table": {
-    "group": "data"
-  },
-  "progress": {
-    "group": "data"
-  },
-  "navbar": {
-    "group": "nav"
-  },
-  "sidebar": {
-    "group": "nav"
-  },
-  "progress-tracker": {
-    "group": "nav"
-  },
-  "spinner": {
-    "group": "notice"
-  },
-  "message": {
-    "group": "notice"
-  },
-  "modal": {
-    "group": "notice"
-  },
-  "status": {
-    "group": "notice"
-  },
-  "action-menu": {
-    "group": "others"
-  },
-  "clipboard": {
-    "group": "others"
-  },
-  "dropdown": {
-    "group": "others"
+  "back-button": {
+    "group": "components"
   },
   "box": {
-    "group": "others"
+    "group": "components"
+  },
+  "button": {
+    "group": "components"
+  },
+  "button-group": {
+    "group": "components"
+  },
+  "calendar": {
+    "group": "components"
+  },
+  "checkbox": {
+    "group": "components"
+  },
+  "chip": {
+    "group": "components"
+  },
+  "collapsible": {
+    "group": "components"
   },
   "datagrid": {
-    "group": "data"
+    "group": "components"
   },
-  "pagination": {
-    "group": "others"
+  "field": {
+    "group": "components"
   },
-  "popover": {
-    "group": "notice"
-  },
-  "tip": {
-    "group": "others"
-  },
-  "skeleton": {
-    "group": "others"
-  },
-  "page-header": {
-    "group": "others"
-  },
-  "tile": {
-    "group": "others"
+  "formfield": {
+    "group": "components"
   },
   "header-tabs": {
-    "group": "nav"
+    "group": "components"
+  },
+  "input": {
+    "group": "components"
+  },
+  "input-group": {
+    "group": "components"
+  },
+  "label": {
+    "group": "components"
+  },
+  "list": {
+    "group": "components"
+  },
+  "message": {
+    "group": "components"
+  },
+  "modal": {
+    "group": "components"
+  },
+  "navbar": {
+    "group": "components"
+  },
+  "page-header": {
+    "group": "components"
+  },
+  "pagination": {
+    "group": "components"
+  },
+  "progress": {
+    "group": "components"
+  },
+  "progress-tracker": {
+    "group": "components"
+  },
+  "radio": {
+    "group": "components"
+  },
+  "radio-toggle-group": {
+    "group": "components"
+  },
+  "select": {
+    "group": "components"
+  },
+  "select-picker": {
+    "group": "components"
+  },
+  "sidebar": {
+    "group": "components"
+  },
+  "skeleton": {
+    "group": "components"
+  },
+  "spinner": {
+    "group": "components"
+  },
+  "status": {
+    "group": "components"
+  },
+  "switch": {
+    "group": "components"
+  },
+  "textarea": {
+    "group": "components"
+  },
+  "tile": {
+    "group": "components"
   }
 }
