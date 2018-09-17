@@ -1,3 +1,13 @@
+<a name="2.20.0"></a>
+# [2.20.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.19.0...v2.20.0) (2018-09-17)
+
+
+### Bug Fixes
+
+* fix responsive api table ([02431e8](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/02431e8))
+
+
+
 <a name="2.19.0"></a>
 # [2.19.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.18.0...v2.19.0) (2018-09-06)
 
