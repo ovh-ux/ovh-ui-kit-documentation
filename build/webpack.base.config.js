@@ -23,7 +23,7 @@ export default {
         alias: {
             src: path.resolve(__root, 'src'),
             build: path.resolve(__dirname),
-            '@oui-angular': fs.realpathSync(path.join(__dirname, '../node_modules/ovh-ui-angular/packages'))
+            '@ovh-ui': fs.realpathSync(path.join(__dirname, '../node_modules/ovh-ui-angular/packages'))
         }
     },
     resolveLoader: {
