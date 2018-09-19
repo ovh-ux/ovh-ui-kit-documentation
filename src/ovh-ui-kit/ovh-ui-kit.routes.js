@@ -2,7 +2,7 @@ import changelogTemplate from "ovh-ui-kit/CHANGELOG.md";
 import config from "./ovh-ui-kit.config.json";
 import contributingTemplate from "ovh-ui-kit/CONTRIBUTING.md";
 import introductionTemplate from "ovh-ui-kit/README.md";
-import templateUtils from "src/utils/template-utils";
+import templateUtils from "../utils/template-utils";
 
 const templates = templateUtils.loadLessReadme();
 

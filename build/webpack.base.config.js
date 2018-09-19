@@ -18,14 +18,6 @@ export default {
     output: {
         filename: '[name]-[hash].js'
     },
-    resolve: {
-        extensions: [".js", ".json", ".less"],
-        alias: {
-            src: path.resolve(__root, 'src'),
-            build: path.resolve(__dirname),
-            '@ovh-ui': fs.realpathSync(path.join(__dirname, '../node_modules/ovh-ui-angular/packages'))
-        }
-    },
     resolveLoader: {
         alias: {
             'markdown-loader': path.join(__dirname, 'loaders', 'markdown-loader'),

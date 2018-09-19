@@ -1,10 +1,8 @@
 import changelogTemplate from "ovh-ui-angular/CHANGELOG.md";
 import config from "./ovh-ui-angular.config.json";
 import contributingTemplate from "ovh-ui-angular/CONTRIBUTING.md";
-
-// import decisionsTemplate from "./decisions.md";
 import introductionTemplate from "ovh-ui-angular/README.md";
-import templateUtils from "src/utils/template-utils";
+import templateUtils from "../utils/template-utils";
 
 const templates = templateUtils.loadAngularJSReadme();
 
@@ -53,12 +51,6 @@ export default function ($stateProvider) {
             friendlyName: "Changelog",
             template: changelogTemplate
         });
-
-    // .state("showcase.oui-angular.decisions", {
-    //     url: "/decisions",
-    //     friendlyName: "Decisions",
-    //     template: decisionsTemplate
-    // });
 
     templateUtils.addAngularJSComponentStates($stateProvider, templates, config);
 }
