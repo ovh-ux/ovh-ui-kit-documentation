@@ -220,7 +220,7 @@
   version "10.10.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.10.1.tgz#d5c96ca246a418404914d180b7fdd625ad18eca6"
 
-"@uirouter/angularjs@^1.0.16", "@uirouter/angularjs@^1.0.20":
+"@uirouter/angularjs@^1.0.20":
   version "1.0.20"
   resolved "https://registry.yarnpkg.com/@uirouter/angularjs/-/angularjs-1.0.20.tgz#bd330544cb2f1c35987f610d8fc353071786c04e"
   dependencies:
@@ -454,10 +454,6 @@ angular-sanitize@^1.6.x, angular-sanitize@^1.7.4:
 angular@^1.6.x, angular@^1.7.4:
   version "1.7.4"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.7.4.tgz#c1bf4884c2d470c06907737a1bf0835a9f646f31"
-
-angular@~1.6.1:
-  version "1.6.10"
-  resolved "https://registry.yarnpkg.com/angular/-/angular-1.6.10.tgz#eed3080a34d29d0f681ff119b18ce294e3f74826"
 
 ansi-colors@^3.0.0:
   version "3.0.5"
@@ -4255,7 +4251,7 @@ lodash@4.17.5:
   version "4.17.5"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
 
-lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1, lodash@^4.3.0, lodash@~4.17.4:
+lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1, lodash@^4.3.0:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
 
@@ -4954,13 +4950,13 @@ output-file-sync@^1.1.2:
     mkdirp "^0.5.1"
     object-assign "^4.1.0"
 
-ovh-documentation-toolkit@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/ovh-documentation-toolkit/-/ovh-documentation-toolkit-1.1.2.tgz#9b198e0f066df172ecf287ff8e087fda44247b92"
+ovh-documentation-toolkit@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/ovh-documentation-toolkit/-/ovh-documentation-toolkit-1.2.0.tgz#b7876a58cccf5fa5f840b907d4b6b6e6559f719c"
   dependencies:
-    "@uirouter/angularjs" "^1.0.16"
-    angular "~1.6.1"
-    lodash "~4.17.4"
+    "@uirouter/angularjs" "^1.0.20"
+    angular "^1.7.4"
+    lodash "^4.17.11"
 
 ovh-ui-angular@^2.20.0:
   version "2.20.0"
