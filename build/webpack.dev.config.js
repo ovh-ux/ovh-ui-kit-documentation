@@ -16,56 +16,66 @@ const server = 'webpack/hot/dev-server'
 const config = _.cloneDeep(baseConfig)
 
 export default merge(config, {
-  devtool: '#source-map',
-  entry: {
-    app: [
-      client,
-      server
-    ]
-  },
-  output: {
-    path: path.join(__root, 'dist'),
-    publicPath: ''
-  },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin(),
-    new CopyWebpackPlugin([
-      { from: 'src/versions.json' }
-    ])
-  ],
-  resolve: {
-    mainFields: ['module', 'main']
-  },
-  module: {
-    rules: [
-      { test: /\.less$/,
-        exclude,
-        use: [
-          { loader: 'style-loader',
-            options: {
-              sourceMap: true
-            } },
-          { loader: 'css-loader',
-            options: {
-              sourceMap: true
-            } },
-          { loader: 'postcss-loader',
-            options: {
-              sourceMap: true,
-              plugins: () => [
-                autoprefixer({
-                  browsers: ['last 2 versions', 'ie 11']
-                })
-              ]
-            } },
-          { loader: 'less-loader',
-            options: {
-              sourceMap: true,
-              plugins: [ RemcalcPlugin ]
-            } }
+    mode: "development",
+    devtool: 'source-map',
+    entry: {
+        app: [
+            client,
+            server
         ]
-      }
-    ]
-  }
+    },
+    output: {
+        path: path.join(__root, 'dist'),
+        publicPath: ''
+    },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.NoEmitOnErrorsPlugin(),
+        new CopyWebpackPlugin([
+            { from: 'src/versions.json' }
+        ])
+    ],
+    resolve: {
+        mainFields: ['module', 'main']
+    },
+    module: {
+        rules: [
+            {
+                test: /\.less$/,
+                exclude,
+                use: [
+                    {
+                        loader: 'style-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            sourceMap: true,
+                            plugins: () => [
+                                autoprefixer({
+                                    browsers: ['last 2 versions', 'ie 11']
+                                })
+                            ]
+                        }
+                    },
+                    {
+                        loader: 'less-loader',
+                        options: {
+                            sourceMap: true,
+                            plugins: [RemcalcPlugin]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
 })
