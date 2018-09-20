@@ -1,10 +1,6 @@
-import changelogTemplate from "../../CHANGELOG.md";
 import componentStatusTemplate from "./component-status.md";
-import contributingTemplate from "./contributing.md";
-import introductionTemplate from "./introduction.md";
-import lessPluginRemcalcTemplate from "less-plugin-remcalc/README.md";
-
-// import urlsTemplate from "./urls.md";
+import contributingTemplate from "../../CONTRIBUTING.md";
+import introductionTemplate from "../../README.md";
 
 export default function ($stateProvider) {
     "ngInject";
@@ -28,25 +24,9 @@ export default function ($stateProvider) {
             friendlyName: "Contributing",
             template: contributingTemplate
         })
-        .state("showcase.documentation.changelog", {
-            url: "/changelog",
-            friendlyName: "Changelog",
-            template: changelogTemplate
-        })
-
-        // .state("showcase.documentation.urls", {
-        //     url: "/urls",
-        //     friendlyName: "URLs",
-        //     template: urlsTemplate
-        // })
         .state("showcase.documentation.component-status", {
             url: "/component-status",
             friendlyName: "Component status",
             template: componentStatusTemplate
-        })
-        .state("showcase.documentation.less-plugin-remcalc", {
-            url: "/less-plugin-remcalc",
-            friendlyName: "less-plugin-remcalc",
-            template: lessPluginRemcalcTemplate
         });
 }

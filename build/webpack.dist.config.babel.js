@@ -2,7 +2,6 @@ import path from 'path'
 import webpack from 'webpack'
 import merge from 'webpack-merge'
 import autoprefixer from 'autoprefixer'
-import WebpackShellPlugin from 'webpack-shell-plugin'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import RemcalcPlugin from 'less-plugin-remcalc'
 import baseConfig from './webpack.base.config'
@@ -24,11 +23,6 @@ export default merge(baseConfig, {
             compress: {
                 warnings: false
             }
-        }),
-        new WebpackShellPlugin({
-            onBuildEnd: [
-                'cp src/versions.json dist/versions.json'
-            ]
         }),
         new ExtractTextPlugin({
             filename: '[name]-[hash].css',
