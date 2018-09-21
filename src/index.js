@@ -15,8 +15,6 @@ import componentStatusConfig from "./init/component-status.config";
 import DocumentationRoutes from "./documentation/documentation.routes";
 import OvhUiAngularRoutes from "./ovh-ui-angular/ovh-ui-angular.routes";
 import OvhUiKitRoutes from "./ovh-ui-kit/ovh-ui-kit.routes";
-import themesConfig from "./init/themes.config";
-import versionsConfig from "./init/versions.config";
 
 const app = angular
     .module("ovh-ui-kit-documentation", [
@@ -28,8 +26,6 @@ const app = angular
         "oui",
         "ovh-ui-kit-documentation-components"
     ])
-    .config(themesConfig)
-    .config(versionsConfig)
     .config(componentStatusConfig)
     .config(DocumentationRoutes)
     .config(OvhUiKitRoutes)
