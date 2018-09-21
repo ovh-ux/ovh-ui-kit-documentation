@@ -18,6 +18,14 @@ export default {
     output: {
         filename: '[name]-[hash].js'
     },
+
+    // To be removed when using yarn workspaces
+    resolve: {
+        alias: {
+            "@ovh-ui": path.resolve(__dirname, "../node_modules/ovh-ui-angular/packages")
+        },
+        mainFiles: ["index", "src/index"]
+    },
     resolveLoader: {
         alias: {
             'markdown-loader': path.join(__dirname, 'loaders', 'markdown-loader'),

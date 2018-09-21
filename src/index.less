@@ -1,19 +1,22 @@
-@import '~bootstrap/less/bootstrap';
+@import (inline) '~bootstrap/dist/css/bootstrap.min.css';
 @import (inline) "~flatpickr/dist/flatpickr.css";
 
-@rem-base: rem-base(10px);
+@rem-base: rem-base(16);
 
-@import "~ovh-ui-kit/packages/oui/stylekit.less";
-@import "~ovh-documentation-toolkit/src/app/index.less";
+@import "~ovh-ui-kit/packages/oui/stylekit";
+@import "~ovh-documentation-toolkit/src/app/index";
 
-versions-selector {
-    display: none;
-}
+// Documentation style
+themes-selector,
+versions-selector { display: none; }
 
-themes-selector {
-    display: none;
-}
+.oui-doc-preview { margin-bottom: rem-calc(15); }
 
-.oui-doc-preview {
-    margin-bottom: rem-calc(15);
+.oui-showcase__code {
+    pre,
+    pre& {
+        &:extend(.oui-box);
+    }
+
+    pre { margin: 0; }
 }
