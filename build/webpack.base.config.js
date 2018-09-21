@@ -64,10 +64,9 @@ export default {
             {
                 test: /\.js$/,
                 exclude,
-                use: [
-                    'ng-annotate-loader',
-                    'babel-loader'
-                ]
+                use: {
+                    loader: "babel-loader"
+                }
             },
             {
                 test: /\.css$/,

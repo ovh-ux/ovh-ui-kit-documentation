@@ -30,10 +30,7 @@ export default merge(config, {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoEmitOnErrorsPlugin(),
-        new CopyWebpackPlugin([
-            { from: 'src/versions.json' }
-        ])
+        new webpack.NoEmitOnErrorsPlugin()
     ],
     resolve: {
         mainFields: ['module', 'main']
