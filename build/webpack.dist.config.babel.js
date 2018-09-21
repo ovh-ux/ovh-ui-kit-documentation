@@ -19,11 +19,6 @@ export default merge(baseConfig, {
         path: path.resolve(__root, 'dist')
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
-            }
-        }),
         new ExtractTextPlugin({
             filename: '[name]-[hash].css',
             allChunks: true
