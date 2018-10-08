@@ -30,7 +30,7 @@
     "lodash": "^4.17.11",
     "ovh-documentation-toolkit": "^1.2.0",
     "ovh-ui-angular": "^2.21.1",
-    "ovh-ui-kit": "^2.21.0"
+    "ovh-ui-kit": "^2.21.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
