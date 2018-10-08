@@ -12,7 +12,7 @@ export default class extends marked.Renderer {
     heading (text, level, raw) {
         const id = raw.toLowerCase().replace(/[^\w]+/g, '-')
         return `
-      <h${level} id="${id}" class="oui-header_${level}">${text}</h${level}>
+      <h${level} id="${id}" class="oui-heading_${level}">${text}</h${level}>
     `
     }
 
