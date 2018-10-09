@@ -53,16 +53,21 @@ export default class extends marked.Renderer {
                         Click to show the example
                     </oui-button>
                 </p>
-                <div class="oui-showcase__code"
-                     ng-show="${scopeVariableName}">
-                    <pre ng-non-bindable>${highlightCode}</pre>
-                </div>`
-            } else {
-                highlightCode = highlight.highlight(lang, code).value
+                <div ng-show="${scopeVariableName}">
+                    <pre class="oui-doc-code" ng-non-bindable>${highlightCode}</pre>
+                </div>`;
             }
+
+            highlightCode = highlight.highlight(lang, code).value;
+
+            return `<pre class="oui-doc-code oui-doc-code_${lang}">${highlightCode}</pre>`;
         }
 
-        return `<pre class="oui-showcase__code">${highlightCode}</pre>`
+        return `<pre class="oui-doc-code">${highlightCode}</pre>`;
+    }
+
+    codespan (code) {
+        return `<code class="oui-doc-codespan">${code}</code>`;
     }
 
     table (header, body) {
