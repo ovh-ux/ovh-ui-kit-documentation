@@ -4964,9 +4964,9 @@ ovh-documentation-toolkit@^1.2.0:
     angular "^1.7.4"
     lodash "^4.17.11"
 
-ovh-ui-angular@^2.21.1:
-  version "2.21.1"
-  resolved "https://nexus.ovh.net/nexus3/repository/npm-all/ovh-ui-angular/-/ovh-ui-angular-2.21.1.tgz#e342434ae590602dc4a1af1f1e86fdb42768aeaa"
+ovh-ui-angular@^2.21.2:
+  version "2.21.2"
+  resolved "https://nexus.ovh.net/nexus3/repository/npm-all/ovh-ui-angular/-/ovh-ui-angular-2.21.2.tgz#051b8e3cf12107966f8ef992e94560a49a7596d4"
   dependencies:
     angular ">=1.6.x"
     angular-aria ">=1.6.x"
@@ -4983,9 +4983,9 @@ ovh-ui-kit@^2.20.0:
   dependencies:
     less-plugin-remcalc "^0.1.0"
 
-ovh-ui-kit@^2.21.0:
-  version "2.21.0"
-  resolved "https://nexus.ovh.net/nexus3/repository/npm-all/ovh-ui-kit/-/ovh-ui-kit-2.21.0.tgz#ec6b523ff82b1d8f3149d9bcf980651630d6120d"
+ovh-ui-kit@^2.21.2:
+  version "2.21.2"
+  resolved "https://nexus.ovh.net/nexus3/repository/npm-all/ovh-ui-kit/-/ovh-ui-kit-2.21.2.tgz#8ee42c45cc88361dab3e3707fde32148c0577d1e"
   dependencies:
     less-plugin-remcalc "^0.1.0"
 
