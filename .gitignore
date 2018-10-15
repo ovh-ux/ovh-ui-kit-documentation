@@ -1,6 +1,0 @@
-node_modules
-dist
-!dist/module.js
-!dist/module.js.map
-*.log
-package-lock.json
