@@ -9,7 +9,6 @@ import "highlightjs/styles/vs.css";
 
 import "./index.less";
 
-import componentStatusConfig from "./init/component-status.config";
 import DocumentationComponents from "./components";
 import DocumentationRoutes from "./documentation/documentation.routes";
 import OvhUiAngularRoutes from "./ovh-ui-angular/ovh-ui-angular.routes";
@@ -24,7 +23,6 @@ const app = angular
         "oui",
         DocumentationComponents
     ])
-    .config(componentStatusConfig)
     .config(DocumentationRoutes)
     .config(OvhUiKitRoutes)
     .config(OvhUiAngularRoutes);

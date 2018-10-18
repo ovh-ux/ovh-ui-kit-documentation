@@ -4,7 +4,7 @@ export default function ($stateProvider) {
     $stateProvider
         .state("showcase", {
             redirectTo: "showcase.documentation",
-            template: "<showcase-ui></showcase-ui>"
+            template: "<oui-showcase></oui-showcase>"
         })
         .state("root", {
             url: "",

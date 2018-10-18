@@ -1,33 +1,27 @@
 // oui-showcase
 ui-view,
-showcase-ui { display: block; }
+oui-showcase { display: block; }
 
-.oui-showcase__navbar {
-  user-select: none;
-
-  .oui-select {
-    margin: 0 rem-calc(15);
-  }
-
-  .oui-navbar__title-icon {
+.oui-navbar__title {
+  &-icon {
     vertical-align: top;
     font-size: rem-calc(44);
     color: inherit;
   }
 
-  .oui-navbar__title-bold,
-  .oui-navbar__title-small {
+  &-bold,
+  &-small {
     display: inline-block;
     font-size: rem-calc(28);
     color: #fff;
   }
 
-  .oui-navbar__title-bold {
+  &-bold {
     margin-left: rem-calc(15);
     font-weight: 600;
   }
 
-  .oui-navbar__title-small {
+  &-small {
     margin-left: rem-calc(2);
     font-weight: 300;
   }
@@ -38,7 +32,7 @@ showcase-ui { display: block; }
   position: relative;
 }
 
-.oui-showcase__main {
+.oui-showcase__content {
   display: block;
   padding-top: rem-calc(44);
   position: relative;
@@ -55,23 +49,13 @@ showcase-ui { display: block; }
   overflow-y: auto;
 }
 
-.oui-showcase__section {
-  padding: rem-calc(32);
-  margin-left: rem-calc(300);
-  background: #fff;
+.oui-showcase__main {
+    margin-left: rem-calc(300);
+    background: #fff;
 }
 
-.oui-showcase__theme-selector {
-  .oui-select {
-    float: right;
-    margin: 0;
-  }
-
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.oui-showcase__view {
+  padding: rem-calc(32);
 }
 
 .oui-showcase__code {
@@ -133,7 +117,7 @@ showcase-ui { display: block; }
     top: 0;
   }
 
-  .oui-showcase__section {
+  .oui-showcase__main {
     width: 100%;
     margin-left: 0;
   }

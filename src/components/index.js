@@ -1,20 +1,13 @@
-import ComponentStatus from "./component-status/component-status.component";
-import ComponentStatusProvider from "./component-status/component-status.provider";
-import IndeterminateDirective from "./indeterminate.directive";
-import redirectToInit from "./init/redirectTo.run";
+import ComponentStatus from "./component-status";
 import rootRoutes from "./index.routes";
-import Showcase from "./showcase/showcase.component";
-import StateHelpers from "./state-helpers/state-helpers.service";
+import Showcase from "./showcase";
 
 export default angular
-    .module("ovh-ui-kit-documentation-components", [
-        "oui", "ui.router"
+    .module("oui-doc.components", [
+        "oui",
+        "ui.router",
+        ComponentStatus,
+        Showcase
     ])
-    .component("componentStatus", ComponentStatus)
-    .component("showcaseUi", Showcase)
-    .directive("indeterminate", IndeterminateDirective)
-    .provider("ComponentStatus", ComponentStatusProvider)
-    .service("StateHelpers", StateHelpers)
     .config(rootRoutes)
-    .run(redirectToInit)
     .name;
