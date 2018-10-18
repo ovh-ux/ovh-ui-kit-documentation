@@ -7,7 +7,7 @@ import baseConfig from './webpack.base.config'
 
 const __root = path.join(__dirname, '..')
 
-const exclude = [/node_modules(?!\/ovh-documentation-toolkit)/, /dist/]
+const exclude = [/node_modules/, /dist/]
 
 export default merge(baseConfig, {
     mode: "production",

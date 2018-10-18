@@ -1,0 +1,55 @@
+<header>
+    <oui-navbar fixed
+        active-link="{{$ctrl.currentSecondLevelStateName}}"
+        brand="{
+            title: 'OVH UIKit',
+            url: '#',
+            iconClass: 'oui-icon oui-icon-ovh'
+        }"
+        main-links="$ctrl.mainLinks">
+    </oui-navbar>
+</header>
+<div class="oui-showcase__main">
+    <div class="oui-showcase__content">
+        <nav class="oui-sidebar oui-showcase__sidenav" role="complementary">
+            <div class="oui-sidebar-menu">
+                <ul class="oui-sidebar-list">
+                    <li class="oui-sidebar-list__item"
+                        ng-repeat="groupKey in $ctrl.secondLevelsChildren[$ctrl.currentSecondLevelStateName].groupsOrder track by $index"
+                        ui-sref-active="oui-sidebar-list__item_active">
+                        <span class="oui-sidebar-link"
+                            ng-if="groupKey === 'undefined'"
+                            ng-bind="$ctrl.secondLevelsChildren[$ctrl.currentSecondLevelStateName].name">
+                        </span>
+                        <span class="oui-sidebar-link"
+                            ng-if="groupKey !== 'undefined'"
+                            ng-bind="$ctrl.secondLevelsChildren[$ctrl.currentSecondLevelStateName].groups[groupKey].name || groupKey">
+                        </span>
+                        <div class="oui-sidebar-menu">
+                            <ul class="oui-sidebar-list">
+                                <li class="oui-sidebar-list__item"
+                                    ng-repeat="child in $ctrl.secondLevelsChildren[$ctrl.currentSecondLevelStateName].children[groupKey] track by child.state">
+                                    <a class="oui-sidebar-link"
+                                        ng-bind="child.name"
+                                        ui-sref="{{child.state}}"
+                                        ui-sref-active="oui-sidebar-link_active">
+                                    </a>
+                                </li>
+                                <li class="oui-sidebar-list__item"
+                                    ng-if="!$ctrl.secondLevelsChildren[$ctrl.currentSecondLevelStateName].groupsOrder.length">
+                                    No children state found under the state {{ $ctrl.currentSecondLevelStateName }}.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="oui-showcase__section">
+            <ui-view class="oui-showcase__section-content"
+                ng-class="$ctrl.theme"
+                autoscroll="true">
+            </ui-view>
+        </main>
+    </div>
+</div>

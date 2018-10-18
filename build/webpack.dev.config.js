@@ -8,7 +8,7 @@ import baseConfig from './webpack.base.config'
 
 const __root = path.join(__dirname, '..')
 
-const exclude = [/node_modules(?!\/ovh-documentation-toolkit)/, /dist/]
+const exclude = [/node_modules/, /dist/]
 
 const client = 'webpack-hot-middleware/client?noInfo=true&reload=true'
 const server = 'webpack/hot/dev-server'
