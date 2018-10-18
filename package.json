@@ -1,6 +1,6 @@
 {
   "name": "ovh-ui-kit-documentation",
-  "version": "2.21.2",
+  "version": "2.21.3",
   "description": "The documentation and showcase application for OVH UI Kit.",
   "license": "BSD-3-Clause",
   "scripts": {
@@ -29,8 +29,8 @@
     "flatpickr": "^4.5.2",
     "lodash": "^4.17.11",
     "ovh-documentation-toolkit": "^1.2.0",
-    "ovh-ui-angular": "^2.21.2",
-    "ovh-ui-kit": "^2.21.4"
+    "ovh-ui-angular": "^2.21.3",
+    "ovh-ui-kit": "^2.21.5"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
@@ -46,7 +46,6 @@
     "babel-register": "^6.26.0",
     "bootstrap": "^4.1.3",
     "cheerio": "^1.0.0-rc.2",
-    "copy-webpack-plugin": "^4.5.2",
     "cross-env": "^5.2.0",
     "css-loader": "^1.0.0",
     "eslint": "^4.3.0",
