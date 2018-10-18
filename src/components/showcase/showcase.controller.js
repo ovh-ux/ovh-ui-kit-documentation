@@ -1,25 +1,30 @@
 import _ from "lodash";
 
 export default class ShowcaseController {
-    constructor ($state, $transitions, StateHelpers) {
+    constructor ($state, $transitions, ShowcaseService) {
         "ngInject";
 
         this.$state = $state;
-        this.StateHelpers = StateHelpers;
-        this.rootState = "showcase";
+        this.$transitions = $transitions;
+        this.ShowcaseService = ShowcaseService;
 
-        this.rootChildren = this.getOrderedChildrenState(this.rootState);
-        this.secondLevelsChildren = this.getSecondLevelsChildren();
         this.currentItemExpanded = 0;
-        this.currentSecondLevelStateName = this.getCurrentSecondLevelStateName();
 
         this.mainLinks = [];
+
+        this.rootState = "showcase";
+    }
+
+    $onInit () {
+        this.rootChildren = this.getOrderedChildrenState(this.rootState);
+        this.secondLevelsChildren = this.getSecondLevelsChildren();
+        this.currentSecondLevelStateName = this.getCurrentSecondLevelStateName();
 
         this.mainLinks.push(...this.rootChildren.map(rootChild => ({
             name: rootChild.state,
             title: rootChild.name,
             isPrimary: true,
-            url: $state.href(rootChild.state)
+            url: this.$state.href(rootChild.state)
         })));
 
         this.mainLinks.forEach(link => {
@@ -49,7 +54,7 @@ export default class ShowcaseController {
             link.subLinks = subLinks;
         });
 
-        $transitions.onStart({}, trans => {
+        this.$transitions.onStart({}, trans => {
             this.currentSecondLevelStateName = ShowcaseController.getSecondLevelStateName(trans.$to().name);
         });
     }
@@ -62,12 +67,8 @@ export default class ShowcaseController {
         }));
     }
 
-    $onDestroy () {
-        this.stateChangeSuccessHandler();
-    }
-
     getOrderedChildrenState (stateName) {
-        let childrenState = _.sortBy(this.StateHelpers.getChildren(stateName), (childState) => -1 * _.get(childState, "weight", 0));
+        let childrenState = _.sortBy(this.ShowcaseService.getChildren(stateName), (childState) => -1 * _.get(childState, "weight", 0));
         childrenState = _.map(childrenState, (childState) => ({
             state: childState.name,
             name: _.get(childState, "friendlyName", `<unnamed state: ${childState.name}>`),

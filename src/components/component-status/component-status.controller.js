@@ -1,4 +1,5 @@
-import { capitalize, find } from "lodash";
+import capitalize from "lodash/capitalize";
+import find from "lodash/find";
 
 const LEVELS_ORDER = ["error", "warning", "info", "success"];
 
