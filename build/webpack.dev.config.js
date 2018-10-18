@@ -3,7 +3,6 @@ import _ from 'lodash'
 import merge from 'webpack-merge'
 import webpack from 'webpack'
 import autoprefixer from 'autoprefixer'
-import CopyWebpackPlugin from 'copy-webpack-plugin'
 import RemcalcPlugin from 'less-plugin-remcalc'
 import baseConfig from './webpack.base.config'
 
