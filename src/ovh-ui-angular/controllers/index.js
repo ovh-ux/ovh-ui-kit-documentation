@@ -11,7 +11,7 @@ import selectController from "./select.controller";
 import showCurrentValueInPopupController from "./show-current-value-in-popup.controller";
 import stepperController from "./stepper.controller";
 
-angular.module("ovh-ui-kit-documentation")
+angular.module("app")
     .controller("CalendarCtrl", calendarController)
     .controller("CriteriaAdderCtrl", criteriaAdderController)
     .controller("ChipsCtrl", chipsController)
