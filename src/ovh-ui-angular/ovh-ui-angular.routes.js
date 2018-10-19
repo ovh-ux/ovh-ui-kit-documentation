@@ -15,7 +15,7 @@ export default function ($stateProvider) {
             friendlyName: "Components",
             groupName: "Getting started",
             redirectTo: "showcase.oui-angular.introduction",
-            template: "<ui-view></ui-view>",
+            template: "<div ui-view></div>",
             weight: 9000,
             groups: {
                 layout: {

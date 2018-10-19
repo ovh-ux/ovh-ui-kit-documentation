@@ -1,6 +1,5 @@
 <header class="oui-showcase__header">
     <oui-navbar fixed
-        active-link="{{$ctrl.currentSecondLevelStateName}}"
         brand="{
             title: 'OVH UIKit',
             url: '#',
@@ -34,10 +33,6 @@
                                     ui-sref-active="oui-sidebar-link_active">
                                 </a>
                             </li>
-                            <li class="oui-sidebar-list__item"
-                                ng-if="!$ctrl.secondLevelsChildren[$ctrl.currentSecondLevelStateName].groupsOrder.length">
-                                No children state found under the state {{ $ctrl.currentSecondLevelStateName }}.
-                            </li>
                         </ul>
                     </div>
                 </li>
@@ -45,6 +40,9 @@
         </div>
     </nav>
     <main class="oui-showcase__main">
-        <ui-view class="oui-showcase__view" autoscroll="true"></ui-view>
+        <div class="oui-showcase__view"
+            autoscroll="true"
+            ui-view>
+        </ui-view>
     </main>
 </div>

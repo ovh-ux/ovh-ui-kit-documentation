@@ -15,7 +15,7 @@ export default function ($stateProvider) {
             friendlyName: "Styles",
             groupName: "Getting started",
             redirectTo: "showcase.ovh-ui-kit.introduction",
-            template: "<ui-view></ui-view>",
+            template: "<div ui-view></div>",
             weight: 9000,
             groups: {
                 layout: {
@@ -55,7 +55,7 @@ export default function ($stateProvider) {
         // Isolated routes
         .state("isolated-ovh-ui-kit", {
             url: "/isolated-ovh-ui-kit",
-            template: "<ui-view></ui-view>"
+            template: "<div ui-view></div>"
         });
 
     templateUtils.addLessComponentStates($stateProvider, templates, config);

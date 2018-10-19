@@ -15,7 +15,7 @@ import OvhUiAngularRoutes from "./ovh-ui-angular/ovh-ui-angular.routes";
 import OvhUiKitRoutes from "./ovh-ui-kit/ovh-ui-kit.routes";
 
 const app = angular
-    .module("ovh-ui-kit-documentation", [
+    .module("app", [
         "ngAria",
         "ngMessages",
         "ngSanitize",

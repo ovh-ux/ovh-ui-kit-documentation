@@ -1,13 +1,13 @@
 import ComponentStatus from "./component-status";
-import rootRoutes from "./index.routes";
+import Routes from "./index.routes";
 import Showcase from "./showcase";
 
 export default angular
-    .module("oui-doc.components", [
+    .module("app.components", [
         "oui",
         "ui.router",
         ComponentStatus,
         Showcase
     ])
-    .config(rootRoutes)
+    .config(Routes)
     .name;
