@@ -1,4 +1,4 @@
-import _ from "lodash";
+import capitalize from "lodash/capitalize";
 
 class TemplateUtils {
     static loadLessReadme () {
@@ -15,7 +15,7 @@ class TemplateUtils {
         Object.keys(templates).forEach(templateName => {
             const templateConfig = {
                 url: `/${templateName}`,
-                friendlyName: _.capitalize(templateName),
+                friendlyName: capitalize(templateName),
                 ...config[templateName]
             };
 
@@ -37,7 +37,7 @@ class TemplateUtils {
         Object.keys(templates).forEach(templateName => {
             const templateConfig = {
                 url: `/${templateName}`,
-                friendlyName: _.capitalize(templateName),
+                friendlyName: capitalize(templateName),
                 ...config[templateName]
             };
 
