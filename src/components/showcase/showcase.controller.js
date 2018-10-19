@@ -1,17 +1,24 @@
-import _ from "lodash";
+import fromPairs from "lodash/fromPairs";
+import get from "lodash/get";
+import groupBy from "lodash/groupBy";
+import join from "lodash/join";
+import map from "lodash/map";
+import orderBy from "lodash/orderBy";
+import sortBy from "lodash/sortBy";
+import split from "lodash/split";
+import take from "lodash/take";
 
 export default class ShowcaseController {
-    constructor ($state, $transitions, ShowcaseService) {
+    constructor ($state, $transitions, $window, ShowcaseService) {
         "ngInject";
 
         this.$state = $state;
         this.$transitions = $transitions;
+        this.$window = $window;
         this.ShowcaseService = ShowcaseService;
 
         this.currentItemExpanded = 0;
-
         this.mainLinks = [];
-
         this.rootState = "showcase";
     }
 
@@ -24,7 +31,7 @@ export default class ShowcaseController {
             name: rootChild.state,
             title: rootChild.name,
             isPrimary: true,
-            url: this.$state.href(rootChild.state)
+            state: rootChild.state
         })));
 
         this.mainLinks.forEach(link => {
@@ -55,6 +62,7 @@ export default class ShowcaseController {
         });
 
         this.$transitions.onStart({}, trans => {
+            this.$window.scrollTo(0, 0);
             this.currentSecondLevelStateName = ShowcaseController.getSecondLevelStateName(trans.$to().name);
         });
     }
@@ -68,35 +76,35 @@ export default class ShowcaseController {
     }
 
     getOrderedChildrenState (stateName) {
-        let childrenState = _.sortBy(this.ShowcaseService.getChildren(stateName), (childState) => -1 * _.get(childState, "weight", 0));
-        childrenState = _.map(childrenState, (childState) => ({
+        let childrenState = sortBy(this.ShowcaseService.getChildren(stateName), (childState) => -1 * get(childState, "weight", 0));
+        childrenState = map(childrenState, (childState) => ({
             state: childState.name,
-            name: _.get(childState, "friendlyName", `<unnamed state: ${childState.name}>`),
-            groups: _.get(childState, "groups"),
-            group: _.get(childState, "group")
+            name: get(childState, "friendlyName", `<unnamed state: ${childState.name}>`),
+            groups: get(childState, "groups"),
+            group: get(childState, "group")
         }));
         return childrenState;
     }
 
     getOrderedAndGroupedChildrenState (stateName) {
-        return _.groupBy(this.getOrderedChildrenState(stateName), "group");
+        return groupBy(this.getOrderedChildrenState(stateName), "group");
     }
 
     static getGroupsOrder (orderedAndGroupedChildrenState, groupsDetails) {
         const keys = Object.keys(orderedAndGroupedChildrenState);
-        return _.orderBy(keys, groupName =>
+        return orderBy(keys, groupName =>
 
             // The -9999 weigth is arbitrary, it is only to keep the
             // ungrouped element at the beginning of the list so the
             // user can use negative and positive values.
-            groupName === "undefined" ? -Infinity : -1 * _.get(groupsDetails, [groupName, "weight"], 0)
+            groupName === "undefined" ? -Infinity : -1 * get(groupsDetails, [groupName, "weight"], 0)
         );
     }
 
     getSecondLevelsChildren () {
-        let secondLevelsChildren = _.map(this.rootChildren, (rootChild) => {
+        let secondLevelsChildren = map(this.rootChildren, (rootChild) => {
             const orderedAndGroupedChildrenState = this.getOrderedAndGroupedChildrenState(rootChild.state);
-            const groupsDetails = _.get(rootChild, "groups");
+            const groupsDetails = get(rootChild, "groups");
 
             return [rootChild.state, {
                 name: this.getSecondLevelGroupName(rootChild.state),
@@ -105,14 +113,14 @@ export default class ShowcaseController {
                 groups: groupsDetails
             }];
         });
-        secondLevelsChildren = _.fromPairs(secondLevelsChildren);
+        secondLevelsChildren = fromPairs(secondLevelsChildren);
         return secondLevelsChildren;
     }
 
     static getSecondLevelStateName (stateName) {
-        let secondLevelStateName = _.split(stateName, ".");
-        secondLevelStateName = _.take(secondLevelStateName, 2);
-        secondLevelStateName = _.join(secondLevelStateName, ".");
+        let secondLevelStateName = split(stateName, ".");
+        secondLevelStateName = take(secondLevelStateName, 2);
+        secondLevelStateName = join(secondLevelStateName, ".");
         return secondLevelStateName;
     }
 
@@ -121,7 +129,7 @@ export default class ShowcaseController {
     }
 
     getSecondLevelGroupName (stateName) {
-        return _.get(this.$state.get(stateName), "groupName", `<groupName property missing on state ${stateName}>`);
+        return get(this.$state.get(stateName), "groupName", `<groupName property missing on state ${stateName}>`);
     }
 
     updateSecondLevelInformation (state) {

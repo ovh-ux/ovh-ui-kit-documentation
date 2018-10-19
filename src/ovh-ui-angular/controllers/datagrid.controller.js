@@ -1,6 +1,10 @@
-import _ from "lodash";
 import data from "ovh-ui-angular/packages/oui-datagrid/src/index.spec.data.json";
+import find from "lodash/find";
+import get from "lodash/get";
+import map from "lodash/map";
 import metaData from "./data/datagrid.data.json";
+import noop from "lodash/noop";
+import pick from "lodash/pick";
 import servers from "ovh-ui-angular/packages/oui-datagrid/src/servers.spec.data.json";
 
 const defaultSliceSize = 50;
@@ -24,7 +28,7 @@ export default class {
             this.data = data;
             this.servers = servers;
 
-            this.partialData = _.map(data.slice(0, defaultSliceSize), line => _.pick(line, ["firstName", "lastName"]));
+            this.partialData = map(data.slice(0, defaultSliceSize), line => pick(line, ["firstName", "lastName"]));
         }, 1000); // eslint-disable-line no-magic-numbers
 
         this.label = "value";
@@ -44,12 +48,12 @@ export default class {
                 switch (criterion.operator) {
                 case "contains":
                     filteredData = filteredData.filter(item => {
-                        const value = _.get(item, criterion.property);
+                        const value = get(item, criterion.property);
                         const pattern = new RegExp(criterion.value, "i");
                         return pattern.test(value);
                     });
                     break;
-                default: _.noop();
+                default: noop();
                 }
             }
 
@@ -63,7 +67,7 @@ export default class {
         return new Promise(resolve => {
             setTimeout(() => {
                 resolve({
-                    data: _.map(page, line => _.pick(line, ["firstName", "lastName"])),
+                    data: map(page, line => pick(line, ["firstName", "lastName"])),
                     meta: {
                         currentOffset: offset,
                         pageCount: Math.ceil(filteredData.length / pageSize),
@@ -78,7 +82,7 @@ export default class {
     loadRow ({ firstName, lastName }) { // eslint-disable-line
         return new Promise(resolve => {
             setTimeout(() => {
-                resolve(_.find(data, { firstName, lastName }));
+                resolve(find(data, { firstName, lastName }));
             }, 500 + 1000 * Math.random()); // eslint-disable-line
         });
     }
