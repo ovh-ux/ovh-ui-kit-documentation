@@ -33,6 +33,10 @@ export default class SelectController {
         });
     }
 
+    disableItems ($item) {
+        return this.countries.indexOf($item) % 2 === 1;
+    }
+
     onFocus () {
         this.onFocusCounter++;
     }
