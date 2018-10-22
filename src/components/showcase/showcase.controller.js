@@ -92,13 +92,11 @@ export default class ShowcaseController {
 
     static getGroupsOrder (orderedAndGroupedChildrenState, groupsDetails) {
         const keys = Object.keys(orderedAndGroupedChildrenState);
-        return orderBy(keys, groupName =>
 
-            // The -9999 weigth is arbitrary, it is only to keep the
-            // ungrouped element at the beginning of the list so the
-            // user can use negative and positive values.
-            groupName === "undefined" ? -Infinity : -1 * get(groupsDetails, [groupName, "weight"], 0)
-        );
+        // The -9999 weigth is arbitrary, it is only to keep the
+        // ungrouped element at the beginning of the list so the
+        // user can use negative and positive values.
+        return orderBy(keys, groupName => groupName === "undefined" ? -Infinity : -1 * get(groupsDetails, [groupName, "weight"], 0));
     }
 
     getSecondLevelsChildren () {

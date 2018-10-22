@@ -12,7 +12,8 @@
     "preview-changelog": "npm-scripts-config preview-changelog",
     "start": "cross-env NODE_ENV=dev babel-node ./build/server",
     "serve:dist": "opn http://localhost:8080 && static dist",
-    "build": "rimraf dist && cross-env NODE_ENV=production webpack --progress --color --hide-modules --config ./build/webpack.dist.config.babel.js",
+    "build": "rimraf dist && cross-env NODE_ENV=production webpack --progress --color --hide-modules --config ./build/webpack.dist.config.js",
+    "lint:js": "eslint --fix .",
     "test": "echo \"no tests for this project\""
   },
   "config": {
@@ -51,6 +52,7 @@
     "eslint-config-ovh": "^0.1.1",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.14.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",

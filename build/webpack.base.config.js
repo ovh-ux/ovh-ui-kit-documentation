@@ -1,22 +1,21 @@
-import fs from 'fs'
-import path from 'path'
-import _ from 'lodash'
-import webpack from 'webpack'
-import formatter from 'eslint-friendly-formatter'
-import HtmlWebpackPlugin from 'html-webpack-plugin'
+import formatter from "eslint-friendly-formatter";
+import fs from "fs";
+import HtmlWebpackPlugin from "html-webpack-plugin";
 import LodashModuleReplacementPlugin from "lodash-webpack-plugin";
+import path from "path";
+import template from "lodash/template";
+import webpack from "webpack";
 
-const __root = path.join(__dirname, '..')
-
-const exclude = [/node_modules(?![\/\\](ovh-ui-angular))/, /dist/]
+const rootPath = path.join(__dirname, "..");
+const exclude = [/node_modules(?![\/\\](ovh-ui-angular))/, /dist/];
 
 export default {
-    context: __root,
+    context: rootPath,
     entry: {
-        app: [path.resolve(__root, 'src', 'index.js')]
+        app: [path.resolve(rootPath, "src", "index.js")]
     },
     output: {
-        filename: '[name]-[hash].js'
+        filename: "[name]-[hash].js"
     },
 
     // To be removed when using yarn workspaces
@@ -28,8 +27,8 @@ export default {
     },
     resolveLoader: {
         alias: {
-            'markdown-loader': path.join(__dirname, 'loaders', 'markdown-loader'),
-            'templatePreview-loader': path.join(__dirname, 'loaders', 'template-preview-loader')
+            "markdown-loader": path.join(__dirname, "loaders", "markdown-loader"),
+            "templatePreview-loader": path.join(__dirname, "loaders", "template-preview-loader")
         }
     },
     performance: {
@@ -37,7 +36,7 @@ export default {
     },
     plugins: [
         new webpack.DefinePlugin({
-            'process.env': process.env.NODE_ENV
+            "process.env": process.env.NODE_ENV
         }),
         new LodashModuleReplacementPlugin({
             shorthands: true,
@@ -48,9 +47,9 @@ export default {
         new HtmlWebpackPlugin({
             inject: false,
             templateContent: (parameters) => {
-                const templatePath = path.join(__root, 'src', 'index.html')
-                const fn = _.template(fs.readFileSync(templatePath))
-                return fn({ assets: parameters.htmlWebpackPlugin.files })
+                const templatePath = path.join(rootPath, "src", "index.html");
+                const fn = template(fs.readFileSync(templatePath));
+                return fn({ assets: parameters.htmlWebpackPlugin.files });
             }
         })
     ],
@@ -58,11 +57,11 @@ export default {
         rules: [
             {
                 test: /\.js$/,
-                enforce: 'pre',
+                enforce: "pre",
                 exclude,
                 use: [
                     {
-                        loader: 'eslint-loader',
+                        loader: "eslint-loader",
                         options: {
                             formatter
                         }
@@ -79,20 +78,20 @@ export default {
             {
                 test: /\.css$/,
                 use: [
-                    'style-loader',
-                    'css-loader'
+                    "style-loader",
+                    "css-loader"
                 ]
             },
             {
                 test: /\.md$/,
                 use: [
                     {
-                        loader: 'html-loader',
+                        loader: "html-loader",
                         options: {
                             interpolate: true
                         }
                     },
-                    'markdown-loader'
+                    "markdown-loader"
                 ]
             },
             {
@@ -100,7 +99,7 @@ export default {
                 exclude,
                 use: [
                     {
-                        loader: 'html-loader',
+                        loader: "html-loader",
                         options: {
                             interpolate: true,
                             minimize: true
@@ -112,7 +111,7 @@ export default {
                 test: /\.(woff2?|ttf|eot|otf|svg)$/,
                 use: [
                     {
-                        loader: 'url-loader',
+                        loader: "url-loader",
                         options: {
                             limit: 10000
                         }
@@ -121,4 +120,4 @@ export default {
             }
         ]
     }
-}
+};

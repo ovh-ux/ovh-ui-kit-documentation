@@ -15,6 +15,5 @@ export default class {
         // Simulate a promise for togglerLinks
         const delay = 2500;
         this.$timeout(() => (this.togglerLinks = angular.copy(data.mainLinks)), delay);
-
     }
 }

@@ -50,12 +50,6 @@ export default function ($stateProvider) {
             url: "/changelog",
             friendlyName: "Changelog",
             template: changelogTemplate
-        })
-
-        // Isolated routes
-        .state("isolated-ovh-ui-kit", {
-            url: "/isolated-ovh-ui-kit",
-            template: "<div ui-view></div>"
         });
 
     templateUtils.addLessComponentStates($stateProvider, templates, config);

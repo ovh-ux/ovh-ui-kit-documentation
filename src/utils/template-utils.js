@@ -24,12 +24,6 @@ class TemplateUtils {
                 ...templateConfig,
                 template: templates[templateName].template
             });
-
-            // Create isolated component route
-            $stateProvider.state(`isolated-ovh-ui-kit.${templateName}`, {
-                ...templateConfig,
-                template: templates[templateName].preview
-            });
         });
     }
 

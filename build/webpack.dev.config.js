@@ -1,22 +1,21 @@
-import path from 'path'
-import _ from 'lodash'
-import merge from 'webpack-merge'
-import webpack from 'webpack'
-import autoprefixer from 'autoprefixer'
-import RemcalcPlugin from 'less-plugin-remcalc'
-import baseConfig from './webpack.base.config'
+import autoprefixer from "autoprefixer";
+import baseConfig from "./webpack.base.config";
+import cloneDeep from "lodash/cloneDeep";
+import merge from "webpack-merge";
+import path from "path";
+import RemcalcPlugin from "less-plugin-remcalc";
+import webpack from "webpack";
 
-const __root = path.join(__dirname, '..')
+const rootPath = path.join(__dirname, "..");
+const exclude = [/node_modules/, /dist/];
 
-const exclude = [/node_modules/, /dist/]
-
-const client = 'webpack-hot-middleware/client?noInfo=true&reload=true'
-const server = 'webpack/hot/dev-server'
-const config = _.cloneDeep(baseConfig)
+const client = "webpack-hot-middleware/client?noInfo=true&reload=true";
+const server = "webpack/hot/dev-server";
+const config = cloneDeep(baseConfig);
 
 export default merge(config, {
     mode: "development",
-    devtool: 'source-map',
+    devtool: "source-map",
     entry: {
         app: [
             client,
@@ -24,15 +23,15 @@ export default merge(config, {
         ]
     },
     output: {
-        path: path.join(__root, 'dist'),
-        publicPath: ''
+        path: path.join(rootPath, "dist"),
+        publicPath: ""
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin()
     ],
     resolve: {
-        mainFields: ['module', 'main']
+        mainFields: ["module", "main"]
     },
     module: {
         rules: [
@@ -41,30 +40,30 @@ export default merge(config, {
                 exclude,
                 use: [
                     {
-                        loader: 'style-loader',
+                        loader: "style-loader",
                         options: {
                             sourceMap: true
                         }
                     },
                     {
-                        loader: 'css-loader',
+                        loader: "css-loader",
                         options: {
                             sourceMap: true
                         }
                     },
                     {
-                        loader: 'postcss-loader',
+                        loader: "postcss-loader",
                         options: {
                             sourceMap: true,
                             plugins: () => [
                                 autoprefixer({
-                                    browsers: ['last 2 versions', 'ie 11']
+                                    browsers: ["last 2 versions", "ie 11"]
                                 })
                             ]
                         }
                     },
                     {
-                        loader: 'less-loader',
+                        loader: "less-loader",
                         options: {
                             sourceMap: true,
                             plugins: [RemcalcPlugin]
@@ -74,4 +73,4 @@ export default merge(config, {
             }
         ]
     }
-})
+});

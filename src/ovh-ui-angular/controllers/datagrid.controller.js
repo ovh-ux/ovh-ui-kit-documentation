@@ -36,14 +36,15 @@ export default class {
         this.loadDatagridParameters();
     }
 
-    loadPartialData ({ offset, pageSize, sort, criteria }) {
+    loadPartialData ({
+        offset, pageSize, sort, criteria
+    }) {
         let filteredData = data;
         criteria.forEach(criterion => {
             if (criterion.property === null && criterion.operator === "contains") {
                 const pattern = new RegExp(criterion.value, "i"); // Naive implementation here...
                 filteredData = filteredData.filter(row => pattern.test(row.firstName) ||
-                    pattern.test(row.lastName)
-                );
+                    pattern.test(row.lastName));
             } else if (criterion.property && criterion.value !== undefined) {
                 switch (criterion.operator) {
                 case "contains":
@@ -56,8 +57,6 @@ export default class {
                 default: noop();
                 }
             }
-
-
         });
 
         const sortedData = sort.property ? this.orderBy(filteredData, sort.property, sort.dir === -1) : data;
@@ -120,3 +119,4 @@ export default class {
         this.saveToLocalStorage("datagridsParams", this.datagridParameters);
     }
 }
+/* eslint-enable class-methods-use-this */
