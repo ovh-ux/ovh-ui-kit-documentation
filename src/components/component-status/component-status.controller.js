@@ -12,9 +12,7 @@ export default class {
     }
 
     getMessageType () {
-        return find(LEVELS_ORDER, (level) =>
-            this.ComponentStatus.findMessageTypeFunc(level, this.cxDesign, this.ux)
-        );
+        return find(LEVELS_ORDER, (level) => this.ComponentStatus.findMessageTypeFunc(level, this.cxDesign, this.ux));
     }
 
     getCXDesignText () {
