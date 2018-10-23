@@ -10,6 +10,7 @@
   "plugins": [
     ["angularjs-annotate", { "explicitOnly" : true }],
     "lodash",
+    "syntax-dynamic-import",
     "transform-runtime"
   ],
   "comments": false

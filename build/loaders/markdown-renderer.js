@@ -1,10 +1,9 @@
-import cheerio from "cheerio";
-import highlight from "highlightjs";
-import marked from "marked";
-
+const cheerio = require("cheerio");
+const highlight = require("highlightjs");
+const marked = require("marked");
 
 /* eslint-disable class-methods-use-this */
-export default class MarkdownRenderer extends marked.Renderer {
+module.exports = class MarkdownRenderer extends marked.Renderer {
     constructor () {
         super();
 
@@ -93,5 +92,5 @@ export default class MarkdownRenderer extends marked.Renderer {
         }
         return `<td class="oui-datagrid__cell">${content}</td>`;
     }
-}
+};
 /* eslint-enable class-methods-use-this */

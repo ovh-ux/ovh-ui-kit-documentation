@@ -1,14 +1,14 @@
-import autoprefixer from "autoprefixer";
-import baseConfig from "./webpack.base.config";
-import ExtractTextPlugin from "extract-text-webpack-plugin";
-import merge from "webpack-merge";
-import path from "path";
-import RemcalcPlugin from "less-plugin-remcalc";
+const autoprefixer = require("autoprefixer");
+const baseConfig = require("./webpack.base.config");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const merge = require("webpack-merge");
+const path = require("path");
+const RemcalcPlugin = require("less-plugin-remcalc");
 
 const rootPath = path.join(__dirname, "..");
 const exclude = [/node_modules/, /dist/];
 
-export default merge(baseConfig, {
+module.exports = merge(baseConfig, {
     mode: "production",
     resolve: {
         mainFields: ["module", "main"]

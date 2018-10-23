@@ -1,10 +1,10 @@
-import express from "express";
-import opn from "opn";
-import portScanner from "portscanner";
-import webpack from "webpack";
-import webpackConfig from "./webpack.dev.config";
-import webpackDevMiddleware from "webpack-dev-middleware";
-import webpackHotMiddleware from "webpack-hot-middleware";
+const express = require("express");
+const opn = require("opn");
+const portScanner = require("portscanner");
+const webpack = require("webpack");
+const webpackConfig = require("./webpack.dev.config");
+const webpackDevMiddleware = require("webpack-dev-middleware");
+const webpackHotMiddleware = require("webpack-hot-middleware");
 
 const app = express();
 const port3000 = 3000;

@@ -1,15 +1,15 @@
-import formatter from "eslint-friendly-formatter";
-import fs from "fs";
-import HtmlWebpackPlugin from "html-webpack-plugin";
-import LodashModuleReplacementPlugin from "lodash-webpack-plugin";
-import path from "path";
-import template from "lodash/template";
-import webpack from "webpack";
+const formatter = require("eslint-friendly-formatter");
+const fs = require("fs");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const LodashModuleReplacementPlugin = require("lodash-webpack-plugin");
+const path = require("path");
+const template = require("lodash/template");
+const webpack = require("webpack");
 
 const rootPath = path.join(__dirname, "..");
 const exclude = [/node_modules(?![\/\\](ovh-ui-angular))/, /dist/];
 
-export default {
+module.exports = {
     context: rootPath,
     entry: {
         app: [path.resolve(rootPath, "src", "index.js")]

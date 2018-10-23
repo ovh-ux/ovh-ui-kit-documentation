@@ -1,4 +1,4 @@
-import markdownLoader from "./markdown-loader";
+const markdownLoader = require("./markdown-loader");
 
 module.exports = function loader (data) {
     if (this.cacheable) {

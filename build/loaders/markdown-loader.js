@@ -1,6 +1,6 @@
-import marked from "marked";
-import Renderer from "./markdown-renderer";
-import utils from "loader-utils";
+const marked = require("marked");
+const Renderer = require("./markdown-renderer");
+const utils = require("loader-utils");
 
 module.exports = function loader (data) {
     if (this.cacheable) {
