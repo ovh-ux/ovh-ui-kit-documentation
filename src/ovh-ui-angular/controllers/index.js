@@ -3,6 +3,7 @@ import chipsController from "./chips.controller";
 import criteriaAdderController from "./criteria-adder.controller";
 import datagridController from "./datagrid.controller";
 import fieldController from "./field.controller";
+import inlineAdderController from "./inline-adder.controller";
 import navbarController from "./navbar.controller";
 import paginationController from "./pagination.controller";
 import progressController from "./progress.controller";
@@ -17,6 +18,7 @@ angular.module("app")
     .controller("ChipsCtrl", chipsController)
     .controller("DatagridCtrl", datagridController)
     .controller("FieldCtrl", fieldController)
+    .controller("InlineAdderCtrl", inlineAdderController)
     .controller("NavbarCtrl", navbarController)
     .controller("PaginationCtrl", paginationController)
     .controller("ProgressCtrl", progressController)

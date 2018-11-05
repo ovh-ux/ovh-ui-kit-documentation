@@ -50,6 +50,10 @@
   "header-tabs": {
     "group": "components"
   },
+  "inline-adder": {
+    "controller": "InlineAdderCtrl",
+    "group": "components"
+  },
   "message": {
     "group": "components"
   },
