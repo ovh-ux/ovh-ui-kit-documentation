@@ -11,7 +11,7 @@ export default function ($stateProvider) {
             friendlyName: "Documentation",
             groupName: "Getting started",
             redirectTo: "showcase.documentation.introduction",
-            template: "<ui-view></ui-view>",
+            template: "<div ui-view></div>",
             weight: 9000
         })
         .state("showcase.documentation.introduction", {

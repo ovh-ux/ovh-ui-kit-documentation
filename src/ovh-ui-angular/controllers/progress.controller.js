@@ -1,6 +1,7 @@
 export default class {
     constructor ($interval) {
         "ngInject";
+
         this.$interval = $interval;
     }
 

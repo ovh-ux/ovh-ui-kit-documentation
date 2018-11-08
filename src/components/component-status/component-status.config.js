@@ -1,4 +1,4 @@
-import { includes } from "lodash";
+import includes from "lodash/includes";
 
 export default function (ComponentStatusProvider) {
     "ngInject";
@@ -18,7 +18,5 @@ export default function (ComponentStatusProvider) {
     };
 
     ComponentStatusProvider.setReadmeUrl("#!/documentation/component-status");
-    ComponentStatusProvider.setFindMessageTypeFunc((level, cxDesign, ux) =>
-        includes(CX_DESIGN_LEVELS[level], cxDesign) || includes(UX_LEVELS[level], ux)
-    );
+    ComponentStatusProvider.setFindMessageTypeFunc((level, cxDesign, ux) => includes(CX_DESIGN_LEVELS[level], cxDesign) || includes(UX_LEVELS[level], ux));
 }

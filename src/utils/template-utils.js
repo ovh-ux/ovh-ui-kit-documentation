@@ -1,4 +1,4 @@
-import _ from "lodash";
+import capitalize from "lodash/capitalize";
 
 class TemplateUtils {
     static loadLessReadme () {
@@ -15,7 +15,7 @@ class TemplateUtils {
         Object.keys(templates).forEach(templateName => {
             const templateConfig = {
                 url: `/${templateName}`,
-                friendlyName: _.capitalize(templateName),
+                friendlyName: capitalize(templateName),
                 ...config[templateName]
             };
 
@@ -24,12 +24,6 @@ class TemplateUtils {
                 ...templateConfig,
                 template: templates[templateName].template
             });
-
-            // Create isolated component route
-            $stateProvider.state(`isolated-ovh-ui-kit.${templateName}`, {
-                ...templateConfig,
-                template: templates[templateName].preview
-            });
         });
     }
 
@@ -37,7 +31,7 @@ class TemplateUtils {
         Object.keys(templates).forEach(templateName => {
             const templateConfig = {
                 url: `/${templateName}`,
-                friendlyName: _.capitalize(templateName),
+                friendlyName: capitalize(templateName),
                 ...config[templateName]
             };
 
