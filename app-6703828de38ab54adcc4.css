@@ -11618,34 +11618,25 @@ oui-tile-description {
   padding-bottom: 0.375rem;
 }
 ui-view,
-showcase-ui {
+oui-showcase {
   display: block;
 }
-.oui-showcase__navbar {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-.oui-showcase__navbar .oui-select {
-  margin: 0 0.938rem;
-}
-.oui-showcase__navbar .oui-navbar__title-icon {
+.oui-navbar__title-icon {
   vertical-align: top;
   font-size: 2.75rem;
   color: inherit;
 }
-.oui-showcase__navbar .oui-navbar__title-bold,
-.oui-showcase__navbar .oui-navbar__title-small {
+.oui-navbar__title-bold,
+.oui-navbar__title-small {
   display: inline-block;
   font-size: 1.75rem;
   color: #fff;
 }
-.oui-showcase__navbar .oui-navbar__title-bold {
+.oui-navbar__title-bold {
   margin-left: 0.938rem;
   font-weight: 600;
 }
-.oui-showcase__navbar .oui-navbar__title-small {
+.oui-navbar__title-small {
   margin-left: 0.125rem;
   font-weight: 300;
 }
@@ -11653,7 +11644,7 @@ showcase-ui {
   z-index: 1;
   position: relative;
 }
-.oui-showcase__main {
+.oui-showcase__content {
   display: block;
   padding-top: 2.75rem;
   position: relative;
@@ -11667,20 +11658,14 @@ showcase-ui {
   width: 18.75rem;
   overflow: hidden;
   overflow-y: auto;
+  z-index: 0;
 }
-.oui-showcase__section {
-  padding: 2rem;
+.oui-showcase__main {
   margin-left: 18.75rem;
   background: #fff;
 }
-.oui-showcase__theme-selector .oui-select {
-  float: right;
-  margin: 0;
-}
-.oui-showcase__theme-selector::after {
-  content: "";
-  display: table;
-  clear: both;
+.oui-showcase__view {
+  padding: 2rem;
 }
 .oui-showcase__code {
   border-radius: 0;
@@ -11731,14 +11716,10 @@ showcase-ui {
   .oui-showcase__content {
     top: 0;
   }
-  .oui-showcase__section {
+  .oui-showcase__main {
     width: 100%;
     margin-left: 0;
   }
-}
-themes-selector,
-versions-selector {
-  display: none;
 }
 code,
 kbd,
