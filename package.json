@@ -29,8 +29,8 @@
     "angular-sanitize": "^1.7.4",
     "flatpickr": "^4.5.2",
     "lodash": "^4.17.11",
-    "ovh-ui-angular": "^2.21.3",
-    "ovh-ui-kit": "^2.21.5"
+    "ovh-ui-angular": "^2.22.0",
+    "ovh-ui-kit": "^2.22.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.2.1",
@@ -39,8 +39,8 @@
     "babel-eslint": "^9.0.0",
     "babel-loader": "^7.1.5",
     "babel-plugin-angularjs-annotate": "^0.9.0",
-    "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-plugin-lodash": "^3.3.4",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
