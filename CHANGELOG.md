@@ -1,3 +1,24 @@
+<a name="2.22.0"></a>
+# [2.22.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.21.3...v2.22.0) (2018-11-08)
+
+
+### Bug Fixes
+
+* fix sidenav z-index ([0622435](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/0622435))
+
+
+### Features
+
+* **oui-inline-adder:** add inline-adder component ([#168](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/168)) ([33814ab](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/33814ab))
+* **oui-select:** allow options to be disabled ([#165](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/165)) ([3a79d6d](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/3a79d6d))
+
+
+### Performance Improvements
+
+* optimize lodash imports ([6dc9cfc](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/6dc9cfc))
+
+
+
 <a name="2.21.3"></a>
 ## [2.21.3](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.21.2...v2.21.3) (2018-10-18)
 
