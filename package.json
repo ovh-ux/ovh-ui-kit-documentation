@@ -1,6 +1,6 @@
 {
   "name": "ovh-ui-kit-documentation",
-  "version": "2.21.3",
+  "version": "2.22.0",
   "description": "The documentation and showcase application for OVH UI Kit.",
   "license": "BSD-3-Clause",
   "scripts": {
