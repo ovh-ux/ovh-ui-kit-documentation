@@ -1,4 +1,4 @@
-import data from "ovh-ui-angular/packages/oui-dual-list/src/index.spec.data.json";
+import data from "./data/dual-list.data.json";
 
 export default class {
     constructor () {
