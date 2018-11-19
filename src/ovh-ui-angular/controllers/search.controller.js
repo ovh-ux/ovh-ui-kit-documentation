@@ -1,6 +1,9 @@
+import data from "./data/autocomplete.data.json";
+
 export default class {
     $onInit () {
         this.resetCount = 0;
+        this.autocomplete = data.objects;
     }
 
     onSearchChange (modelValue) {

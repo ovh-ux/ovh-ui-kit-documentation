@@ -1,3 +1,4 @@
+import autocompleteController from "./autocomplete.controller";
 import calendarController from "./calendar.controller";
 import chipsController from "./chips.controller";
 import criteriaAdderController from "./criteria-adder.controller";
@@ -14,6 +15,7 @@ import showCurrentValueInPopupController from "./show-current-value-in-popup.con
 import stepperController from "./stepper.controller";
 
 angular.module("app")
+    .controller("AutocompleteCtrl", autocompleteController)
     .controller("CalendarCtrl", calendarController)
     .controller("CriteriaAdderCtrl", criteriaAdderController)
     .controller("ChipsCtrl", chipsController)
