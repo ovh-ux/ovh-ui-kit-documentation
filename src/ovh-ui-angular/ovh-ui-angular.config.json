@@ -119,6 +119,9 @@
   "switch": {
     "group": "components"
   },
+  "tabs": {
+    "group": "components"
+  },
   "textarea": {
     "group": "components"
   },
