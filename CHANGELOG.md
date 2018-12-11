@@ -1,3 +1,16 @@
+<a name="2.23.0"></a>
+# [2.23.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.22.0...v2.23.0) (2018-12-11)
+
+
+### Features
+
+* **oui-autocomplete:** add oui-autocomplete directive ([#172](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/172)) ([becb905](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/becb905))
+* **oui-dual-list:** add dual-list component ([#171](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/171)) ([e1c9bb3](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/e1c9bb3))
+* **oui-file:** add file component ([#174](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/174)) ([f9800d8](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/f9800d8))
+* **oui-tabs:** add tabs component ([#173](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/173)) ([a93f5b3](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/a93f5b3))
+
+
+
 <a name="2.22.0"></a>
 # [2.22.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.21.3...v2.22.0) (2018-11-08)
 
