@@ -29,8 +29,8 @@
     "angular-sanitize": "^1.7.4",
     "flatpickr": "^4.5.2",
     "lodash": "^4.17.11",
-    "ovh-ui-angular": "^2.22.0",
-    "ovh-ui-kit": "^2.22.0"
+    "ovh-ui-angular": "^2.23.0",
+    "ovh-ui-kit": "^2.23.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.2.1",
