@@ -1,7 +1,9 @@
+import autocompleteController from "./autocomplete.controller";
 import calendarController from "./calendar.controller";
 import chipsController from "./chips.controller";
 import criteriaAdderController from "./criteria-adder.controller";
 import datagridController from "./datagrid.controller";
+import dualListController from "./dual-list.controller";
 import fieldController from "./field.controller";
 import inlineAdderController from "./inline-adder.controller";
 import navbarController from "./navbar.controller";
@@ -13,6 +15,7 @@ import showCurrentValueInPopupController from "./show-current-value-in-popup.con
 import stepperController from "./stepper.controller";
 
 angular.module("app")
+    .controller("AutocompleteCtrl", autocompleteController)
     .controller("CalendarCtrl", calendarController)
     .controller("CriteriaAdderCtrl", criteriaAdderController)
     .controller("ChipsCtrl", chipsController)
@@ -25,4 +28,5 @@ angular.module("app")
     .controller("ShowCurrentValueInPopupCtrl", showCurrentValueInPopupController)
     .controller("SearchCtrl", searchController)
     .controller("SelectCtrl", selectController)
-    .controller("StepperCtrl", stepperController);
+    .controller("StepperCtrl", stepperController)
+    .controller("DualListCtrl", dualListController);

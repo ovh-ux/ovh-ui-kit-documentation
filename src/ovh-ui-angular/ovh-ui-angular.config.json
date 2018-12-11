@@ -2,6 +2,10 @@
   "action-menu": {
     "group": "components"
   },
+  "autocomplete": {
+    "controller": "AutocompleteCtrl",
+    "group": "components"
+  },
   "back-button": {
     "group": "components"
   },
@@ -37,8 +41,15 @@
   "dropdown": {
     "group": "components"
   },
+  "dual-list": {
+    "controller": "DualListCtrl",
+    "group": "components"
+  },
   "field": {
     "controller": "FieldCtrl",
+    "group": "components"
+  },
+  "file": {
     "group": "components"
   },
   "form-actions": {
@@ -109,6 +120,9 @@
     "group": "components"
   },
   "switch": {
+    "group": "components"
+  },
+  "tabs": {
     "group": "components"
   },
   "textarea": {
