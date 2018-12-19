@@ -85,6 +85,10 @@
     "controller": "PaginationCtrl",
     "group": "components"
   },
+  "password": {
+    "controller": "PasswordCtrl",
+    "group": "components"
+  },
   "popover": {
     "group": "components"
   },

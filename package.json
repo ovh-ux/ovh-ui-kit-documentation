@@ -32,7 +32,8 @@
     "flatpickr": "^4.5.2",
     "lodash": "^4.17.11",
     "ovh-ui-angular": "^2.23.0",
-    "ovh-ui-kit": "^2.23.0"
+    "ovh-ui-kit": "^2.23.0",
+    "zxcvbn": "^4.4.2"
   },
   "devDependencies": {
     "autoprefixer": "^9.2.1",

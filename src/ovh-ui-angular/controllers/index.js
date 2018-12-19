@@ -8,6 +8,7 @@ import fieldController from "./field.controller";
 import inlineAdderController from "./inline-adder.controller";
 import navbarController from "./navbar.controller";
 import paginationController from "./pagination.controller";
+import passwordController from "./password.controller";
 import progressController from "./progress.controller";
 import searchController from "./search.controller";
 import selectController from "./select.controller";
@@ -24,6 +25,7 @@ angular.module("app")
     .controller("InlineAdderCtrl", inlineAdderController)
     .controller("NavbarCtrl", navbarController)
     .controller("PaginationCtrl", paginationController)
+    .controller("PasswordCtrl", passwordController)
     .controller("ProgressCtrl", progressController)
     .controller("ShowCurrentValueInPopupCtrl", showCurrentValueInPopupController)
     .controller("SearchCtrl", searchController)
