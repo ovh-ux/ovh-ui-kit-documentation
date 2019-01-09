@@ -14,6 +14,7 @@ import searchController from "./search.controller";
 import selectController from "./select.controller";
 import showCurrentValueInPopupController from "./show-current-value-in-popup.controller";
 import stepperController from "./stepper.controller";
+import timepickerController from "./timepicker.controller";
 
 angular.module("app")
     .controller("AutocompleteCtrl", autocompleteController)
@@ -21,6 +22,7 @@ angular.module("app")
     .controller("CriteriaAdderCtrl", criteriaAdderController)
     .controller("ChipsCtrl", chipsController)
     .controller("DatagridCtrl", datagridController)
+    .controller("DualListCtrl", dualListController)
     .controller("FieldCtrl", fieldController)
     .controller("InlineAdderCtrl", inlineAdderController)
     .controller("NavbarCtrl", navbarController)
@@ -31,4 +33,4 @@ angular.module("app")
     .controller("SearchCtrl", searchController)
     .controller("SelectCtrl", selectController)
     .controller("StepperCtrl", stepperController)
-    .controller("DualListCtrl", dualListController);
+    .controller("TimepickerCtrl", timepickerController);
