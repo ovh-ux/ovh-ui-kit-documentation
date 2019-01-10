@@ -135,6 +135,10 @@
   "tile": {
     "group": "components"
   },
+  "timepicker": {
+    "controller": "TimepickerCtrl",
+    "group": "components"
+  },
   "tooltip": {
     "group": "components"
   }
