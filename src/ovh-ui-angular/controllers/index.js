@@ -1,7 +1,7 @@
 import autocompleteController from "./autocomplete.controller";
 import calendarController from "./calendar.controller";
 import chipsController from "./chips.controller";
-import criteriaAdderController from "./criteria-adder.controller";
+import criteriaController from "./criteria.controller";
 import datagridController from "./datagrid.controller";
 import dualListController from "./dual-list.controller";
 import fieldController from "./field.controller";
@@ -19,7 +19,7 @@ import timepickerController from "./timepicker.controller";
 angular.module("app")
     .controller("AutocompleteCtrl", autocompleteController)
     .controller("CalendarCtrl", calendarController)
-    .controller("CriteriaAdderCtrl", criteriaAdderController)
+    .controller("CriteriaCtrl", criteriaController)
     .controller("ChipsCtrl", chipsController)
     .controller("DatagridCtrl", datagridController)
     .controller("DualListCtrl", dualListController)

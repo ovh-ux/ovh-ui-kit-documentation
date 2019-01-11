@@ -30,8 +30,8 @@
   "collapsible": {
     "group": "components"
   },
-  "criteria-adder": {
-    "controller": "CriteriaAdderCtrl",
+  "criteria": {
+    "controller": "CriteriaCtrl",
     "group": "components"
   },
   "datagrid": {
