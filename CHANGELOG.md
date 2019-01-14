@@ -1,3 +1,19 @@
+<a name="2.24.0"></a>
+# [2.24.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.23.0...v2.24.0) (2019-01-14)
+
+
+### Bug Fixes
+
+* fix webpack resolve mainFields ([592db55](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/592db55))
+
+
+### Features
+
+* **oui-password:** add password component ([#178](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/178)) ([5123276](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/5123276))
+* **oui-timepicker:** add timepicker component ([#179](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/179)) ([8dc6cd8](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/8dc6cd8))
+
+
+
 <a name="2.23.0"></a>
 # [2.23.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.22.0...v2.23.0) (2018-12-11)
 
