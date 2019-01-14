@@ -11,7 +11,7 @@ const exclude = [/node_modules/, /dist/];
 module.exports = merge(baseConfig, {
     mode: "production",
     resolve: {
-        mainFields: ["module", "main"]
+        mainFields: ["src", "main"]
     },
     output: {
         path: path.resolve(rootPath, "dist")

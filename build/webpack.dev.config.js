@@ -31,7 +31,7 @@ module.exports = merge(config, {
         new webpack.NoEmitOnErrorsPlugin()
     ],
     resolve: {
-        mainFields: ["module", "main"]
+        mainFields: ["src", "main"]
     },
     module: {
         rules: [

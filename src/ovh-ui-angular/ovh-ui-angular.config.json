@@ -30,8 +30,8 @@
   "collapsible": {
     "group": "components"
   },
-  "criteria-adder": {
-    "controller": "CriteriaAdderCtrl",
+  "criteria": {
+    "controller": "CriteriaCtrl",
     "group": "components"
   },
   "datagrid": {
@@ -85,6 +85,10 @@
     "controller": "PaginationCtrl",
     "group": "components"
   },
+  "password": {
+    "controller": "PasswordCtrl",
+    "group": "components"
+  },
   "popover": {
     "group": "components"
   },
@@ -129,6 +133,10 @@
     "group": "components"
   },
   "tile": {
+    "group": "components"
+  },
+  "timepicker": {
+    "controller": "TimepickerCtrl",
     "group": "components"
   },
   "tooltip": {

@@ -13,7 +13,9 @@
     "start": "cross-env NODE_ENV=dev babel-node ./build/server",
     "serve:dist": "opn http://localhost:8080 && static dist",
     "build": "rimraf dist && cross-env NODE_ENV=production webpack --progress --color --hide-modules --config ./build/webpack.dist.config.js",
+    "lint:css": "stylelint 'packages/**/*.less' --fix",
     "lint:js": "eslint --fix .",
+    "lint": "yarn lint:css && yarn lint:js",
     "test": "echo \"no tests for this project\""
   },
   "config": {
@@ -30,7 +32,8 @@
     "flatpickr": "^4.5.2",
     "lodash": "^4.17.11",
     "ovh-ui-angular": "^2.23.0",
-    "ovh-ui-kit": "^2.23.0"
+    "ovh-ui-kit": "^2.23.0",
+    "zxcvbn": "^4.4.2"
   },
   "devDependencies": {
     "autoprefixer": "^9.2.1",
@@ -76,6 +79,8 @@
     "raw-loader": "^0.5.1",
     "rimraf": "^2.6.2",
     "style-loader": "^0.23.0",
+    "stylelint": "^9.6.0",
+    "stylelint-config-standard": "^18.2.0",
     "url-loader": "^1.1.1",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.0",

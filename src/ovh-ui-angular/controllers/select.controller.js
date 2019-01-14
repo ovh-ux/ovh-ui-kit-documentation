@@ -1,4 +1,4 @@
-import countries from "./countries.json";
+import countries from "./data/countries.json";
 
 export default class SelectController {
     constructor ($http, $timeout) {
@@ -17,7 +17,7 @@ export default class SelectController {
     }
 
     groupByFirstLetter (item) { // eslint-disable-line class-methods-use-this
-        return item.name.substr(0, 1).toUpperCase();
+        return item.country.name.substr(0, 1).toUpperCase();
     }
 
     refreshAddresses (address) {
