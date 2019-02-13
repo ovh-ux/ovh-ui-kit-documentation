@@ -1,3 +1,13 @@
+<a name="2.24.1"></a>
+## [2.24.1](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.24.0...v2.24.1) (2019-02-13)
+
+
+### Bug Fixes
+
+* **oui-pagination:** add input search when huge amount of pages ([#183](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/183)) ([a16cdb6](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/a16cdb6))
+
+
+
 <a name="2.24.0"></a>
 # [2.24.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.23.0...v2.24.0) (2019-01-14)
 
