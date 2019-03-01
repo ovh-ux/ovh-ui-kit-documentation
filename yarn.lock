@@ -1657,10 +1657,10 @@ boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bootstrap@^4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.1.3.tgz#0eb371af2c8448e8c210411d0cb824a6409a12be"
-  integrity sha512-rDFIzgXcof0jDyjNosjv4Sno77X4KuPeFxG2XZZv1/Kc8DRVGVADdoQyyOVDwPqL36DDmtCQbrpMCqvpPLJQ0w==
+bootstrap@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.3.1.tgz#280ca8f610504d99d7b6b4bfc4b68cec601704ac"
+  integrity sha512-rXqOmH1VilAt2DyPzluTi2blhk17bO7ef+zLLPlWvG494pDxcM234pJ8wTc/6R40UWizAIIMgxjvxZg5kmsbag==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -6269,10 +6269,10 @@ output-file-sync@^1.1.2:
     mkdirp "^0.5.1"
     object-assign "^4.1.0"
 
-ovh-ui-angular@^2.24.3:
-  version "2.24.3"
-  resolved "https://registry.yarnpkg.com/ovh-ui-angular/-/ovh-ui-angular-2.24.3.tgz#2af4e03542190f0893d193a858eee9711b07dcc5"
-  integrity sha512-6NuY3bquHoO9YYQEFGdnH+GvGwNUOoGQRACuKV5EsZNnGKNRxPJKb6s4vfBTKcL/IE4AE2yAgIhcb5Y16gEuGg==
+ovh-ui-angular@^2.25.0:
+  version "2.25.0"
+  resolved "https://registry.yarnpkg.com/ovh-ui-angular/-/ovh-ui-angular-2.25.0.tgz#d000150c6806ad851ddbdc7296a20b2020e847ba"
+  integrity sha512-68Qkhe0ugscuRd6Ez83RovohKoZy5y96fmEpH0gl1BfYvQaeWpqxDh7oRcCXwimatHaV87D750YMbRDAA7/Cqg==
   dependencies:
     bloodhound-js "^1.2.3"
     clipboard "^2.0.1"
@@ -6281,10 +6281,10 @@ ovh-ui-angular@^2.24.3:
     popper.js "^1.14.4"
     ui-select "^0.19.8"
 
-ovh-ui-kit@^2.24.2:
-  version "2.24.2"
-  resolved "https://registry.yarnpkg.com/ovh-ui-kit/-/ovh-ui-kit-2.24.2.tgz#27e7c945c81f22745657d4eeb8b6a96022a87828"
-  integrity sha512-yLdyZskNlDUnx29XCYY5SppcJYaVBrNOpa682D+rw1s79Y9/dwAlF6qWD47NWDRK2XzgJR8U7xTjvbersuGBwg==
+ovh-ui-kit@^2.25.0:
+  version "2.25.0"
+  resolved "https://registry.yarnpkg.com/ovh-ui-kit/-/ovh-ui-kit-2.25.0.tgz#cf49d929dc9c4dde9478cb70c35246000bd49563"
+  integrity sha512-SapAsTK38S4YmyBJG7tclcCSnVlP3xY3mB1mS6xhtQ+/qBliGvPDxzlM5rCBP4+W77qqitRIwHpY8GpcFN7TLg==
   dependencies:
     less-plugin-remcalc "^0.1.0"
 
