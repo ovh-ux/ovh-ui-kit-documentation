@@ -5441,7 +5441,6 @@ output-file-sync@^1.1.2:
 ovh-ui-angular@^2.27.0:
   version "2.27.0"
   resolved "https://registry.yarnpkg.com/ovh-ui-angular/-/ovh-ui-angular-2.27.0.tgz#bc8fd52bc1e4d991621f3ddbd7ba6bcee16d72b9"
-  integrity sha512-q1KlF5ryxfoeWYF3MumzEuF857MKjjf/adrO2nQmmvLRG+GzzuY6jPi0tP1v1UiastbFcglNhcg8nUlaKFQCLA==
   dependencies:
     bloodhound-js "^1.2.3"
     clipboard "^2.0.1"
@@ -5453,7 +5452,6 @@ ovh-ui-angular@^2.27.0:
 ovh-ui-kit@^2.27.0:
   version "2.27.0"
   resolved "https://registry.yarnpkg.com/ovh-ui-kit/-/ovh-ui-kit-2.27.0.tgz#9174e19cd0f3f4f43389f75d893766a633dd5679"
-  integrity sha512-6NHs8cnWaeP59P7kyteRdLHQIt5p7s0+6LzrCprX/BPMIjcgvuccoxhj9ZdOZS7M1d2WK0m7EGJT+C/y+F5ENQ==
   dependencies:
     less-plugin-remcalc "^0.1.0"
 
