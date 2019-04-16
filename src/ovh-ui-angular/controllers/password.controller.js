@@ -15,4 +15,8 @@ export default class {
     checkPasswordLength (password) {
         return angular.isString(password) && password.length >= this.minLength && password.length <= this.maxLength;
     }
+
+    checkPasswordMatch (password) {
+        return password === this.modelTriggerValidation;
+    }
 }
