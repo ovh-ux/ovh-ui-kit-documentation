@@ -18,6 +18,9 @@ export default class {
         this.orderBy = orderByFilter;
         this.ouiDatagridService = ouiDatagridService;
         this.metaData = metaData;
+
+        this.offset = 1;
+        this.pageSize = 5;
     }
 
     $onInit () {
@@ -117,6 +120,11 @@ export default class {
     onColumnsParametersChange (datagridId, columns) {
         this.datagridParameters[datagridId] = columns;
         this.saveToLocalStorage("datagridsParams", this.datagridParameters);
+    }
+
+    onPageChange ({ offset, pageSize }) {
+        this.offset = offset;
+        this.pageSize = pageSize;
     }
 }
 /* eslint-enable class-methods-use-this */
