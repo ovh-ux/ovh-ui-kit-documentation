@@ -716,7 +716,6 @@ async@^2.4.1, async@^2.5.0, async@^2.6.0:
 asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
-  integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
 
 atob@^2.1.1:
   version "2.1.2"
@@ -1421,7 +1420,6 @@ binary-extensions@^1.0.0:
 bloodhound-js@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/bloodhound-js/-/bloodhound-js-1.2.3.tgz#702c175f7488a14cdfedb6c0fba2dba577964d49"
-  integrity sha512-gpcHaO8SqK/bLwWgobLGQvIVpSdTX4fKZFjfh6ltori5aULXJxC/ndrNRf3PYGOdyD4mFIqjySXLWX4pE88VmA==
   dependencies:
     es6-promise "^3.0.2"
     object-assign "^4.0.1"
@@ -1869,7 +1867,6 @@ cli-width@^2.0.0:
 clipboard@^2.0.1:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-2.0.4.tgz#836dafd66cf0fea5d71ce5d5b0bf6e958009112d"
-  integrity sha512-Vw26VSLRpJfBofiVaFb/I8PVfdI1OxKcYShe6fm0sP/DtmiWQNCjhM/okTvdCo0G+lMMm1rMYbk4IK4x1X+kgQ==
   dependencies:
     good-listener "^1.2.2"
     select "^1.1.2"
@@ -1990,7 +1987,6 @@ compare-func@^1.3.1:
 component-emitter@^1.2.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.3.0.tgz#16e4070fba8ae29b679f2215853ee181ab2eabc0"
-  integrity sha512-Rd3se6QB+sO1TwqZjscQrurpEPIfO0/yYnSin6Q/rD3mOutHvUrCAhJub3r90uNb+SESBuE0QYoB90YdfatsRg==
 
 component-emitter@^1.2.1:
   version "1.2.1"
@@ -2194,7 +2190,6 @@ cookie@0.3.1:
 cookiejar@^2.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/cookiejar/-/cookiejar-2.1.2.tgz#dd8a235530752f988f9a0844f3fc589e3111125c"
-  integrity sha512-Mw+adcfzPxcPeI+0WlvRrr/3lGVO0bD75SxX6811cxSh1Wbxx7xZBGK1eVtDf6si8rg2lhnUjsVLMFMfbRIuwA==
 
 copy-concurrently@^1.0.0:
   version "1.0.5"
@@ -2218,7 +2213,6 @@ core-js@^2.4.0, core-js@^2.5.0:
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
-  integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
 cosmiconfig@^4.0.0:
   version "4.0.0"
@@ -2409,7 +2403,6 @@ debug@2.6.9, debug@^2.1.2, debug@^2.2.0, debug@^2.3.3, debug@^2.6.8, debug@^2.6.
 debug@^3.1.0:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
-  integrity sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
   dependencies:
     ms "^2.1.1"
 
@@ -2492,12 +2485,10 @@ del@^2.0.2:
 delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
-  integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
 
 delegate@^3.1.2:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/delegate/-/delegate-3.2.0.tgz#b66b71c3158522e8ab5744f720d8ca0c2af59166"
-  integrity sha512-IofjkYBZaZivn0V8nnsMJGBr4jVLxHDheKSW88PyxS5QC4Vo9ZbZVvhzlSxY87fVq3STR6r+4cGepyHkcWOQSw==
 
 delegates@^1.0.0:
   version "1.0.0"
@@ -2744,7 +2735,6 @@ es-to-primitive@^1.1.1:
 es6-promise@^3.0.2:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-3.3.1.tgz#a08cdde84ccdbf34d027a1451bc91d4bcd28a613"
-  integrity sha1-oIzd6EzNvzTQJ6FFG8kdS80ophM=
 
 es6-templates@^0.2.3:
   version "0.2.3"
@@ -2760,7 +2750,6 @@ escape-html@~1.0.3:
 escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
-  integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
 eslint-config-ovh@^0.1.1:
   version "0.1.1"
@@ -3053,7 +3042,6 @@ extend-shallow@^3.0.0, extend-shallow@^3.0.2:
 extend@^3.0.0, extend@~3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
-  integrity sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==
 
 external-editor@^1.1.0:
   version "1.1.1"
@@ -3304,7 +3292,6 @@ forever-agent@~0.6.1:
 form-data@^2.3.1:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/form-data/-/form-data-2.3.3.tgz#dcce52c05f644f298c6a7ab936bd724ceffbf3a6"
-  integrity sha512-1lLKB2Mu3aGP1Q/2eCOx0fNbRMe7XdwktwOruhfqqd0rIJWwN4Dh+E3hrPSlDCXnSR7UtZ1N38rVXm+6+MEhJQ==
   dependencies:
     asynckit "^0.4.0"
     combined-stream "^1.0.6"
@@ -3321,7 +3308,6 @@ form-data@~2.3.2:
 formidable@^1.2.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/formidable/-/formidable-1.2.1.tgz#70fb7ca0290ee6ff961090415f4b3df3d2082659"
-  integrity sha512-Fs9VRguL0gqGHkXS5GQiMCr1VhZBxz0JnJs4JmMp/2jL18Fmbzvv7vOFRU+U8TBkHEE/CX1qDXzJplVULgsLeg==
 
 forwarded@~0.1.2:
   version "0.1.2"
@@ -3615,7 +3601,6 @@ gonzales-pe@^4.2.3:
 good-listener@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/good-listener/-/good-listener-1.2.2.tgz#d53b30cdf9313dffb7dc9a0d477096aa6d145c50"
-  integrity sha1-1TswzfkxPf+33JoNR3CWqm0UXFA=
   dependencies:
     delegate "^3.1.2"
 
@@ -4522,7 +4507,6 @@ less-loader@^4.1.0:
 less-plugin-remcalc@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/less-plugin-remcalc/-/less-plugin-remcalc-0.1.0.tgz#34bce158cd24d2a14efa8984e01b2b9d0420d4cc"
-  integrity sha512-Nws5vHVO5QwXlIURF9ncZwTZtw91CH57F1yMm98c52RwWRaqZdmntcyxG+LuBLqM2Qfh2GWt0v0BrVrkzj2Cqg==
 
 less@^3.8.1:
   version "3.8.1"
@@ -4946,17 +4930,14 @@ miller-rabin@^4.0.0:
 mime-db@1.40.0:
   version "1.40.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.40.0.tgz#a65057e998db090f732a68f6c276d387d4126c32"
-  integrity sha512-jYdeOMPy9vnxEqFRRo6ZvTZ8d9oPb+k18PKoYNYUe2stVEBPPwsln/qWzdbmaIvnhZ9v2P+CuecK+fpUfsV2mA==
 
 mime-db@~1.36.0:
   version "1.36.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.36.0.tgz#5020478db3c7fe93aad7bbcc4dcf869c43363397"
-  integrity sha512-L+xvyD9MkoYMXb1jAmzI/lWYAxAMCPvIBSWur0PZ5nOf5euahRLVqH//FKW9mWp2lkqUgYiXPgkzfMUFi4zVDw==
 
 mime-types@^2.1.12:
   version "2.1.24"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.24.tgz#b6f8d0b3e951efb77dedeca194cff6d16f676f81"
-  integrity sha512-WaFHS3MCl5fapm3oLxU4eYDw77IQM2ACcxQ9RIxfaC3ooc6PFuBMGZZsYpvoXS5D5QTWPieo1jjLdAm3TBP3cQ==
   dependencies:
     mime-db "1.40.0"
 
@@ -4973,7 +4954,6 @@ mime@1.4.1:
 mime@^1.2.9, mime@^1.4.1:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
-  integrity sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==
 
 mime@^2.0.3, mime@^2.3.1:
   version "2.3.1"
@@ -5083,7 +5063,6 @@ ms@2.0.0:
 ms@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
-  integrity sha512-tgp+dl5cGk28utYktBsrFqA7HKgrhgPsg6Z/EfhWI4gl1Hwq8B/GmY/0oXZ6nF8hDVesS/FpnYaD/kOWhYQvyg==
 
 mute-stream@0.0.6:
   version "0.0.6"
@@ -5476,7 +5455,6 @@ output-file-sync@^1.1.2:
 ovh-ui-angular@^2.30.0:
   version "2.30.0"
   resolved "https://registry.yarnpkg.com/ovh-ui-angular/-/ovh-ui-angular-2.30.0.tgz#bd682bdf47ec6574ccb61fefee5557608cd42d0e"
-  integrity sha512-rXDPMhjRUQscPsf+u1rHYBMLPb5kjnlpLbatnUgmKGFjM0EZ53QdYNgdUFjJvZtW1SMuulH1IGkaS8y27oiyDw==
   dependencies:
     bloodhound-js "^1.2.3"
     clipboard "^2.0.1"
@@ -5488,7 +5466,6 @@ ovh-ui-angular@^2.30.0:
 ovh-ui-kit@^2.30.0:
   version "2.30.0"
   resolved "https://registry.yarnpkg.com/ovh-ui-kit/-/ovh-ui-kit-2.30.0.tgz#2ef4c038f55e667b4d160c6184de2a7b5a287f7b"
-  integrity sha512-gn20E69mwHw2YPecJ4+UApOmvFcNlFLCC5BRadrq5EGMYgh8m1a4U4PwccC7++7JC6mh3KKsuy/faU+lSieYnQ==
   dependencies:
     less-plugin-remcalc "^0.1.0"
 
@@ -5738,7 +5715,6 @@ pluralize@^7.0.0:
 popper.js@^1.14.4:
   version "1.15.0"
   resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.15.0.tgz#5560b99bbad7647e9faa475c6b8056621f5a4ff2"
-  integrity sha512-w010cY1oCUmI+9KwwlWki+r5jxKfTFDVoadl7MSrIujHU5MJ5OR6HTDj6Xo8aoR/QsA56x8jKjA59qGH4ELtrA==
 
 portscanner@^2.2.0:
   version "2.2.0"
@@ -5935,7 +5911,6 @@ private@^0.1.6, private@^0.1.8, private@~0.1.5:
 process-nextick-args@~2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.0.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"
-  integrity sha512-MtEC1TqN0EU5nephaJ4rAtThHtC86dNN9qCuEhtshvpVBkAW5ZO7BASN9REnF9eoXGcRub+pFuKEpOHE+HbEMw==
 
 process@^0.11.10:
   version "0.11.10"
@@ -6022,7 +5997,6 @@ qs@6.5.1:
 qs@^6.5.1:
   version "6.7.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
-  integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
 qs@~6.5.2:
   version "6.5.2"
@@ -6559,7 +6533,6 @@ schema-utils@^1.0.0:
 select@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/select/-/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
-  integrity sha1-DnNQrN7ICxEIUoeG7B1EGNEbOW0=
 
 "semver@2 || 3 || 4 || 5", semver@^5.3.0, semver@^5.5.0:
   version "5.5.1"
@@ -6850,7 +6823,6 @@ statuses@~1.4.0:
 storage2@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/storage2/-/storage2-0.1.0.tgz#a2215c6c479d1c84df006a58ef5525e5d8cea00e"
-  integrity sha512-HNGFQFOr0+paYBbsAl9XO+YzM/LdS6CI9xI5aAfIu+9wL5NO3DK2YN8K0ha6LLJeYckSfyOA7jxWKHpyHF9zZw==
 
 stream-browserify@^2.0.1:
   version "2.0.1"
@@ -6898,7 +6870,6 @@ string-width@^1.0.1:
 string_decoder@^1.0.0, string_decoder@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-1.1.1.tgz#9cf1611ba62685d7030ae9e4ba34149c3af03fc8"
-  integrity sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg==
   dependencies:
     safe-buffer "~5.1.0"
 
@@ -7044,7 +7015,6 @@ sugarss@^2.0.0:
 superagent@^3.8.3:
   version "3.8.3"
   resolved "https://registry.yarnpkg.com/superagent/-/superagent-3.8.3.tgz#460ea0dbdb7d5b11bc4f78deba565f86a178e128"
-  integrity sha512-GLQtLMCoEIK4eDv6OGtkOoSMt3D+oq0y3dsxMuYuDvaNUvuT8eFBuLmfR0iYYzHC1e8hpzC6ZsxbuP6DIalMFA==
   dependencies:
     component-emitter "^1.2.0"
     cookiejar "^2.1.0"
@@ -7153,7 +7123,6 @@ timers-browserify@^2.0.4:
 tiny-emitter@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
-  integrity sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
 
 tmp@^0.0.29:
   version "0.0.29"
@@ -7305,7 +7274,6 @@ uglifyjs-webpack-plugin@^1.2.4:
 ui-select@^0.19.8:
   version "0.19.8"
   resolved "https://registry.yarnpkg.com/ui-select/-/ui-select-0.19.8.tgz#74860848a7fd8bc494d9856d2f62776ea98637c1"
-  integrity sha1-dIYISKf9i8SU2YVtL2J3bqmGN8E=
 
 unherit@^1.0.4:
   version "1.1.1"
@@ -7441,7 +7409,6 @@ user-home@^1.1.1:
 util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
-  integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
 
 util.promisify@1.0.0:
   version "1.0.0"
