@@ -1,3 +1,13 @@
+<a name="2.29.0"></a>
+# [2.29.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.28.0...v2.29.0) (2019-04-23)
+
+
+### Features
+
+* **oui-datagrid:** add pagination change example ([#192](https://github.com/ovh-ux/ovh-ui-kit-documentation/issues/192)) ([b402bbf](https://github.com/ovh-ux/ovh-ui-kit-documentation/commit/b402bbf))
+
+
+
 <a name="2.28.0"></a>
 # [2.28.0](https://github.com/ovh-ux/ovh-ui-kit-documentation/compare/v2.27.0...v2.28.0) (2019-04-08)
 
