@@ -5473,7 +5473,7 @@ output-file-sync@^1.1.2:
     mkdirp "^0.5.1"
     object-assign "^4.1.0"
 
-ovh-ui-angular@2.30.0:
+ovh-ui-angular@^2.30.0:
   version "2.30.0"
   resolved "https://registry.yarnpkg.com/ovh-ui-angular/-/ovh-ui-angular-2.30.0.tgz#bd682bdf47ec6574ccb61fefee5557608cd42d0e"
   integrity sha512-rXDPMhjRUQscPsf+u1rHYBMLPb5kjnlpLbatnUgmKGFjM0EZ53QdYNgdUFjJvZtW1SMuulH1IGkaS8y27oiyDw==
@@ -5485,7 +5485,7 @@ ovh-ui-angular@2.30.0:
     popper.js "^1.14.4"
     ui-select "^0.19.8"
 
-ovh-ui-kit@2.30.0:
+ovh-ui-kit@^2.30.0:
   version "2.30.0"
   resolved "https://registry.yarnpkg.com/ovh-ui-kit/-/ovh-ui-kit-2.30.0.tgz#2ef4c038f55e667b4d160c6184de2a7b5a287f7b"
   integrity sha512-gn20E69mwHw2YPecJ4+UApOmvFcNlFLCC5BRadrq5EGMYgh8m1a4U4PwccC7++7JC6mh3KKsuy/faU+lSieYnQ==
