@@ -8,8 +8,8 @@ This is a showcase application for our UI-Kit.
 
 ---
 
-<div align="center">
-:bookmark: `ovh-ui-kit-documentation` is now deprecated. Please take a look at our <a href="https://github.com/ovh-ux/ovh-ui-kit">OVH UI Kit - Master UI Framework</a>.
+<div style="text-align: center;">
+:bookmark: <code class="oui-doc-codespan">ovh-ui-kit-documentation</code> is now deprecated. Please take a look at our <a href="https://github.com/ovh-ux/ovh-ui-kit">OVH UI Kit - Master UI Framework</a>.
 </div>
 
 ---

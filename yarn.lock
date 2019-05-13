@@ -5452,9 +5452,10 @@ output-file-sync@^1.1.2:
     mkdirp "^0.5.1"
     object-assign "^4.1.0"
 
-ovh-ui-angular@^2.30.0:
-  version "2.30.0"
-  resolved "https://registry.yarnpkg.com/ovh-ui-angular/-/ovh-ui-angular-2.30.0.tgz#bd682bdf47ec6574ccb61fefee5557608cd42d0e"
+ovh-ui-angular@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/ovh-ui-angular/-/ovh-ui-angular-3.0.2.tgz#3f2874d56a2317357b5223e6d9fd827c0c2c4186"
+  integrity sha512-IuqYbpzbyCviTtRtHnmlI1TX1V2Md5yRKObP0kHwEpc1+zi0qIOJbej+9Pd/nNzPJpN8MKRlnaVcRfuojqhOCg==
   dependencies:
     bloodhound-js "^1.2.3"
     clipboard "^2.0.1"
@@ -5463,9 +5464,10 @@ ovh-ui-angular@^2.30.0:
     popper.js "^1.14.4"
     ui-select "^0.19.8"
 
-ovh-ui-kit@^2.30.0:
-  version "2.30.0"
-  resolved "https://registry.yarnpkg.com/ovh-ui-kit/-/ovh-ui-kit-2.30.0.tgz#2ef4c038f55e667b4d160c6184de2a7b5a287f7b"
+ovh-ui-kit@^2.32.0:
+  version "2.32.0"
+  resolved "https://registry.yarnpkg.com/ovh-ui-kit/-/ovh-ui-kit-2.32.0.tgz#1e003eec0cd2fe5765057b733f6e2640927e4c86"
+  integrity sha512-QGLGbl1UTViyOVzGK+JFdJIi0nZbz0AuR2QTP72bKzFzWBqsQFQgMpg6Njbn/jYIfJlJogMJygWiGnZygm9p7g==
   dependencies:
     less-plugin-remcalc "^0.1.0"
 
