@@ -14,7 +14,7 @@ module.exports = merge(baseConfig, {
         mainFields: ["src", "main"]
     },
     output: {
-        path: path.resolve(rootPath, "dist")
+        path: path.resolve(rootPath, "docs")
     },
     plugins: [
         new ExtractTextPlugin({
