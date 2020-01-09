@@ -1,6 +1,7 @@
 import autocompleteController from "./autocomplete.controller";
 import calendarController from "./calendar.controller";
 import chipsController from "./chips.controller";
+import collapsibleController from "./collapsible.controller";
 import criteriaController from "./criteria.controller";
 import datagridController from "./datagrid.controller";
 import dualListController from "./dual-list.controller";
@@ -19,6 +20,7 @@ import timepickerController from "./timepicker.controller";
 angular.module("app")
     .controller("AutocompleteCtrl", autocompleteController)
     .controller("CalendarCtrl", calendarController)
+    .controller("CollapsibleCtrl", collapsibleController)
     .controller("CriteriaCtrl", criteriaController)
     .controller("ChipsCtrl", chipsController)
     .controller("DatagridCtrl", datagridController)

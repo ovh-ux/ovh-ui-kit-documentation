@@ -28,6 +28,7 @@
     "group": "components"
   },
   "collapsible": {
+    "controller": "CollapsibleCtrl",
     "group": "components"
   },
   "criteria": {
